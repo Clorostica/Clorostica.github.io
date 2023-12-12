@@ -1,1 +1,13 @@
+
+👋 Hallo, ich bin @Clorostica
+👀 Ich interessiere mich für …
+🌱 Ich lerne derzeit …
+💞️ Ich suche nach einer Zusammenarbeit bei …
+📫 Wie man mich erreichen kann …
+
+<!---
+Clorostica/Clorostica is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
+
 Datenschutzrichtlinie
