@@ -1,1 +1,1 @@
-# Clorostica.github.io
+Datenschutzrichtlinie
