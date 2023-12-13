@@ -2,19 +2,17 @@
 <img align='right' src="https://media.giphy.com/media/ieyl9zmCjO4b4t6qoY/giphy.gif" width="230">
 <p><em>Graphic designer and front-end developer at <a href="http://www.unb.br">INACAP</a><img src="https://media.giphy.com/media/fYSnHlufseco8Fh93Z/giphy.gif" width="30">
 
-[![Linkedin: Claudia Saez Orostica]([https://img.shields.io/badge/-thaianebraga-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/thaianebraga/)](https://www.linkedin.com/in/thaianebraga/](https://www.linkedin.com/in/claudia-saez-orostica-97221624b/))
-[![Portafolio:]([https://img.shields.io/badge/-thaianebraga-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/thaianebraga/)](https://www.linkedin.com/in/thaianebraga/](https://www.linkedin.com/in/claudia-saez-orostica-97221624b/](https://clorostica.myportfolio.com))
+[![Linkedin: Claudia Saez Orostica]((https://www.linkedin.com/in/claudia-saez-orostica-97221624b/))
+[![Portafolio:]((https://clorostica.myportfolio.com))
 
 ### <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> A little more about me...  
 
 ```javascript
 const thai = {
   pronouns: "she" | "her",
-  code: [Javascript, Typescript, HTML, CSS, Ruby, Python, Java],
-  tools: [React, Redux, Node, Storybook, Styled-Components, Jest, Docker],
-  architecture: ["microservices", "event-driven", "design system pattern"],
+  code: [Javascript, HTML, CSS, Python, Java],
+  tools: [React, Redux, Node],
   techCommunities: {
-                        coorganizer: "AfroPython",
                         speaker: "Latinity",
                         mentor: "RailsGirls POA"
                       },
