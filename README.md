@@ -1,6 +1,6 @@
 <h2> Hi, I'm Claudia Orostica! <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="50"></h2>
 <img align='right' src="https://media.giphy.com/media/ieyl9zmCjO4b4t6qoY/giphy.gif" width="230">
-<p><em>Graphic designer and front-end developer at <a href="http://www.unb.br">INACAP</a><img src="https://media.giphy.com/media/fYSnHlufseco8Fh93Z/giphy.gif" width="30">
+<p><em>Graphic designer and front-end developer at <a href="http://www.inacap.cl">INACAP</a><img src="https://media.giphy.com/media/fYSnHlufseco8Fh93Z/giphy.gif" width="30">
 
 [![Linkedin: Claudia Saez Orostica]((https://www.linkedin.com/in/claudia-saez-orostica-97221624b/))
 [![Portafolio:]((https://clorostica.myportfolio.com))
