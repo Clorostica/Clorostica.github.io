@@ -21,6 +21,19 @@ body {
   height:100vh;
   backdrop-filter: blur(10px);
 }
+p {
+  backdrop-filter: blur(10px);
+  font-weight: 600;
+  font-family: 'Manjari', sans-serif;
+  text-align: center;
+  color: #636b86;
+  font-size: 20px;
+  text-align: justify;
+  padding-top: 20px;
+  padding-bottom: 20px;
+font-weight: 900;
+
+}
 .animate_background{
   position:fixed;
   z-index:-5;
@@ -289,6 +302,7 @@ label {
     display:inline;
     padding-right: 14px;
   }
+  
   .animation-title {
     vertical-align: inherit;
     font-size: 3.82rem;
@@ -592,7 +606,7 @@ margin-left: 50px;
 position: absolute;
 display:block;
 right:0;
-top: 40px;
+top: 20px;
 cursor: pointer;
 }
 .logo-wrap a {
@@ -1039,7 +1053,7 @@ section{
       font-family: 'Staatliches', sans-serif;
       color: #636b86;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
     letter-spacing: 0.7cm; 
       letter-spacing: 1pt;
@@ -1072,7 +1086,7 @@ section{
     font-family: 'Staatliches', sans-serif;
     color: #636b86;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 25px;
     letter-spacing: 0.7cm; 
     letter-spacing: 1pt;
   }
@@ -1099,7 +1113,7 @@ section{
     font-family: 'Staatliches', sans-serif;
    color: #636b86;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
     letter-spacing: 0.7cm; 
       letter-spacing: 1pt;
@@ -1123,7 +1137,7 @@ section{
       font-family: 'Staatliches', sans-serif;
       color: #636b86;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
     letter-spacing: 0.7cm; 
       letter-spacing: 1pt;
@@ -1147,7 +1161,7 @@ section{
     text-decoration: none;
       font-family: 'Staatliches', sans-serif;
       color: #636b86;
-    font-size: 30px;
+      font-size: 25px;
     position: relative;
     letter-spacing: 0.7cm; 
       letter-spacing: 1pt;
@@ -1699,24 +1713,54 @@ background-repeat: no-repeat;
 }
 /* Medium devices only */
 @media (min-width: 950px) and (max-width: 1199px){
+  .logo-wrap {
+    text-align: left;
+
+  }
 
 }
 
 /* Small devices only*/
 @media (min-width: 720px) and (max-width: 949px){
- 
+  .logo-wrap {
+    text-align: left;
+
+  }
+  h4.titulo.animation-title{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 /* X-Small devices only */
 @media (min-width: 375px) and (max-width: 719px){
-  .logo-wrap {
-    text-align: left;
-
+  div.wrapper1{
+    font-size: small;
+  }
+  h4.titulo.animation-title{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
   }
   a.flow-wave{
     width: 30%;
     text-align: center;
     display:contents;
+}
+div.logo-wrap{
+width: 100%
+
+}
+.c{
+  width: 30px;
+}
+.title {
+  font-size: 55px;
+}
+.boxS2{
+
+	align-items: center;
+	justify-content: center;
 }
 div.animation-title{
   text-align: center;

@@ -54,12 +54,57 @@ body{
 	transition: all 300ms linear;
 }
 a{
+	color:#636b86;
     text-decoration: none;
   }
   a:hover{
     text-decoration: none;
     color:#ff2f97 ;
   }
+  .containerS{
+	width: 90%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
+	grid-gap: 1.2rem;
+}
+.boxS{
+	padding: 2rem 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.boxS{
+	padding: 2rem 2rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.boxS img{ 
+	width: 100px;
+}
+.titulo{
+  letter-spacing: 0.7cm; 
+  letter-spacing: 5pt;
+  font-family: 'Staatliches', sans-serif;
+    font-weight: 800;
+    text-align: left;
+    z-index: 5;
+    opacity:0.8;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #636b86;
+  }
+  /* X-Small devices only */
+@media (min-width: 375px) and (max-width: 719px){
+	.boxS{
+	align-items: center;
+	justify-content: center;
+}}
 </style>
 </head>
 <body>
@@ -67,7 +112,7 @@ a{
 	<header class="cd-header">
 		<div class="header-wrapper">
 			<div class="logo-wrap">
-                <img src="./img/logoblanco.png" style="width: 16%;margin-left: 15px;margin-top:15px">
+				<img src="./img/logoblanco.png" style="width: 30vh ; margin-bottom: 15px;">
 			</div>
 			<div class="nav-but-wrap">
 				<div class="menu-icon hover-target">
@@ -89,25 +134,25 @@ a{
 			</ul>
 		</div>
 	</div>			
-	<section">
-		<div class="row" style="padding-bottom:10px;padding-top: 200px;">
-			<div class="col-7"> 
-						<div style="text-align: left;padding-left: 130px;">
-							<p class="animation-title title" data-aos="fade-down" data-aos-duration="4000">ABOUT ME</p>
-							<hr/> 
-							 <p class="subtitulo2" style="padding-bottom: 30px;word-spacing: 0.25em;">I'm Claudia Orostica, a passionate designer and front-end developer originally from Chile. With a background in graphic design, my journey led me to develop a deep love for tattoos, refining my skills in studios worldwide.
-							In the past year, Berlin has been my home, where I've been involved in diverse projects, from corporate branding to web design. My focus is on conveying essence through captivating visuals. I look forward to sharing my passion and experience, aiming to create exceptional results together. For more details, visit my website.</p>
-						</div>
-						<object data="/files.pdf" type="application/pdf" width="100%" height="500px">
-							<a class="effect subtitulo"href="files.pdf" style="margin-left: 130px;">→ Curriculum Vitae</a>
-						</object>
-			</div>						
-					 <div class="col-5" style="padding-top: 20px;">
-							<img src="img/yo.jpg" style=" width: 350px;border-radius: 20px ;margin-left: 30px;">
-						</div>
-		 </div> 
+	<section>
+		<div class="container" style="padding-bottom: 100px; width:56%;padding-top:100px;">
+			<div data-aos="fade-down" style="width: 100%;">
+				<p class="animation-title titulo" data-aos="fade-down" data-aos-duration="8000">ABOUT ME</p>
+			</div>
+			<hr style="width: 100%;"/>
+		<div class="containerS">
+            <div class="boxS">
+                <img src="image/icon1.png" alt="">
+				<p>I'm Claudia Orostica, a passionate designer and front-end developer originally from Chile. With a background in graphic design, my journey led me to develop a deep love for tattoos, refining my skills in studios worldwide.
+					In the past year, Berlin has been my home, where I've been involved in diverse projects, from corporate branding to web design. My focus is on conveying essence through captivating visuals. I look forward to sharing my passion and experience, aiming to create exceptional results together. For more details, visit my website</p>
+					<div class="container"><a href="files.pdf" target="_blank" style="font-size: 20px;">Download PDF</a></div>
+				</div>
+            <div class="boxS">
+                <img src="img/yo.jpg" style=" width: 320px;border-radius: 20px ;margin-bottom: 200px;">
+            
+            </div>
+		</div>
 </section>
-
 	<div class='cursor' id="cursor"></div>
 	<div class='cursor2' id="cursor2"></div>
 	<div class='cursor3' id="cursor3"></div>

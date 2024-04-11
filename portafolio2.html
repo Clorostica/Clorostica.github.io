@@ -76,6 +76,32 @@ a{
       opacity: 1;
     background-color: #636b86;
   }
+  .containerS{
+	width: 100%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(18rem,1fr));
+	grid-gap: 1.2rem;
+}
+.boxS{
+	padding-bottom: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.boxS2{
+    padding-top: 120px;
+    padding-left: 60px;
+	width: 110%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+label{
+    font-size: 20px;
+    color:#a1a1a1;
+}
 </style>
 </head>
 <body>
@@ -83,7 +109,7 @@ a{
 	<header class="cd-header">
 		<div class="header-wrapper">
 			<div class="logo-wrap">
-                <img src="./img/logoblanco.png" style="width: 16%;margin-left: 15px;margin-top:15px">
+                <img src="./img/logoblanco.png" style="width: 30vh ; margin-bottom: 15px;">
 			</div>
 			<div class="nav-but-wrap">
 				<div class="menu-icon hover-target">
@@ -104,23 +130,25 @@ a{
 				<li class="nav__list-item"><p style="font-size: 10px;display:inline"></p><a href="contact2.html" class="hover-target">Contact</a></li>
 			</ul>
 		</div>
-	</div>			
-    <div class="animate__animated animate__bounce animate__faster container-fluid" style="width: 50%;margin-right:45%; margin-top:10%;">
-        <div data-aos="fade-down">
-            <p class="animation-title title">PORTFOLIO</p>
-        </div>
-        <hr />
-        <div class="wrapper1 ">
+	</div>		
+    </div>
+    <div class="containerS">
+        <div class="boxS2">
+            <div data-aos="fade-down" style="width: 100%;">
+                <p class="animation-title titulo" data-aos="fade-down" data-aos-duration="8000">PORTFOLIO</p>
+            </div>
+            <hr style="width: 100%;"/>
+        <div class="wrapper1">
             <div class="row">
                 <div class="col-6" style="vertical-align:baseline">
-                    <a class="link arrow-link" href="Epica.html" style="display:inline">
+                    <a class="link arrow-link" href="epica.html" style="display:inline">
                         Epica&nbsp; &nbsp;
                         <span>
                             <img class="elementToFadeInAndOut" src="img/epica01.jpg" alt="image" height="224" />
                         </span>
                     </a>
                 </div>
-                <div class="col-6" style="font-size:30px; text-align:right;">
+                <div class="col-6" style="font-size:20px; text-align:right;">
                     <label class="categorias">Branding</label>
                 </div>
             </div>
@@ -136,7 +164,7 @@ a{
                         </span>
                     </a>
                 </div>
-                <div class="col-6" style="font-size:30px; text-align:right;">
+                <div class="col-6" style="font-size:20px; text-align:right;">
                     <label class="categorias">Web Development</label>
                 </div>
             </div>
@@ -152,7 +180,7 @@ a{
                         </span>
                     </a>
                 </div>
-                <div class="col-6" style="font-size:30px; text-align:right;">
+                <div class="col-6" style="font-size:20px; text-align:right;">
                     <label class="categorias">Branding</label>
                 </div>
             </div>
@@ -168,7 +196,7 @@ a{
                         </span>
                     </a>
                 </div>
-                <div class="col-6" style="font-size:30px; text-align:right;">
+                <div class="col-6" style="font-size:20px; text-align:right;">
                     <label class="categorias">Branding</label>
                 </div>
             </div>
@@ -184,13 +212,17 @@ a{
                         </span>
                     </a>
                 </div>
-                <div class="col-6" style="font-size:30px; text-align:right;">
+                <div class="col-6" style="font-size:20px; text-align:right;">
                     <label class="categorias">Branding<label />
                 </div>
             </div>
         </div>
         <hr />
+            </div>
+        <div class="boxS">
+        </div>
     </div>
+
 
 	<div class='cursor' id="cursor"></div>
 	<div class='cursor2' id="cursor2"></div>
