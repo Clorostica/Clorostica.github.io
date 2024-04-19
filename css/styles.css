@@ -1071,7 +1071,7 @@ section{
   }
   .wrapper a:hover span {
     display: block;
-    transform: translate(303%, -40%) scale(2);
+    transform: translate(280%, -40%) scale(2);
     border-radius: 10px;
     color: #ff2f97;
     text-align: center;
@@ -1101,7 +1101,7 @@ section{
   }
   .wrapper1 a:hover span {
     display: block;
-   transform: translate(220%, -6%) scale(1.5);
+   transform: translate(200%, -6%) scale(1.5);
     border-radius: 20px;
     -webkit-animation: fadeinout 2s linear forwards;
     animation: fadeinout 2s linear forwards;
@@ -1129,7 +1129,7 @@ section{
   }
   .wrapper2 a:hover span {
     display: block;
-    transform: translate(225%, -76%) scale(1.5);
+    transform: translate(208%, -76%) scale(1.5);
     border-radius: 20px;
   }	
   .wrapper3 a {
@@ -1153,7 +1153,7 @@ section{
   }
   .wrapper3 a:hover span {
     display: block;
-    transform: translate(220%, -110%) scale(1.5);
+    transform: translate(205%, -110%) scale(1.5);
     border-radius: 20px;
   }	
   
@@ -1177,10 +1177,34 @@ section{
   }
   .wrapper4 a:hover span {
     display: block;
-    transform: translate(250%, -120%) scale(1.5);
+    transform: translate(230%, -120%) scale(1.5);
     border-radius: 20px;
   }
   
+  
+  .wrapper5 a {
+    text-decoration: none;
+      font-family: 'Staatliches', sans-serif;
+      color: #636b86;
+      font-size: 25px;
+    position: relative;
+    letter-spacing: 0.7cm; 
+      letter-spacing: 1pt;
+  }
+  .wrapper5 a span {
+      animation: fadeIn 0.6s; 
+    position: absolute;
+    display: none;
+    z-index: 99;
+    transform: scale(0);
+    overflow: hidden;
+    border-radius: 30px;
+  }
+  .wrapper5 a:hover span {
+    display: block;
+    transform: translate(200%, -120%) scale(1.5);
+    border-radius: 20px;
+  }
 /* #Cursor
 ================================================== */
 .cursor,
@@ -1752,13 +1776,12 @@ width: 100%
 
 }
 .c{
-  width: 30px;
+  width: 50px;
 }
-.title {
-  font-size: 55px;
+p.title {
+  font-size: 35px;
 }
 .boxS2{
-
 	align-items: center;
 	justify-content: center;
 }
