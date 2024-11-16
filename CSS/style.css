@@ -188,7 +188,7 @@ footer#nav_footer {
 }
 
 #header-nav-bar-menu {
-    width: 70%;
+    width: 50%;
     height: 100px;
     display: flex;
     justify-content: space-around;
