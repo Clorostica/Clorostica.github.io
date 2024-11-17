@@ -114,6 +114,9 @@
     header .banner h2 {
         font-size: 20px;
     }
+     header .banner h3 {
+        font-size: 15px;
+    }
 
     #contact_me_container .contact_me_form {
         width: 350px;
