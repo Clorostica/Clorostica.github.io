@@ -144,6 +144,7 @@ header {
     filter: drop-shadow(0 0 1.5rem #29C67F);
 }
 .banner h1 {
+    text-justify: inter-word; 
     font-size: 32px;
     text-shadow: 1px 1px 5px var(--text-color);
     text-align: center;
@@ -157,11 +158,13 @@ header {
 }
 
 .banner h2 {
+    text-justify: inter-word; 
     font-size: 27px;
     text-shadow: 1px 1px 5px var(--text-color);
     text-align: center;
 }
 .banner h3 {
+    text-justify: inter-word; 
     font-size: 20px;
     text-shadow: 1px 1px 5px var(--text-color);
     text-align: center;
