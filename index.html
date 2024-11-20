@@ -7,9 +7,11 @@
     <title>Portfolio Homepage</title>
     <link rel="icon" type="image/x-icon" href="#">
     <script src="https://kit.fontawesome.com/c3b56a7551.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://clorostica.github.io/CSS/style.css">
-    <link rel="stylesheet" href="https://clorostica.github.io/CSS/media_queries.css">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/media_queries.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -42,10 +44,10 @@
                         </div>
                         <div class="footer_element">
                             <h4>Social</h4>
-                            <span><a href="#"><i class="fa-brands fa-facebook"></i> Facebook</a></span>
-                            <span><a href="#"><i class="fa-brands fa-tiktok"></i> Tiktok</a></span>
-                            <span><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></span>
-                            <span><a href="#"><i class="fa-brands fa-linkedin"></i> Linkedin</a></span>
+                            <span><a href="https://www.facebook.com/valeriu.secrieru.75"><i class="fa-brands fa-facebook"></i> Facebook</a></span>
+                            <span><a href="https://www.tiktok.com/@valeriu_code"><i class="fa-brands fa-tiktok"></i> Tiktok</a></span>
+                            <span><a href="https://www.instagram.com/vale_secrieru"><i class="fa-brands fa-instagram"></i> Instagram</a></span>
+                            <span><a href="https://www.linkedin.com/in/claudia-saez-orostica-97221624b/"><i class="fa-brands fa-linkedin"></i> Linkedin</a></span>
                         </div>
                         <div class="footer_element">
                             <h4>Location</h4>
@@ -57,17 +59,27 @@
 
             </div>
         </nav>
-        <div class="banner">
-            <h1>Hi my name is <span>Claudia</span></h1>
-            <h2>I'm a <span>Front-end</span> developer</h2>
-            <h3>A multidisciplinary developer and designer<br>
-                with a passion for creating engaging, entertaining user experiences. ✨
-            </h3>
+        <div class="introduction">
+            <div class="banner">
+                <h1 >Hi my name is <span>Claudia</span></h1>
+                <div>
+                    <h2>I'm a <span>Front-end</span> developer</h2>
+                    <h3>A multidisciplinary developer and designer with a passion for creating engaging, entertaining user experiences. ✨</h3>
+                </div>
+                <div class="button">
+                    DOWNLOAD CV
+                </div>
             </div>
+            <div class="banner">
+                <div class="drop-shadow-div blob">
+                </div>      
+            </div> 
+        </div>
     </header>
     <main>
         <div class="main_container reveal" id="about_me">
             <h2>About Me</h2>
+            <h4>Hi there, I'm glad to have you here!</h4>
             <p>Currently, Berlin is my home, where I've been involved in a wide range of projects, 
                 from corporate branding to web design. My main focus is on capturing the essence of 
                 each project through captivating visuals, always striving to deliver impactful and 
@@ -95,18 +107,12 @@
             <h2>Projects</h2>
             <div class="main_grid" id="projects_grid">
                 <div class="grid_container">
-                    <div class="grid_card">
-                         <a href="https://clorostica.github.io/LittleLemon/"><img src="https://clorostica.github.io/IMG/logo.png" alt="LittleLemon" style="width:80%">
-                         </a>
-                    </div>
-                    <div class="grid_container_text"><span>Little Lemon</span></div>
+                    <div class="grid_card"><span>Work in progress...</span></div>
+                    <div class="grid_container_text"><span>Text</span></div>
                 </div>
                 <div class="grid_container">
-                    <div class="grid_card">
-                        <a href="#"><img src="https://clorostica.github.io/IMG/CordilleraFloreria.png" alt="" style="width:80%">
-                         </a>
-                     </div>
-                    <div class="grid_container_text"><span>Floreria Cordillera</span></div>
+                    <div class="grid_card"><span>Work in progress...</span></div>
+                    <div class="grid_container_text"><span>Text</span></div>
                 </div>
                 <div class="grid_container">
                     <div class="grid_card"><span>Work in progress...</span></div>
@@ -144,21 +150,21 @@
 
                 <div class="grid_container">
                     <div class="grid_card">
-                        <img src="https://clorostica.github.io/IMG/html.png" alt="html-course-certificate">
+                        <img src="/IMG/html.png" alt="html-course-certificate">
                     </div>
                     <div class="grid_container_text"><span>HTM & CSS</span></div>
                 </div>
 
                 <div class="grid_container">
                     <div class="grid_card">
-                        <img src="https://clorostica.github.io/IMG/frontend.png" alt="css-course-certificate">
+                        <img src="/IMG/frontend.png" alt="css-course-certificate">
                     </div>
                     <div class="grid_container_text"><span>Introduction Front-end</span></div>
                 </div>
 
                 <div class="grid_container">
                     <div class="grid_card">
-                        <img src="https://clorostica.github.io/IMG/javascript.png" alt="javascript-course-certificate">
+                        <img src="/IMG/javascript.png" alt="javascript-course-certificate">
                     </div>
                     <div class="grid_container_text"><span>JavaScript</span></div>
                 </div>
@@ -233,9 +239,8 @@
             <span class="copyright"><em>©2024 Claudia Saez</em></span>
         </div>
     </footer>
-      <script src="https://clorostica.github.io/JS/mobile.js"></script>
-      <script src="https://clorostica.github.io/JS/animation.js"></script>
 </body>
+<script src="/JS/mobile.js"></script>
 <script type="module">
    import createGlobe from 'https://cdn.skypack.dev/cobe'
 
@@ -266,4 +271,5 @@ const globe = createGlobe(canvas, {
   },
 })
   </script>
+  <script src="/JS/animation.js"></script>
 </html>
