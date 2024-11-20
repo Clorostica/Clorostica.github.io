@@ -55,12 +55,6 @@ a {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
-.w-full{
-    width: 100%;
-}
-.small_screen {
-    display: none;
-}
 
 /*-------------*/
 
@@ -92,19 +86,18 @@ header {
 }
 .introduction {
     display: flex; 
-    justify-content: center; 
     align-items: center; 
-    margin: 160px auto; 
+    margin: 150px auto; 
     gap: 20px; 
     width: calc(100% - 40px);
-    max-width: 1200px;
+    max-width: 960px;
     flex-wrap: wrap; 
 }
 
 .banner {
+    justify-content: space-between; 
     display: flex; 
     flex-direction: column; 
-    justify-content: center; 
     align-items: center; 
     padding: 20px; 
     width: 100%; 
@@ -120,7 +113,7 @@ header {
     height: 330px; 
     border-radius: 50%; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    margin-top: 20px; 
+    margin-top: 10px; 
     background-image: url("https://clorostica.github.io/IMG/yo.jpg"); 
     background-color: #29C67F; 
     background-size: cover; 
@@ -164,7 +157,7 @@ header {
 }
 
 .banner h2 {
-    font-size: 30px;
+    font-size: 27px;
     text-shadow: 1px 1px 5px var(--text-color);
     text-align: center;
 }
@@ -484,7 +477,7 @@ main .main_container {
     padding-left: 10px;
     font-family: 'Poppins', sans-serif;
     border: none;
-    background-color: var(--main-color);
+    background-color: #F7F7FF;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -496,7 +489,7 @@ main .main_container {
     margin: 10px 0;
     font-family: 'Poppins', sans-serif;
     border: none;
-    background-color: var(--main-color);
+    background-color: #F7F7FF;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
