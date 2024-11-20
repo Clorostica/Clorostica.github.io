@@ -16,6 +16,9 @@
     .firstcut {
         display: none;
     }
+    .introduction{
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 1500px) {
@@ -25,6 +28,9 @@
 
     #header-nav-bar-menu li a { 
         font-size: 20px;
+    }
+    .introduction{
+        width: 100%;
     }
 }
 
@@ -40,9 +46,13 @@
     .secondcut {
         display: none;
     }
+    .introduction{
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 1000px) {
+    
     #header-nav-bar-menu {
         width: 100%;
     }
@@ -50,7 +60,12 @@
     #header-nav-bar-menu li a { 
         font-size: 16px;
     }
-    
+    .introduction{
+        width: 70%;
+    }
+    h2{
+        font-size: 40px;
+    }
     .main_grid, #certificates_grid {
         grid-template-columns: auto auto;
     }
@@ -81,18 +96,37 @@
     .small_screen#nav_burger {
         display: flex;
     }
-    
+    .introduction{
+        width: 60%;
+    }
+    .button{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    h2{
+        font-size: 30px;
+    }
 }
 
 @media only screen and (max-width: 650px) {
-    header .banner {
-        padding: 0 10px;
-    }
-    
-    header .banner h1,h2 {
-        font-size: 40px;
+    .container{
+        margin-top: 40px;
     }
 
+    .button{
+        height: auto;
+        width:auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    header .banner {
+        padding: 20 10px;
+    }
+    
+    header .banner h1{
+        padding-top: 20px;
+        font-size: 40px;
+    }
     .main_grid, #certificates_grid {
         grid-template-columns: auto;
     }
@@ -104,18 +138,19 @@
 }
 
 @media only screen and (max-width: 550px) {
+    .container{
+        margin-top: 40px;
+    }
     header .banner h1 {
-        font-size: 26px;
+        margin-top: 10px;
+        font-size: 30px;
         animation: 
         typing-mobile 1.5s steps(35, end),
         blink-caret-mobile .65s step-end infinite;
     }
 
-    header .banner h2 {
-        font-size: 20px;
-    }
-     header .banner h3 {
-        font-size: 15px;
+    header .banner h2{
+        font-size: 25px;
     }
 
     #contact_me_container .contact_me_form {
