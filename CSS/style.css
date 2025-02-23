@@ -375,7 +375,7 @@ footer#nav_footer {
     color: var(--text-color);
     margin: 10px 0;
     font-family: 'Poppins', sans-serif;
-    text-align: right;
+    text-align: left; 
 }
 
 .button_container {
@@ -414,7 +414,7 @@ main .main_container {
     flex-direction: column;
     justify-content: flex-start; 
     align-items: flex-end; 
-    text-align: right; 
+    text-align: left; 
     color: white;
     font-family: 'Poppins', sans-serif;
     width: 50%;
@@ -451,7 +451,6 @@ main .main_container {
 }
 
 .grid_container {
-    background-color: #ffffff;
     height: 350px;
     border-radius: 24px;
     flex-direction: column;
