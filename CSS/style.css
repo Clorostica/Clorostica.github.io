@@ -443,6 +443,7 @@ main .main_container {
 }
 
 .grid_container {
+    background-color: #ffffff;
     height: 350px;
     border-radius: 24px;
     flex-direction: column;
