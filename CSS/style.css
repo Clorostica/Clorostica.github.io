@@ -583,7 +583,6 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: black;
     border-top: 2px solid var(--text-color);
 }
 
