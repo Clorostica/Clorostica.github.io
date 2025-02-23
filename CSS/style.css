@@ -310,41 +310,50 @@ footer#nav_footer {
 }
 /*RESUME*/
 .experience {
-    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 40px;
+    text-align: center; /* Centra el título */
 }
 
 .experience h2 {
-    text-align: center;
     margin-bottom: 30px;
+    font-size: 2.5rem;
+    color: var(--main-color); /* Usa el color principal para el título */
 }
 
 .experience_item {
     display: flex;
+    align-items: center; /* Alinea verticalmente la fecha y los detalles */
     margin-bottom: 30px;
+    background-color: #2A2A2A; /* Fondo oscuro para cada experiencia */
+    border-radius: 8px;
+    padding: 20px;
 }
 
 .date {
-    width: 120px; /* Fija el tamaño de la columna de la fecha */
+    width: 120px;
     font-size: 16px;
     font-weight: bold;
-    color: #555;
+    color: var(--main-color); /* Color para la fecha */
     padding-right: 20px;
+    text-align: left; /* Alinea la fecha hacia la izquierda */
 }
 
 .details {
     flex-grow: 1;
+    color: var(--text-color);
 }
 
 .details h3 {
     margin: 0;
-    font-size: 20px;
-    color: #333;
+    font-size: 1.8rem;
+    color: var(--main-color); /* Color para el título de cada puesto */
 }
 
 .details p {
     font-size: 16px;
-    color: #666;
+    color: var(--text-color);
     margin: 10px 0;
 }
 
@@ -355,16 +364,21 @@ footer#nav_footer {
 .tools button {
     margin-right: 10px;
     padding: 8px 12px;
-    background-color: #007bff;
+    background-color: var(--main-color); /* Usa el color principal para los botones */
     border: none;
-    color: white;
+    color: var(--text-color);
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
 .tools button:hover {
-    background-color: #0056b3;
+    background-color: #2A9D6B; /* Color más oscuro cuando el botón es hover */
+}
+
+::placeholder {
+    color: var(--text-color);
+    opacity: 0.8;
 }
 
 /*-------------*/
