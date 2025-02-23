@@ -344,7 +344,7 @@ footer#nav_footer {
 }
 
 .date {
-    width: 270px;
+    width: 275px;
     font-size: 16px;
     font-weight: bold;
     color: var(--main-color);
@@ -411,9 +411,12 @@ main .main_container {
 
 
 #about_me p {
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-end; 
+    text-align: right; 
     color: white;
     font-family: 'Poppins', sans-serif;
-    text-align: center;
     width: 50%;
     margin: 20px 0;
 }
