@@ -99,7 +99,6 @@ header {
     justify-content: space-between; 
     display: flex; 
     flex-direction: column; 
-    align-items: center; 
     padding: 20px; 
     width: 100%; 
     max-width: 500px; 
@@ -148,10 +147,11 @@ header {
 }
 
 .banner h1 {
-    text-justify: inter-word; 
     font-size: 33px;
     text-shadow: 1px 1px 5px var(--text-color);
-    text-align: center;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-end; 
     margin-bottom: 20px;
     overflow: hidden; 
     border-right: .15em solid var(--main-color);
@@ -162,15 +162,19 @@ header {
 }
 
 .banner h2 {
-    text-justify: inter-word; 
-    font-size: 32px;
-    text-align: center;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-end; 
+    text-align: justify; 
+    font-size: 42px;
+
 }
 
 .banner h3 {
-    text-justify: inter-word; 
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-end; 
     font-size: 18px;
-    text-align: center;
     padding-top: 10px;
     color: #8992b1;
 }
