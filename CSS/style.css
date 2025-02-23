@@ -369,10 +369,13 @@ footer#nav_footer {
 }
 
 .details p {
+    justify-content: flex-start; /* Cambia 'center' por 'flex-start' para que no esté centrado */
+    align-items: flex-end;
     font-size: 16px;
     color: var(--text-color);
     margin: 10px 0;
-     font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    text-align: right;
 }
 
 .button_container {
