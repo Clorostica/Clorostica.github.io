@@ -411,7 +411,7 @@ main .main_container {
     flex-direction: column;
     justify-content: flex-start; 
     align-items: flex-end; 
-    text-align: left; 
+    text-align: justify; 
     color: white;
     font-family: 'Poppins', sans-serif;
     width: 60%;
