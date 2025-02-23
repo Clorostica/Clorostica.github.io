@@ -172,7 +172,7 @@ header {
 }
 .banner span {
     font-family: 'Bungee', cursive;
-    color: var(--main-color);
+    color: #64ffda;
     cursor: pointer;
     text-shadow: 1px 1px 2px var(--main-color);
 }
@@ -270,7 +270,7 @@ footer#nav_footer {
 #header-nav-bar-menu::after {
     content: '/ >';
     width: 10%;
-    color: var(--main-color);
+    color: #64ffda;
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -280,7 +280,7 @@ footer#nav_footer {
     content: '<';
     text-align: right;
     width: 10%;
-    color: var(--main-color);
+    color: #64ffda;
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -296,7 +296,7 @@ footer#nav_footer {
 }
 
 #header-nav-bar-menu li a {
-    color: var(--text-color);
+    color: #64ffda;
     font-weight: 600;
     font-size: 22px;
     transition: all 500ms;
@@ -304,7 +304,7 @@ footer#nav_footer {
 
 #header-nav-bar-menu li a:hover {
     font-size: 24px;
-    color: var(--main-color);
+    color: #64ffda;
     text-shadow: 2px 2px 8px var(--main-color);
     transition: all 500ms;
 }
