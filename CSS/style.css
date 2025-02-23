@@ -116,7 +116,7 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     margin-top: 10px; 
     background-image: url("/IMG/yo.jpg"); 
-    background-color: #64FFDA; /* Actualizado a nuevo color */
+    background-color: #64FFDA; 
     background-size: cover; 
     background-position: center;
     animation: morph 3.6s linear infinite;
@@ -144,7 +144,7 @@ header {
 .drop-shadow-div {
     -webkit-appearance: none;
     appearance:none;
-    filter: drop-shadow(0 0 1.5rem #64FFDA); /* Actualizado a nuevo color */
+    filter: drop-shadow(0 0 1.5rem #64FFDA); 
 }
 
 .banner h1 {
@@ -176,7 +176,7 @@ header {
 
 .banner span {
     font-family: 'Bungee', cursive;
-    color: #64FFDA; /* Actualizado a nuevo color */
+    color: #64FFDA; 
     cursor: pointer;
     text-shadow: 1px 1px 2px var(--main-color);
 }
@@ -273,7 +273,7 @@ footer#nav_footer {
 #header-nav-bar-menu::after {
     content: '/ >';
     width: 10%;
-    color: #64FFDA; /* Actualizado a nuevo color */
+    color: #64FFDA; 
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -283,7 +283,7 @@ footer#nav_footer {
     content: '<';
     text-align: right;
     width: 10%;
-    color: #64FFDA; /* Actualizado a nuevo color */
+    color: #64FFDA; 
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
@@ -299,7 +299,7 @@ footer#nav_footer {
 }
 
 #header-nav-bar-menu li a {
-    color: #64FFDA; /* Actualizado a nuevo color */
+    color: #64FFDA; 
     font-weight: 600;
     font-size: 22px;
     transition: all 500ms;
@@ -307,7 +307,7 @@ footer#nav_footer {
 
 #header-nav-bar-menu li a:hover {
     font-size: 24px;
-    color: #64FFDA; /* Actualizado a nuevo color */
+    color: #64FFDA; 
     text-shadow: 2px 2px 8px var(--main-color);
     transition: all 500ms;
 }
@@ -372,7 +372,7 @@ footer#nav_footer {
 }
 
 .details p {
-    justify-content: flex-start; /* Cambia 'center' por 'flex-start' para que no esté centrado */
+    justify-content: flex-start; 
     align-items: flex-end;
     font-size: 14px;
     color: #8891B0;
@@ -436,17 +436,17 @@ main .main_container {
 
 .main_container a:hover {
     letter-spacing: 1.05px;
-    color: #64FFDA; /* Actualizado a nuevo color */
+    color: #64FFDA; 
     transition: all 500ms;
 }
 
 .main_container a span {
-    color: #64FFDA; /* Actualizado a nuevo color */
+    color: #64FFDA; 
 }
 
 .main_grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas */
+    grid-template-columns: 1fr 1fr 1fr; 
     gap: 20px;
     margin: 20px 0px;
 }
