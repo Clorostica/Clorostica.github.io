@@ -87,7 +87,6 @@ header {
 
 .introduction {
     display: flex; 
-    align-items: center; 
     margin: 150px auto; 
     gap: 20px; 
     width: calc(100% - 40px);
@@ -156,9 +155,6 @@ header {
     overflow: hidden; 
     border-right: .15em solid var(--main-color);
     white-space: nowrap;
-    animation: 
-        typing 1.5s steps(40, end) 1.5s,
-        blink-caret .75s step-end infinite 1.5s;
 }
 
 .banner h2 {
