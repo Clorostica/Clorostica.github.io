@@ -501,6 +501,126 @@ main .main_container {
     font-weight: 500;
 }
 
+/* Estilos generales de la página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0B1930; /* Fondo de la página */
+    color: #8992B1; /* Color de texto por defecto */
+}
+
+/* Estilos del formulario */
+#contact_me_container .contact_me_form {
+    width: 450px;
+    margin-left: 150px;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 24px;
+    background-color: #0B1930; /* Fondo del formulario */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+#contact_me_container .contact_me_form input,
+#contact_me_container .contact_me_form textarea {
+    width: 65%;
+    height: 2.5rem;
+    margin: 10px 0;
+    border-radius: 14px;
+    padding-left: 10px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background-color: #F7F7FF;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    color: #8992B1; /* Color de la letra normal */
+}
+
+#contact_me_container .contact_me_form label {
+    color: #64FFDA; /* Color para etiquetas */
+    font-family: 'Poppins', sans-serif;
+}
+
+#contact_me_container .contact_me_form input::placeholder,
+#contact_me_container .contact_me_form textarea::placeholder {
+    color: #8992B1; /* Color de los placeholders */
+}
+
+#contact_me_container .contact_me_form button {
+    padding: 15px 30px;
+    margin-top: 15px;
+    background-color: #64FFDA; /* Botón destacado */
+    border: none;
+    color: #0B1930; /* Letra del botón */
+    border-radius: 14px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#contact_me_container .contact_me_form button:hover {
+    background-color: #29C67F;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos del footer */
+footer {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Asegura que el contenido del footer esté centrado */
+    background-color: #0B1930; /* Fondo del footer */
+    border-top: 2px solid #64FFDA; /* Color de borde del footer */
+}
+
+footer .footer_container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px 0;
+    justify-items: center; /* Centra los elementos dentro del grid */
+}
+
+footer .footer_container .footer_element {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .footer_container .footer_element h4 {
+    color: #64FFDA; /* Color de los títulos */
+    font-family: 'Bungee', sans-serif;
+    text-align: center;
+    cursor: default;
+}
+
+footer .footer_container .footer_element span, 
+footer .footer_container .footer_element a {
+    color: #8992B1; /* Color de los textos */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 5px 0;
+}
+
+footer .footer_container .footer_element a:hover {
+    color: #64FFDA;
+    text-shadow: 1px 1px 2px #64FFDA;
+    transition: all 0.3s ease;
+}
+
+.copyright {
+    color: #64FFDA;
+    font-family: 'Poppins', sans-serif;
+}
+
 @keyframes morph {
     0%,
     100% {
