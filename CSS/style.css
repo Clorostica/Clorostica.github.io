@@ -575,15 +575,16 @@ body {
 }
 
 /* Estilos del footer */
+
 footer {
     width: 100%;
     padding: 50px 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center; /* Asegura que el contenido del footer esté centrado */
-    background-color: #0B1930; /* Fondo del footer */
-    border-top: 2px solid #64FFDA; /* Color de borde del footer */
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    border-top: 2px solid var(--text-color);
 }
 
 footer .footer_container {
@@ -591,41 +592,46 @@ footer .footer_container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 30px 0;
-    justify-items: center; /* Centra los elementos dentro del grid */
 }
 
 footer .footer_container .footer_element {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 footer .footer_container .footer_element h4 {
-    color: #64FFDA; /* Color de los títulos */
+    color: var(--main-color);
     font-family: 'Bungee', sans-serif;
     text-align: center;
     cursor: default;
 }
 
-footer .footer_container .footer_element span, 
-footer .footer_container .footer_element a {
-    color: #8992B1; /* Color de los textos */
+footer .footer_container .footer_element span, a {
+    color: var(--text-color);
     font-family: 'Poppins', sans-serif;
     text-align: center;
     margin: 5px 0;
 }
 
-footer .footer_container .footer_element a:hover {
-    color: #64FFDA;
-    text-shadow: 1px 1px 2px #64FFDA;
-    transition: all 0.3s ease;
-}
-
 .copyright {
-    color: #64FFDA;
+    color: var(--main-color);
     font-family: 'Poppins', sans-serif;
 }
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
 
 @keyframes morph {
     0%,
