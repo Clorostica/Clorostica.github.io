@@ -28,6 +28,7 @@ body {
     position: relative;
     overflow-x: hidden;
     -webkit-overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
   }
 
 h1 {
