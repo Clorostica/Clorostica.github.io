@@ -522,7 +522,15 @@ body {
     color: #8992B1; /* Color de texto por defecto */
 }
 
-/* Estilos del formulario */
+#contact_me_container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0;
+}
+
 #contact_me_container .contact_me_form {
     width: 450px;
     margin-left: 150px;
@@ -532,12 +540,11 @@ body {
     align-items: center;
     flex-direction: column;
     border-radius: 24px;
-    background-color: #0B1930; /* Fondo del formulario */
+    background-color: var(--main-body-color);
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
-#contact_me_container .contact_me_form input,
-#contact_me_container .contact_me_form textarea {
+#contact_me_container .contact_me_form input {
     width: 65%;
     height: 2.5rem;
     margin: 10px 0;
@@ -547,36 +554,49 @@ body {
     border: none;
     background-color: #F7F7FF;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-    color: #8992B1; /* Color de la letra normal */
+}
+
+#contact_me_container .contact_me_form textarea {
+    width: 65%;
+    height: 7.5rem;
+    border-radius: 14px;
+    padding: 10px;
+    margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background-color: #F7F7FF;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 #contact_me_container .contact_me_form label {
-    color: #64FFDA; /* Color para etiquetas */
+    color: var(--text-color);
     font-family: 'Poppins', sans-serif;
 }
 
-#contact_me_container .contact_me_form input::placeholder,
-#contact_me_container .contact_me_form textarea::placeholder {
-    color: #8992B1; /* Color de los placeholders */
-}
-
-#contact_me_container .contact_me_form button {
-    padding: 15px 30px;
-    margin-top: 15px;
-    background-color: #64FFDA; /* Botón destacado */
-    border: none;
-    color: #0B1930; /* Letra del botón */
-    border-radius: 14px;
+#contact_me_container .map_container {
+    height: 450px;
+    width: 450px;
+    margin-right: 150px;
     cursor: pointer;
-    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#contact_me_container .contact_me_form button:hover {
-    background-color: #29C67F;
-    transition: background-color 0.3s ease;
+canvas {
+    transition: all 1s;
 }
 
-/* Estilos del footer */
+canvas:hover {
+    transform: scale(1.2);
+    transition: all 1s;
+}
+
+/*-------------*/
+
+/*FOOTER SECTION CSS*/
+
+/*-------------*/
 
 footer {
     width: 100%;
@@ -585,14 +605,14 @@ footer {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    background-color: black;
     border-top: 2px solid var(--text-color);
 }
 
 footer .footer_container {
     width: 80%;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Solo dos columnas para el formulario y el mapa */
-    gap: 20px; /* Espacio entre el formulario y el mapa */
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 30px 0;
 }
 
@@ -600,7 +620,7 @@ footer .footer_container .footer_element {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Centrado en el contenedor */
+    justify-content: space-around;
 }
 
 footer .footer_container .footer_element h4 {
@@ -633,6 +653,7 @@ footer .footer_container .footer_element span, a {
     transform: translateX(0);
     opacity: 1;
 }
+
 
 @keyframes morph {
     0%,
