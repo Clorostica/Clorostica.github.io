@@ -47,6 +47,7 @@ h4 {
     color: #64FFDA; /* Actualizado a nuevo color */
     font-family: 'Poppins', sans-serif;
     cursor: default;
+    font-size: 10px;
 }
 
 a {
