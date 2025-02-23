@@ -10,11 +10,11 @@
 }
 
 :root {
-    --main-color: #29C67F;
+    --main-color: ##ccd6f6;
 }
 
 :root {
-    --text-color: #F7F7FF;
+    --text-color: #64ffda;
 }
 
 ::placeholder {
