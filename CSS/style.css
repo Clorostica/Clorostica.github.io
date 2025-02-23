@@ -32,14 +32,14 @@ body {
   }
 
 h1 {
-    color: var(--text-color);
+    color: #ccd6f6;
     font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
     cursor: default;
     font-size: 32px;
 }
 
 h2 {
-    color: var(--text-color);
+    color: #8892b0;
     font-family: 'Poppins', sans-serif;
     cursor: default;
 }
@@ -321,7 +321,7 @@ footer#nav_footer {
 .experience h2 {
     margin-bottom: 30px;
     font-size: 2.5rem;
-    color: var(--main-color);
+    color: #8891B0;
 }
 
 .experience_item {
@@ -370,7 +370,7 @@ footer#nav_footer {
     justify-content: flex-start; /* Cambia 'center' por 'flex-start' para que no esté centrado */
     align-items: flex-end;
     font-size: 14px;
-    color: var(--text-color);
+    color: #8891B0;
     margin: 10px 0;
     font-family: 'Poppins', sans-serif;
     text-align: left; 
@@ -413,7 +413,7 @@ main .main_container {
     justify-content: flex-start; 
     align-items: flex-end; 
     text-align: justify; 
-    color: white;
+    color: #8891B0;
     font-family: 'Poppins', sans-serif;
     width: 60%;
     margin: 20px 0;
