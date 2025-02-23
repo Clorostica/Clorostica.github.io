@@ -65,6 +65,9 @@
         width: 80%;
         margin: 0 auto; /* Centra la sección */
     }
+    .experience_item {
+        flex-direction: row;
+    }
 }
 
 /* Para pantallas de 1000px o menos */
@@ -108,7 +111,9 @@
     #contact_me_container .map_container {
         margin-right: 0px;
     }
-
+    .experience_item {
+        padding: 30px;
+    }
     footer .footer_container {
         grid-template-columns: 1fr;
     }
@@ -147,6 +152,13 @@
 
     header .banner h3 {
         font-size: 20px;
+    }
+        .experience {
+        width: 80%;
+    }
+
+    .experience_item {
+        flex-direction: row;
     }
 }
 
