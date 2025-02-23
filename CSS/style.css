@@ -308,6 +308,64 @@ footer#nav_footer {
     text-shadow: 2px 2px 8px var(--main-color);
     transition: all 500ms;
 }
+/*RESUME*/
+.experience {
+    width: 100%;
+    padding: 40px;
+}
+
+.experience h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.experience_item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.date {
+    width: 120px; /* Fija el tamaño de la columna de la fecha */
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+    padding-right: 20px;
+}
+
+.details {
+    flex-grow: 1;
+}
+
+.details h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.details p {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.tools {
+    margin-top: 10px;
+}
+
+.tools button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.tools button:hover {
+    background-color: #0056b3;
+}
 
 /*-------------*/
 
