@@ -161,13 +161,11 @@ header {
 .banner h2 {
     text-justify: inter-word; 
     font-size: 27px;
-    text-shadow: 1px 1px 5px var(--text-color);
     text-align: center;
 }
 .banner h3 {
     text-justify: inter-word; 
     font-size: 20px;
-    text-shadow: 1px 1px 5px var(--text-color);
     text-align: center;
     padding-top: 10px;
 }
