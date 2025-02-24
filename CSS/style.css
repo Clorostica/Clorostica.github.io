@@ -117,7 +117,7 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     margin-top: 10px; 
     background-image: url("/IMG/yo.jpg"); 
-    background-color: #29C67F; 
+    background-color: #64ffda; 
     background-size: cover; 
     background-position: center;
     animation: morph 3.6s linear infinite;
@@ -126,16 +126,16 @@ header {
 .drop-shadow-div{
     -webkit-appearance: none;
     appearance:none;
-    filter: drop-shadow(0 0 1.5rem #29C67F);
+    filter: drop-shadow(0 0 1.5rem #64ffda);
 }
 .banner h1 {
     text-justify: inter-word; 
     font-size: 40px;
-    text-shadow: 1px 1px 5px var(--text-color);
+    text-shadow: 1px 1px 5px var(#64ffda);
     text-align: center;
     margin-bottom: 20px;
     overflow: hidden; 
-    border-right: .15em solid var(--main-color);
+    border-right: .15em solid var(#64ffda);
     white-space: nowrap;
     animation: 
         typing 1.5s steps(40, end) 1.5s,
@@ -145,21 +145,21 @@ header {
 .banner h2 {
     text-justify: inter-word; 
     font-size: 27px;
-    text-shadow: 1px 1px 5px var(--text-color);
+    text-shadow: 1px 1px 5px var(#64ffda);
     text-align: center;
 }
 .banner h3 {
     text-justify: inter-word; 
     font-size: 20px;
-    text-shadow: 1px 1px 5px var(--text-color);
+    text-shadow: 1px 1px 5px var(#64ffda);
     text-align: center;
     padding-top: 10px;
 }
 .banner span {
     font-family: 'Bungee', cursive;
-    color: var(--main-color);
+    color: var(#64ffda);
     cursor: pointer;
-    text-shadow: 1px 1px 2px var(--main-color);
+    text-shadow: 1px 1px 2px var(#64ffda);
 }
 @keyframes morph {
     0%,
