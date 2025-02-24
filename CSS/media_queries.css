@@ -139,8 +139,8 @@
         margin: 80px auto; 
     }
 
-    .banner {
-        max-width: 90%; 
+   .introduction .banner {
+        width: 100%; 
     }
 
     .small_screen#nav_burger {
@@ -208,6 +208,9 @@
         margin: 80px auto; 
         flex-direction: column; 
     }
+.introduction .banner {
+        width: 100%; 
+    }
         .experience {
     width: 94%;
     }
@@ -262,9 +265,12 @@
     }
     .main_container h2 {
     text-align: center;
-}
+        }
         .experience {
     width: 94%;
+    }
+.introduction .banner {
+        width: 100%; 
     }
         
 }
