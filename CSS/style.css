@@ -104,9 +104,12 @@ header {
     padding: 20px;
     width: 48%; 
     gap: 20px;
+    box-sizing: border-box;  /* Incluye los márgenes y rellenos dentro del ancho */
+      overflow: hidden;
 }
 
 .drop-shadow-div.blob {
+    
     display: flex; 
     justify-content: center; 
     align-items: center; 
