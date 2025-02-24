@@ -37,6 +37,8 @@
     #header-nav-bar-menu li a { 
         font-size: 20px;
     }
+            .introduction {
+        padding-top:100px;
 }
 
 /* Para pantallas de 1300px o menos */
@@ -124,6 +126,8 @@
 
     .introduction {
         flex-direction: column;
+         padding-top:30px;
+        width:100%;
     }
     
     .banner {
@@ -202,12 +206,15 @@
     .mobilecut {
         display: none;
     }
-
     .introduction {
+        width:100%;
+        flex-direction: column;
+        padding-top:30px
         padding-top: 0; 
         margin: 80px auto; 
         flex-direction: column; 
     }
+
         banner {
         width: 100%; 
     }
@@ -224,7 +231,7 @@
         .main_container {
     width: 100%; 
     padding: 0 10px; 
-}
+        }
 }
 /* Para pantallas de 550px o menos */
 @media only screen and (max-width: 550px) {
@@ -284,7 +291,12 @@
 width: 100%;
     }
 .introduction .banner {
-        width: 100%; 
+        flex-direction: column;
+        padding-top:30px
+        padding-top: 0; 
+        margin: 80px auto; 
+        flex-direction: column; 
+        width:100%;
     }
 .drop-shadow-div.blob {
         text-align:center;
