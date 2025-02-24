@@ -132,27 +132,34 @@ header {
     text-justify: inter-word; 
     font-size: 40px;
     text-shadow: 1px 1px 5px var(#64ffda);
-    text-align: center;
     margin-bottom: 20px;
     overflow: hidden; 
     border-right: .15em solid var(#64ffda);
     white-space: nowrap;
-    animation: 
-        typing 1.5s steps(40, end) 1.5s,
-        blink-caret .75s step-end infinite 1.5s;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-end; 
+    text-align: justify; 
+    text-justify: inter-word; 
 }
 
 .banner h2 {
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-end; 
+    text-align: justify; 
     text-justify: inter-word; 
     font-size: 27px;
     text-shadow: 1px 1px 5px var(#64ffda);
-    text-align: center;
 }
 .banner h3 {
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-end; 
+    text-align: justify; 
     text-justify: inter-word; 
     font-size: 20px;
     text-shadow: 1px 1px 5px var(#64ffda);
-    text-align: center;
     padding-top: 10px;
 }
 .banner span {
@@ -329,11 +336,11 @@ footer#nav_footer {
 
 .experience_item {
     display: flex;
+    justify-content: flex-start; 
     align-items: stretch;
     margin-bottom: 30px;
     border-radius: 8px;
     padding: 20px;
-    justify-content: flex-start; 
     transition: transform 0.2s ease, filter 0.3s ease;
 }
 
