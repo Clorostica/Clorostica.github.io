@@ -100,8 +100,6 @@ header {
 }
 
 .banner {
-   display: flex;
-    align-items: center; 
     justify-content: flex-start; 
     padding: 20px;
     width: 48%; 
