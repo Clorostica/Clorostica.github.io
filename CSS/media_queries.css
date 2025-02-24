@@ -126,7 +126,7 @@
 
     .introduction {
         margin: 10px; 
-        padding-top:100px
+        padding-top:80px
         flex-direction: column;
         width:100%;
     }
@@ -211,7 +211,7 @@
         width:100%;
         flex-direction: column;
         margin: 10px; 
-        padding-top:100px
+        padding-top:80px
         flex-direction: column; 
     }
 
@@ -235,11 +235,6 @@
 }
 /* Para pantallas de 550px o menos */
 @media only screen and (max-width: 550px) {
-    .introduction {
-        padding-top: 100; 
-        margin: 80px auto; 
-        flex-direction: column; 
-    }
 
     header .banner h1 {
         margin-top: 10px;
@@ -290,9 +285,9 @@
 .experience {
 width: 100%;
     }
-.introduction  {
+.introduction {
         margin: 10px; 
-        padding-top:100px
+        padding-top:80px
         flex-direction: column; 
         width:100%;
     }
