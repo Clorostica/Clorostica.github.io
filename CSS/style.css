@@ -424,7 +424,8 @@ main .main_container {
     margin: 20px 0;
 }
 #about_me h2 {
-    font-weight: 300;
+    font-size: 40px;
+    font-weight: 800;
     padding-top: 10px;
     padding-bottom: 10px;
 }
