@@ -284,7 +284,7 @@ banner {
     text-align: center;
         }
 .experience {
-    width: 94%;
+    max-width: 100%;
     }
 .introduction .banner {
         width: 100%; 
