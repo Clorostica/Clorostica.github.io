@@ -87,13 +87,14 @@ header {
 }
 
 .introduction {
-    display: flex; 
-    align-items: center; 
-    margin: 150px auto; 
-    gap: 20px; 
-    width: calc(100% - 40px);
+   display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin: 150px auto;
+    gap: 20px;
+    width: 100%;
     max-width: 960px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .banner {
