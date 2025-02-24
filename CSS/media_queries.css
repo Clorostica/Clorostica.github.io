@@ -171,14 +171,14 @@
         .drop-shadow-div.blob {
         text-align:center;
         
-}
-        .grid_container .grid_card{
+        }
+.grid_container .grid_card{
         max-width:300px;
         height:300px;
         .main_container {
-    width: 100%; /* Asegura que el contenedor principal ocupe todo el ancho disponible */
-    padding: 0 10px; /* Añadido un pequeño relleno para los márgenes en móviles */
-}
+    width: 100%; 
+    padding: 0 10px; 
+        }
 }
 
 /* Para pantallas de 650px o menos */
