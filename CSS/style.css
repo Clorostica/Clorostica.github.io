@@ -97,7 +97,7 @@ header {
     gap: 20px;
     width: 100%;
     flex-wrap: wrap;
-    width:60%
+    width:100%
 }
 
 .banner {
@@ -108,7 +108,6 @@ header {
 }
 
 .drop-shadow-div.blob {
-    
     display: flex; 
     justify-content: center; 
     align-items: center; 
