@@ -318,7 +318,7 @@ footer#nav_footer {
 /*RESUME*/
 
 .experience {
-    max-width: 60%;
+    width: 60%;
     margin: 0 auto;
     text-align: center;
     display: flex;
@@ -338,7 +338,7 @@ footer#nav_footer {
     align-items: stretch;
     margin-bottom: 30px;
     border-radius: 8px;
-    padding: 20px;
+    padding: 10px;
     transition: transform 0.2s ease, filter 0.3s ease;
 }
 
