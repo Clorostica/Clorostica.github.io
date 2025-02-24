@@ -122,6 +122,9 @@
     footer .footer_container {
         grid-template-columns: 1fr;
     }
+        .grid_container .grid_card{
+        max-width:400px;
+        height:400px;
 }
 
 
@@ -165,10 +168,13 @@
     .main_container h2 {
     text-align: center;
     }
-.drop-shadow-div.blob {
-text-align:center;
+        .drop-shadow-div.blob {
+        text-align:center;
         
 }
+        .grid_container .grid_card{
+        max-width:400px;
+        height:400px;
 }
 
 /* Para pantallas de 650px o menos */
@@ -222,6 +228,9 @@ banner {
         text-align:center;
         
 }
+        .grid_container .grid_card{
+        max-width:400px;
+        height:400px;
 }
 
 /* Para pantallas de 550px o menos */
@@ -283,6 +292,10 @@ banner {
 .drop-shadow-div.blob {
         text-align:center;
         
+}
+.grid_container .grid_card{
+        max-width:400px;
+        height:400px;
 }
 
 
