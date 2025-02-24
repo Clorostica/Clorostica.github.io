@@ -172,9 +172,14 @@
         text-align:center;
         
 }
-        .grid_container .grid_card{
+        .grid_card{
         max-width:400px;
         height:400px;
+}
+        .main_container {
+    width: 100%; /* Asegura que el contenedor principal ocupe todo el ancho disponible */
+    padding: 0 10px; /* Añadido un pequeño relleno para los márgenes en móviles */
+}
 }
 
 /* Para pantallas de 650px o menos */
@@ -228,11 +233,15 @@ banner {
         text-align:center;
         
 }
-        .grid_container .grid_card{
+        .grid_card{
         max-width:400px;
         height:400px;
 }
-
+        .main_container {
+    width: 100%; /* Asegura que el contenedor principal ocupe todo el ancho disponible */
+    padding: 0 10px; /* Añadido un pequeño relleno para los márgenes en móviles */
+}
+}
 /* Para pantallas de 550px o menos */
 @media only screen and (max-width: 550px) {
     .introduction {
@@ -280,11 +289,15 @@ banner {
     #about_me p {
         width: 94%;
     }
+.main_container {
+    width: 100%; /* Asegura que el contenedor principal ocupe todo el ancho disponible */
+    padding: 0 10px; /* Añadido un pequeño relleno para los márgenes en móviles */
+}
     .main_container h2 {
     text-align: center;
         }
 .experience {
-    max-width: 100%;
+width: 100%;
     }
 .introduction .banner {
         width: 100%; 
