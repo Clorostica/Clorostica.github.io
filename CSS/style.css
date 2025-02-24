@@ -89,16 +89,14 @@ header {
 }
 
 .introduction {
-    padding-top:120px;
+    padding-top: 120px;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
-    margin-left:80px;
-    margin-right:80px
+    justify-content: center; /* Centrar horizontalmente */
     gap: 20px;
-    width: 100%;
+    width: 60%;
+    margin: auto; /* Centrar en la página */
     flex-wrap: wrap;
-    width:60%
 }
 
 .banner {
