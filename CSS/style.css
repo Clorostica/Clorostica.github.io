@@ -17,7 +17,7 @@
 }
 
 body {
-    background: #0B1930; /* Fondo actualizado */
+    background: #0B1930; 
     position: relative;
     overflow-x: hidden;
     -webkit-overflow-x: hidden;
@@ -25,7 +25,7 @@ body {
 }
 
 h1 {
-    color: #8992b1; /* Títulos */
+    color: #8992b1; 
     font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
     cursor: default;
     font-size: 32px;
@@ -44,7 +44,7 @@ h3 {
 }
 
 h4 {
-    color: #64FFDA; /* Actualizado a nuevo color */
+    color: #64FFDA; 
     font-family: 'Poppins', sans-serif;
     cursor: default;
     font-size: 15px;
