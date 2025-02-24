@@ -165,6 +165,10 @@
     .main_container h2 {
     text-align: center;
     }
+.drop-shadow-div.blob {
+text-align:center;
+        
+}
 }
 
 /* Para pantallas de 650px o menos */
@@ -208,12 +212,16 @@
         margin: 80px auto; 
         flex-direction: column; 
     }
-.introduction .banner {
+banner {
         width: 100%; 
     }
         .experience {
     width: 94%;
     }
+.drop-shadow-div.blob {
+        text-align:center;
+        
+}
 }
 
 /* Para pantallas de 550px o menos */
@@ -266,12 +274,14 @@
     .main_container h2 {
     text-align: center;
         }
-        .experience {
+.experience {
     width: 94%;
     }
 .introduction .banner {
         width: 100%; 
     }
+.drop-shadow-div.blob {
+        text-align:center;
         
 }
 
