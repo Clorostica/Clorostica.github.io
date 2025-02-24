@@ -88,6 +88,7 @@ header {
 
 .introduction {
     display: flex; 
+    align-items: center; 
     margin: 150px auto; 
     gap: 20px; 
     width: calc(100% - 40px);
@@ -99,6 +100,7 @@ header {
     justify-content: space-between; 
     display: flex; 
     flex-direction: column; 
+    align-items: center; 
     padding: 20px; 
     width: 100%; 
     max-width: 500px; 
@@ -115,12 +117,50 @@ header {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     margin-top: 10px; 
     background-image: url("/IMG/yo.jpg"); 
-    background-color: #64FFDA; 
+    background-color: #29C67F; 
     background-size: cover; 
     background-position: center;
     animation: morph 3.6s linear infinite;
 }
 
+.drop-shadow-div{
+    -webkit-appearance: none;
+    appearance:none;
+    filter: drop-shadow(0 0 1.5rem #29C67F);
+}
+.banner h1 {
+    text-justify: inter-word; 
+    font-size: 40px;
+    text-shadow: 1px 1px 5px var(--text-color);
+    text-align: center;
+    margin-bottom: 20px;
+    overflow: hidden; 
+    border-right: .15em solid var(--main-color);
+    white-space: nowrap;
+    animation: 
+        typing 1.5s steps(40, end) 1.5s,
+        blink-caret .75s step-end infinite 1.5s;
+}
+
+.banner h2 {
+    text-justify: inter-word; 
+    font-size: 27px;
+    text-shadow: 1px 1px 5px var(--text-color);
+    text-align: center;
+}
+.banner h3 {
+    text-justify: inter-word; 
+    font-size: 20px;
+    text-shadow: 1px 1px 5px var(--text-color);
+    text-align: center;
+    padding-top: 10px;
+}
+.banner span {
+    font-family: 'Bungee', cursive;
+    color: var(--main-color);
+    cursor: pointer;
+    text-shadow: 1px 1px 2px var(--main-color);
+}
 @keyframes morph {
     0%,
     100% {
@@ -139,50 +179,6 @@ header {
         -moz-border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
     }
 }
-
-.drop-shadow-div {
-    -webkit-appearance: none;
-    appearance:none;
-    filter: drop-shadow(0 0 1.5rem #64FFDA); 
-}
-
-.banner h1 {
-    font-size: 33px;
-    text-shadow: 1px 1px 5px var(--text-color);
-    flex-direction: column;
-    justify-content: flex-start; 
-    align-items: flex-end; 
-    margin-bottom: 20px;
-    overflow: hidden; 
-    border-right: .15em solid var(--main-color);
-    white-space: nowrap;
-}
-
-.banner h2 {
-    flex-direction: column;
-    justify-content: flex-start; 
-    align-items: flex-end; 
-    text-align: justify; 
-    font-size: 42px;
-
-}
-
-.banner h3 {
-    flex-direction: column;
-    justify-content: flex-start; 
-    align-items: flex-end; 
-    font-size: 16px;
-    padding-top: 10px;
-    color: #8992b1;
-}
-
-.banner span {
-    font-family: 'Bungee', cursive;
-    color: #64FFDA; 
-    cursor: pointer;
-    text-shadow: 1px 1px 2px var(--main-color);
-}
-
 nav {
     width: 100%;
     z-index: 1;
