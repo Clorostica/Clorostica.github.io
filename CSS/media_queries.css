@@ -125,7 +125,8 @@
     }
 
     .introduction {
-        margin: 10px; 
+        margin-left:50px;
+        margin-right:50px;
         padding-top:80px
         flex-direction: column;
         width:100%;
@@ -212,7 +213,8 @@
         flex-direction: column;
         margin: 10px; 
         padding-top:80px
-        flex-direction: column; 
+        margin-left:50px;
+        margin-right:50px;
     }
 
         banner {
@@ -286,7 +288,8 @@
 width: 100%;
     }
 .introduction {
-        margin: 20px; 
+        margin-left:50px;
+        margin-right:50px;
         padding-top:80px
         flex-direction: column; 
         width:100%;
