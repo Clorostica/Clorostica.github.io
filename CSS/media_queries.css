@@ -154,7 +154,7 @@
         font-size: 20px;
     }
         .experience {
-    max-width: 100%;
+    width: 80%;
     }
     .main_container h2 {
     text-align: center;
@@ -203,7 +203,7 @@
         align-items: center; 
     }
     .experience {
-    max-width: 100%;
+    width: 90%;
     }
 }
 
@@ -260,7 +260,7 @@
     text-align: center;
 }
         .experience {
-    max-width: 100%;
+    width: 100%;
     }
 }
 
@@ -297,7 +297,7 @@
     text-align: center;
 }
             .experience {
-    max-width: 100%;
+    width: 80%;
     }
 }
 
