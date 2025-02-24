@@ -89,13 +89,13 @@ header {
 }
 
 .introduction {
+    padding: 0 10px; 
     display: flex;
     align-items: center;
     justify-content: space-between; 
     margin: 150px auto;
     gap: 20px;
     width: 100%;
-    max-width: 960px;
     flex-wrap: wrap;
 }
 
