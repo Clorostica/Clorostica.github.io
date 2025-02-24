@@ -139,8 +139,9 @@
     .drop-shadow-div.blob {
         display: block;
         margin: 0 auto;
+        width:80%
     }
-
+        
     .small_screen#nav_burger {
         display: flex;
     }
@@ -223,9 +224,8 @@
         .experience {
     width: 94%;
     }
-.drop-shadow-div.blob {
-        text-align:center;
-        
+drop-shadow-div blob{
+        width:80%
 }
         .grid_container .grid_card{
         max-width:300px;
@@ -294,10 +294,10 @@ width: 100%;
         flex-direction: column; 
         width:100%;
     }
-.drop-shadow-div.blob {
-        text-align:center;
-        
+drop-shadow-div blob{
+        width:80%
 }
+        
 .grid_container .grid_card{
         max-width:300px;
         height:300px;
