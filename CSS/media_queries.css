@@ -133,7 +133,7 @@
         width: 90%; 
         padding-top: 60px; 
         margin: 0 5%; 
-            
+    }
     .banner {
         width: 80%;
     }
@@ -213,14 +213,12 @@
         display: none;
     }
     .introduction {
-        width:100%;
-        flex-direction: column;
-        margin: 10px; 
         padding-top:80px;
-        margin-left:50px;
-        margin-right:50px;
+        flex-direction: column;
+        width: 90%; 
+        padding-top: 60px; 
+        margin: 0 5%; 
     }
-
     .banner {
         width: 80%;
     }
@@ -294,12 +292,12 @@ max-width: 300px;
 .experience {
 width: 100%;
     }
-.introduction {
-        margin-left:50px;
-        margin-right:50px;
-        padding-top:80px
-        flex-direction: column; 
-        width:100%;
+    .introduction {
+        padding-top:80px;
+        flex-direction: column;
+        width: 90%; 
+        padding-top: 60px; 
+        margin: 0 5%; 
     }
     .drop-shadow-div.blob {
     display: block;
