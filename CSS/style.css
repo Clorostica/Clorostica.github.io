@@ -101,7 +101,6 @@ header {
 
 .banner {
     justify-content: flex-start; 
-    padding: 20px;
     width: 48%; 
     gap: 20px;
     box-sizing: border-box;  /* Incluye los márgenes y rellenos dentro del ancho */
