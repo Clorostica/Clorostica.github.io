@@ -119,24 +119,22 @@
     }
 }
 
-/* Para pantallas de 700px o menos */
+
 @media only screen and (max-width: 700px) {
     #header-nav-bar-menu {
-        display: none; /* Oculta el menú principal */
+        display: none; 
     }
 
     .introduction {
-        flex-direction: column; /* Los banners se apilan verticalmente */
-        align-items: center;
-        gap: 20px; /* Espaciado entre los banners */
-        width: 100%;
-        margin: 80px auto; 
+        padding-top: 160px;
+        display: flex;             
+        flex-direction: row;      
+        justify-content: space-between; /* Espaciado uniforme */
+        align-items: center;       /* Centrado vertical */
+        gap: 20px;                
+        width: 80%;               
+        margin: 0 auto;            
     }
-
-    .banner {
-        max-width: 90%; /* Ocupa el 90% del ancho */
-    }
-
     .small_screen#nav_burger {
         display: flex;
     }
@@ -159,6 +157,19 @@
     .main_container h2 {
     text-align: center;
 }
+
+    .banner {
+        flex: 1;                   
+        max-width: 45%;           
+        min-width: 300px;          
+    }
+
+    .main_container h2 {
+    text-align: center;
+}
+            .experience {
+    width: 80%;
+    }
 }
 
 /* Para pantallas de 650px o menos */
@@ -221,8 +232,8 @@
         overflow: hidden;    
         width: 100%;     
         animation: 
-            typing-mobile 1.5s steps(35, end),
-            blink-caret-mobile .65s step-end infinite;
+        typing-mobile 1.5s steps(35, end),
+        blink-caret-mobile .65s step-end infinite;
     }
 
     header .banner h2 {
@@ -264,42 +275,6 @@
     }
 }
 
-
-@media only screen and (min-width: 700px) {
-    .introduction {
-        padding-top: 160px;
-        display: flex;             
-        flex-direction: row;      
-        justify-content: space-between; /* Espaciado uniforme */
-        align-items: center;       /* Centrado vertical */
-        gap: 20px;                
-        width: 80%;               
-        margin: 0 auto;            
-    }
-
-    .banner {
-        flex: 1;                   
-        max-width: 45%;           
-        min-width: 300px;          
-    }
-
-    #header-nav-bar-menu {
-        display: flex;             /* Asegura que el menú esté en línea */
-        justify-content: space-between; /* Espaciado entre elementos del menú */
-        align-items: center;       /* Centrado vertical */
-        gap: 15px;                 /* Espaciado entre enlaces */
-    }
-
-    #header-nav-bar-menu li a {
-        font-size: 16px;           /* Tamaño de fuente cómodo para pantallas medianas */
-    }
-    .main_container h2 {
-    text-align: center;
-}
-            .experience {
-    width: 80%;
-    }
-}
 
 @keyframes typing-mobile {
     from {
