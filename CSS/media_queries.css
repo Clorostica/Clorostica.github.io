@@ -26,9 +26,6 @@
         margin: 0 auto; 
     }
 
-    .banner {
-        max-width: 500px; 
-    }
 }
 
 /* Para pantallas de 1500px o menos */
@@ -39,14 +36,6 @@
 
     #header-nav-bar-menu li a { 
         font-size: 20px;
-    }
-
-    .introduction {
-        padding-top:100px;
-        flex-direction: row; 
-        gap: 20px; 
-        width: 70%; 
-        margin: 0 auto; 
     }
 }
 
