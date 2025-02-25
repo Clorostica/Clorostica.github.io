@@ -19,7 +19,7 @@
     }
 
     .introduction {
-        padding-top:100px;
+        padding-top:150px;
         width: 60%;
         flex-direction: row; 
         gap: 20px; 
@@ -37,7 +37,7 @@
         font-size: 20px;
     }
 .introduction {
-        padding-top:100px;
+        padding-top:150px;
         width: 60%;
         flex-direction: row; 
         gap: 20px; 
@@ -58,7 +58,7 @@
     }
 
     .introduction {
-        padding-top:100px;
+        padding-top:150px;
         width: 60%;
         flex-direction: row; 
         gap: 20px; 
@@ -79,7 +79,7 @@
     }
 
     .introduction {
-        padding-top:100px;
+        padding-top:150px;
         width: 60%;
         flex-direction: row; 
         gap: 20px; 
@@ -127,7 +127,7 @@
     }
 
     .introduction {
-        padding-top:120px;
+        padding-top:130px;
         flex-direction: column;
         width: 90%; 
         padding-top: 60px; 
@@ -211,8 +211,9 @@
     .mobilecut {
         display: none;
     }
+
     .introduction {
-        padding-top:120px;
+        padding-top:130px;
         flex-direction: column;
         width: 90%; 
         padding-top: 60px; 
@@ -292,7 +293,7 @@ max-width: 300px;
 width: 100%;
     }
     .introduction {
-        padding-top:120px;
+        padding-top:130px;
         flex-direction: column;
         width: 90%; 
         padding-top: 60px; 
