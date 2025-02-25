@@ -164,6 +164,8 @@
     }
     .main_container h2 {
     text-align: center;
+ padding-left:30px;
+padding-right:30px;
     }
 
 .grid_container .grid_card{
@@ -205,6 +207,8 @@
     }
     .main_container h2 {
     text-align: center;
+padding-left:30px;
+padding-right:30px;
 }
     .mobilecut {
         display: none;
@@ -226,12 +230,12 @@
     .drop-shadow-div.blob {
     display: block;
     margin: 0 auto;
-width: 70%;
-max-width: 300px;
+    width: 70%;
+    max-width: 300px;
     }
-        .grid_container .grid_card{
+.grid_container .grid_card{
         max-width:300px;
-        .main_container {
+.main_container {
     width: 100%; 
     padding: 0 10px; 
         }
@@ -284,6 +288,8 @@ max-width: 300px;
 }
     .main_container h2 {
     text-align: center;
+padding-left:30px;
+padding-right:30px;
         }
 .experience {
 width: 100%;
