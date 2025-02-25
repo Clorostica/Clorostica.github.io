@@ -22,7 +22,7 @@
         padding-top:150px;
         width: 60%;
         flex-direction: row; 
-        gap: 20px; 
+        gap: 30px; 
     }
 
 }
@@ -40,7 +40,7 @@
         padding-top:150px;
         width: 60%;
         flex-direction: row; 
-        gap: 20px; 
+        gap: 30px; 
         }
 }
 /* Para pantallas de 1300px o menos */
@@ -61,7 +61,7 @@
         padding-top:150px;
         width: 60%;
         flex-direction: row; 
-        gap: 20px; 
+        gap: 30px; 
     }
     .experience_item {
         flex-direction: row;
@@ -82,7 +82,7 @@
         padding-top:150px;
         width: 60%;
         flex-direction: row; 
-        gap: 20px; 
+        gap: 30px; 
             
     }
 
@@ -130,7 +130,6 @@
         padding-top:130px;
         flex-direction: column;
         width: 90%; 
-        padding-top: 60px; 
         margin: 0 5%; 
     }
     .banner {
@@ -216,7 +215,6 @@
         padding-top:130px;
         flex-direction: column;
         width: 90%; 
-        padding-top: 60px; 
         margin: 0 5%; 
     }
     .banner {
@@ -296,7 +294,6 @@ width: 100%;
         padding-top:130px;
         flex-direction: column;
         width: 90%; 
-        padding-top: 60px; 
         margin: 0 5%; 
     }
     .drop-shadow-div.blob {
