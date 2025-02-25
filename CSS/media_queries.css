@@ -168,7 +168,6 @@
 
 .grid_container .grid_card{
         max-width:300px;
-        height:300px;
         .main_container {
     width: 100%; 
     padding: 0 10px; 
@@ -232,7 +231,6 @@ max-width: 300px;
     }
         .grid_container .grid_card{
         max-width:300px;
-        height:300px;
         .main_container {
     width: 100%; 
     padding: 0 10px; 
@@ -304,7 +302,6 @@ width: 100%;
     }
         
 .grid_container .grid_card{
-        width: 60%;
         max-width: 250px;
 }
             .banner {
