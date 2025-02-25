@@ -89,7 +89,6 @@ header {
 }
 
 .introduction {
-    padding-top: 160px;
     display: flex;
     align-items: center;
     justify-content: center; /* Centrar horizontalmente */
