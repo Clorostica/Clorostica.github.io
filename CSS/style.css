@@ -368,11 +368,11 @@ main .main_container {
     gap: 20px;            
     flex-wrap: wrap;       
     padding: 20px;
+    width: 300px;  
 }
 
 .grid_card1 {
     width: 300px;         
-    background: #0b1930;   /* Color de fondo */
     border-radius: 10px;   
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;    
