@@ -344,26 +344,32 @@ main .main_container {
     font-size: 40px;
 }
 .grid_container1 {
-    display: flex;         
-    justify-content: center; 
-    gap: 20px;            
-    flex-wrap: wrap;       
+    display: grid;  /* Usamos grid en lugar de flexbox */
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+    gap: 20px;  /* Espacio entre las columnas */
     padding: 20px;
-    width: 300px;  
+    width: 100%;  /* Aseguramos que ocupe el 100% del espacio disponible */
+    box-sizing: border-box;  /* Para que el padding no afecte el ancho */
 }
 
 .grid_card1 {
-    width: 300px;         
-    border-radius: 10px;   
+    width: 100%;  /* Hacemos que los cards ocupen todo el espacio disponible en su celda */
+    border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;    
+    text-align: center;
     padding: 20px;
 }
 
 .grid_card img {
-    width: 20%;         
+    width: 100%;  /* Hacemos que la imagen ocupe el 100% del ancho del card */
     border-radius: 10px;
 }
+
+.grid_container_text {
+    margin-top: 10px;  /* Espacio entre la imagen y el texto */
+    text-align: center;
+}
+
 
 #about_me p {
     justify-content: flex-start; 
