@@ -367,7 +367,7 @@ main .main_container {
     justify-content: flex-start; 
     align-items: flex-end;
     font-family: 'Poppins', sans-serif;
-    text-align: left; 
+    text-align: right; 
     color: #CCD5F6;
     width: 50%;
     margin: 20px 0;
