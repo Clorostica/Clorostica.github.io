@@ -18,12 +18,16 @@
 }
 
 body {
-    color: #CCD5F6;
+
     background: #0B1930; 
     position: relative;
     overflow-x: hidden;
     -webkit-overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
+}
+
+p{
+        color: #CCD5F6;
 }
 
 h1 {
