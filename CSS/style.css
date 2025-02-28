@@ -380,10 +380,6 @@ footer#nav_footer {
     z-index: 2; 
 }
 
-.image-hover {
-    opacity: 0; 
-}
-
 .grid_container_img {
     position: relative;
     width: 60%px; 
@@ -401,17 +397,6 @@ footer#nav_footer {
     z-index: 1; 
 }
 
-.grid_container_img .image-hover {
-    opacity: 0;
-    z-index: 2; 
-}
-
-.grid_container_img:hover .image-default {
-    opacity: 0;
-}
-.grid_container_img img {
-    transition: transform 0.4s ease-in-out; 
-}
 
 .grid_container_img:hover img {
     transform: scale(1.05); 
