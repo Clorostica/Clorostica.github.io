@@ -346,10 +346,10 @@ main {
 }
 
 main .main_container {
-    width: 60%;   
+    width: 100%;   
     align-items: center;      
     justify-content: center;  
-    margin: 0 auto; 
+    margin: 0 auto;
     display:block;
 }
 
