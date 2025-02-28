@@ -39,7 +39,7 @@ h2 {
 }
 
 h3 {
-    color: var(--text-color); /* Títulos */
+    color: #ccd5f6;
     font-family: 'Poppins', sans-serif;
     cursor: default;
 }
