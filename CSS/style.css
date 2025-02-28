@@ -1,3 +1,4 @@
+/* Estilos generales de la página */
 * {
     margin: 0;
     padding: 0;
@@ -526,19 +527,6 @@ main .main_container {
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 10px;
-}
-
-/* Estilos generales de la página */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #0B1930; /* Fondo de la página */
-    color: #8992B1; /* Color de texto por defecto */
 }
 
 #contact_me_container {
