@@ -357,7 +357,27 @@ main .main_container {
 .main_container h2 {
     font-size: 40px;
 }
+.grid_container1 {
+    display: flex;         
+    justify-content: center; 
+    gap: 20px;            
+    flex-wrap: wrap;       
+    padding: 20px;
+}
 
+.grid_card1 {
+    width: 300px;         
+    background: #0b1930;   /* Color de fondo */
+    border-radius: 10px;   
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;    
+    padding: 20px;
+}
+
+.grid_card img {
+    width: 100%;         
+    border-radius: 10px;
+}
 
 #about_me p {
     color: white;
