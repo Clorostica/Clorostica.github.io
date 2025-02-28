@@ -387,8 +387,8 @@ footer#nav_footer {
 
 .grid_container_img {
     position: relative;
-    width: 930px; 
-    height: 300px; 
+    width: 60%px; 
+    height: auto;
 }
 
 .grid_container_img img {
