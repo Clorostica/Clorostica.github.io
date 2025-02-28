@@ -25,10 +25,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-p{
-        color: #CCD5F6;
-}
-
 h1 {
     color: #8992b1; 
     font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
@@ -362,14 +358,14 @@ main .main_container {
 }
 
 .grid_card img {
-    width: 100%;         
+    width: 20%;         
     border-radius: 10px;
 }
 
 #about_me p {
-    color: white;
+    text-align: right;
+    color: #CCD5F6;
     font-family: 'Poppins', sans-serif;
-    text-align: center;
     width: 50%;
     margin: 20px 0;
 }
