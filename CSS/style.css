@@ -451,8 +451,8 @@ main .main_container {
 
 .grid_container_img {
     position: relative;
-    width: 930px; 
-    height: 300px; 
+    width: 800px; 
+    height: 250px; 
 }
 
 .grid_container_img img {
