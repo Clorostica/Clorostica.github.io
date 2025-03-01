@@ -517,7 +517,10 @@ main .main_container {
     width: 250px; 
     margin: auto;
 }
-
+.cert_container:hover {
+    transform: scale(1.02); 
+    filter: brightness(1.2);
+}
 
 .cert_card img {
     width: 250px; /* Reduce el tamaño de la imagen */
