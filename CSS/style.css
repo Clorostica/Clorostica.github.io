@@ -497,12 +497,12 @@ main .main_container {
 }
 /* Contenedor de los certificados */
 .certificate_container {
+    width:60px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 certificados por fila */
-    gap: 20px; /* Espaciado entre certificados */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
     justify-content: center;
-    padding: 20px;
-    margin-top: 20px; /* Se asegura de que empiece debajo del main_container */
+    margin-top: 20px; 
 }
 
 /* Cada certificado */
