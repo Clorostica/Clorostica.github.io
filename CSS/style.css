@@ -344,7 +344,7 @@ main .main_container {
      flex-direction: column;
     justify-content: center;    
     margin: 0 auto;
-    padding-bottom:50px;
+    padding-bottom:80px;
 }
 .main_container a {
     color: var(--text-color);
