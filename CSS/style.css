@@ -363,7 +363,7 @@ main .main_container {
 .main_container a span {
     color: var(--main-color);
 }
-/*some projects */
+
 .main_grid {
     width: 60%;
     display: flex;            
@@ -455,7 +455,6 @@ main .main_container {
     text-align: left;
 }
 
-
 .experience_item:hover {
     transform: scale(1.02); /* Pequeño zoom */
     filter: brightness(1.2); /* Aclara el contenido */
@@ -469,8 +468,8 @@ main .main_container {
     color: var(--main-color);
     padding-right: 20px;
     text-align: left;
-    align-self: flex-start; /* Sube la fecha */
-    margin-top: 5px; /* Pequeño margen para mejor alineación */
+    align-self: flex-start; 
+    margin-top: 5px; 
 }
 
 .details {
