@@ -340,7 +340,12 @@ footer#nav_footer {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
+main .main_container {
+    display: flex;              
+    align-items: center;       
+    justify-content: center;    
+    margin: 0 auto;    
+}
 .main_container a {
     color: var(--text-color);
     margin-top: 20px;
