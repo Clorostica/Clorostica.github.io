@@ -494,7 +494,7 @@ main .main_container {
     font-size: 14px;
     color: #8891B0;
 }
-/* Contenedor de los certificados */
+
 .certificate_container {
     width:60px;
     display: grid;
@@ -504,7 +504,7 @@ main .main_container {
     margin-top: 20px; 
 }
 
-/* Cada certificado */
+
 .cert_container {
     display: flex;
     flex-direction: column;
@@ -514,19 +514,18 @@ main .main_container {
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
-    max-width: 180px; /* Evita que sean muy anchos */
+    width: 250px; 
     margin: auto;
 }
 
-/* Imagen del certificado */
+
 .cert_card img {
-    width: 120px; /* Reduce el tamaño de la imagen */
+    width: 250px; /* Reduce el tamaño de la imagen */
     height: auto;
     display: block;
     border-radius: 5px;
 }
 
-/* Texto del certificado */
 .cert_text span {
     font-size: 14px;
     font-weight: bold;
