@@ -57,7 +57,9 @@ a {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
-
+p{
+    color: #CCD5F6;
+}
 /*-------------*/
 
 /*HEADER SECTION CSS*/
@@ -367,7 +369,7 @@ main .main_container {
     justify-content: flex-start; 
     align-items: flex-end;
     font-family: 'Poppins', sans-serif;
-    text-align: right; 
+    text-align: left; 
     color: #CCD5F6;
     width: 50%;
     margin: 20px 0;
