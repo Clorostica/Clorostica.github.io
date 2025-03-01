@@ -122,6 +122,9 @@
 }
 
 @media only screen and (max-width: 700px) {
+.certificate_container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+    }
     #header-nav-bar-menu {
         display: none; 
     }
@@ -242,8 +245,24 @@ padding-right:30px;
 }
 /* Para pantallas de 550px o menos */
 @media only screen and (max-width: 550px) {
+.certificate_container {
+        grid-template-columns: 1fr; 
+    }
+.mobilecut {
+    background-color: #f8f8f8;
+}
 
-    header .banner h1 {
+.mobilecut .cert_card {
+    background-color: #ffeb3b; 
+    color: #333;
+    height: auto;
+}
+
+.mobilecut .cert_text {
+    color: #ff5722;
+}
+
+header .banner h1 {
         margin-top: 10px;
         font-size: 20px;
         white-space: nowrap;  
@@ -251,18 +270,18 @@ padding-right:30px;
         width: 100%;     
     }
 
-    header .banner h2 {
+header .banner h2 {
         font-size: 18px;          
         width: 100%;             
         word-wrap: break-word;    
         line-height: 1.4;         
     }
 
-    header .banner h3 {
+header .banner h3 {
         font-size: 16px;
     }
 
-    #contact_me_container .contact_me_form {
+#contact_me_container .contact_me_form {
         width: 350px;
         box-shadow: none;
     }
@@ -279,32 +298,34 @@ padding-right:30px;
         width: 85%;
     }
 
-    #about_me p {
+#about_me p {
         width: 94%;
     }
 .main_container {
-    width: 100%; 
-    padding: 0 10px; 
+width: 100%; 
+padding: 0 10px; 
 }
-    .main_container h2 {
-    text-align: center;
+        
+.main_container h2 {
+text-align: center;
 padding-left:30px;
 padding-right:30px;
         }
 .experience {
 width: 100%;
     }
-    .introduction {
-        padding-top:130px;
-        flex-direction: column;
-        width: 90%; 
-        margin: 0 5%; 
+.introduction {
+padding-top:130px;
+flex-direction: column;
+width: 90%; 
+margin: 0 5%; 
     }
-    .drop-shadow-div.blob {
-    display: block;
-    margin: 0 auto;
-    width: 80%;
-    max-width: 300px; /* Ajustar según diseño */
+        
+.drop-shadow-div.blob {
+display: block;
+margin: 0 auto;
+width: 80%;
+max-width: 300px; /* Ajustar según diseño */
     }
         
 .grid_container .grid_card{
