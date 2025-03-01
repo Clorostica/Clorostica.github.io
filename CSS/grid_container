@@ -421,6 +421,7 @@ main .main_container {
     color: #CDD6F6;
     padding: 20px;
     z-index: 2; 
+    font-size: 14px;
 }
 .grid_container h2{
     font-size: 40px;
