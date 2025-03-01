@@ -342,54 +342,37 @@ main .main_container {
 
 .main_container h2 {
     font-size: 40px;
-}.grid_container1 {
+}
+/* certificates */
+.main_grid1 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-    gap: 20px;  /* Espacio entre los cuadrados */
+    grid-template-columns: repeat(3, 30%); /* 3 columnas, cada una del 30% */
+    gap: 5%; /* Espacio entre las columnas */
+    justify-content: center; /* Centra el grid */
     padding: 20px;
-    width: 100%;
+    width: 100%; /* Aseguramos que el contenedor ocupe todo el ancho disponible */
     box-sizing: border-box;
-    justify-content: center; /* Asegura que el contenido esté centrado */
 }
 
 .grid_card1 {
-    width: 120px;  /* Ancho fijo para formar cuadrados */
-    height: 120px; /* Altura igual al ancho */
+    width: 100%;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f0f0f0; /* Color de fondo opcional */
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo opcional */
 }
 
-/* Asegurar que la imagen también sea cuadrada y no se deforme */
 .grid_card1 img {
-    width: 80%;  /* Ajuste de tamaño */
-    height: 80%;
-    object-fit: contain; /* Evita que la imagen se deforme */
+    width: 80%;
+    height: auto;
     border-radius: 10px;
 }
 
 .grid_container_text {
-    margin-top: 5px;  /* Espacio entre la imagen y el texto */
     text-align: center;
     font-size: 14px;
-}
-
-/* Responsividad para pantallas más pequeñas */
-@media (max-width: 768px) {
-    .grid_container1 {
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
-    }
-}
-
-@media (max-width: 480px) {
-    .grid_container1 {
-        grid-template-columns: 1fr; /* 1 columna en móviles */
-    }
+    margin-top: 5px;
 }
 
 #about_me p {
