@@ -495,7 +495,14 @@ main .main_container {
     color: #8891B0;
     margin: 10px 0;
 }
-
+.certificate_container{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    padding: 20px;
+    margin-top: 20px;
+}
 .cert_container {
     max-width: 120px; 
     text-align: center;
