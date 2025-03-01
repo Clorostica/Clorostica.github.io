@@ -342,10 +342,10 @@ footer#nav_footer {
 }
 main .main_container {
     display: flex;              
-    align-items: center;       
+    align-items: center;  
+     flex-direction: column;
     justify-content: center;    
     margin: 0 auto;    
-    flex-direction: column;
 }
 .main_container a {
     color: var(--text-color);
