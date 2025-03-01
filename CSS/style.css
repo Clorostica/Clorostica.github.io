@@ -514,10 +514,11 @@ main .main_container {
     border-radius: 8px;
     width: 250px; 
     margin: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
 }
 .cert_container:hover {
-    transform: scale(1.02); 
-    filter: brightness(1.2);
+    transform: scale(1.02);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
 .cert_card img {
@@ -528,7 +529,7 @@ main .main_container {
 }
 
 .cert_text span {
-    font-size: 16px;
+    font-size: 26px;
     font-weight: bold;
     color: #64ffda;
     margin-top: 5px;
@@ -536,7 +537,6 @@ main .main_container {
 
 /* Certificados en progreso */
 .mobilecut .cert_card {
-    background-color: #e0e0e0;
     color: #64ffda;
     font-size: 12px;
     padding: 15px;
