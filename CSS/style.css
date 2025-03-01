@@ -324,46 +324,7 @@ footer#nav_footer {
     padding: 10px;
     transition: transform 0.2s ease, filter 0.3s ease;
 }
-/*Experience */
 
-main {
-    width: 100%;
-}
-
-main .main_container {
-    width: 100%;   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /
-    margin: 0 auto;
-    padding-bottom:50px;
-}
-
-.main_container h2 {
-    font-size: 40px;
-}
-.grid_container1 {
-    display: flex;         
-    justify-content: center; 
-    gap: 20px;            
-    flex-wrap: wrap;       
-    padding: 20px;
-    width: 300px;  
-}
-
-.grid_card1 {
-    width: 300px;         
-    border-radius: 10px;   
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;    
-    padding: 20px;
-}
-
-.grid_card img {
-    width: 20%;         
-    border-radius: 10px;
-}
 
 #about_me p {
     justify-content: flex-start; 
@@ -396,7 +357,7 @@ main .main_container {
 .main_container a span {
     color: var(--main-color);
 }
-/*Experience */
+/*some projects */
 .main_grid {
     width: 60%;
     display: flex;            
@@ -488,8 +449,7 @@ main .main_container {
     text-align: left;
 }
 
-/*Experience fin */
-/* Efecto hover */
+
 .experience_item:hover {
     transform: scale(1.02); /* Pequeño zoom */
     filter: brightness(1.2); /* Aclara el contenido */
