@@ -528,16 +528,16 @@ main .main_container {
 }
 
 .cert_text span {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
-    color: #444;
+    color: #64ffda;
     margin-top: 5px;
 }
 
 /* Certificados en progreso */
 .mobilecut .cert_card {
     background-color: #e0e0e0;
-    color: #777;
+    color: #64ffda;
     font-size: 12px;
     padding: 15px;
 }
