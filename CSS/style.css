@@ -444,8 +444,8 @@ main .main_container {
 
 .grid_container_img {
     position: relative;
-    width: 930px; 
-    height: 300px; 
+    width: 900px; 
+    height: 240px; 
 }
 
 .grid_container_img img {
