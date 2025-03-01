@@ -345,42 +345,6 @@ main .main_container {
 }
 /* certificates */
 /* Contenedor principal del grid */
-.main_grid1 {
-    display: grid;
-    grid-template-columns: repeat(3, 30%); /* 3 columnas del 30% cada una */
-    gap: 5%; /* Espacio entre los elementos */
-    justify-content: center; /* Centra el contenido */
-    padding: 20px;
-    width: 60%;
-    box-sizing: border-box;
-}
-.grid_container1 {
-    display: flex;
-    flex-direction: column; /* Alinea la tarjeta y el texto verticalmente */
-    align-items: center;
-    width: 100%;
-    height: 200px; /* Altura fija para todos los contenedores */
-    justify-content: space-between; /* Distribuye los elementos dentro */
-}
-
-.grid_card1 {
-    width: 100%;
-    height: 150px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-.grid_card1 img {
-    width: 80%;
-    height: auto;
-    max-height: 100px; 
-    border-radius: 10px;
-}
-
 #about_me p {
     justify-content: flex-start; 
     align-items: flex-end;
