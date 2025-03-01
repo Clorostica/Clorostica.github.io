@@ -495,41 +495,51 @@ main .main_container {
     color: #8891B0;
     margin: 10px 0;
 }
-.certificate_container{
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 20px; 
+/* Contenedor de los certificados */
+.certificate_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 certificados por fila */
+    gap: 20px; /* Espaciado entre certificados */
+    justify-content: center;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 20px; /* Se asegura de que empiece debajo del main_container */
 }
+
+/* Cada certificado */
 .cert_container {
-    max-width: 120px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
+    max-width: 180px; /* Evita que sean muy anchos */
+    margin: auto;
 }
 
+/* Imagen del certificado */
 .cert_card img {
-    width: 80px; /* Hace que la imagen sea más pequeña */
+    width: 120px; /* Reduce el tamaño de la imagen */
     height: auto;
     display: block;
-    margin: 0 auto 5px;
+    border-radius: 5px;
 }
 
+/* Texto del certificado */
 .cert_text span {
-    font-size: 12px; /* Reduce el tamaño del texto */
+    font-size: 14px;
     font-weight: bold;
     color: #444;
+    margin-top: 5px;
 }
 
-/* Estilo para los certificados en progreso */
+/* Certificados en progreso */
 .mobilecut .cert_card {
     background-color: #e0e0e0;
     color: #777;
-    font-size: 10px;
+    font-size: 12px;
     padding: 15px;
 }
 
