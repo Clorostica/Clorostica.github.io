@@ -496,17 +496,8 @@ main .main_container {
     margin: 10px 0;
 }
 
-#certificates {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 certificados por fila */
-    gap: 15px; /* Espacio entre ellos */
-    padding: 20px;
-    justify-content: center;
-}
-
-/* Tarjeta de cada certificado */
 .cert_container {
-    max-width: 120px; /* Evita que sean muy anchos */
+    max-width: 120px; 
     text-align: center;
     padding: 10px;
     border: 1px solid #ddd;
@@ -514,7 +505,6 @@ main .main_container {
     background-color: #f9f9f9;
 }
 
-/* Imagen del certificado */
 .cert_card img {
     width: 80px; /* Hace que la imagen sea más pequeña */
     height: auto;
@@ -522,7 +512,6 @@ main .main_container {
     margin: 0 auto 5px;
 }
 
-/* Texto del certificado */
 .cert_text span {
     font-size: 12px; /* Reduce el tamaño del texto */
     font-weight: bold;
