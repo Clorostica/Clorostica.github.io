@@ -486,6 +486,7 @@ main .main_container {
 }
 
 .details p {
+    padding-top:40px;
     justify-content: flex-start; 
     align-items: flex-end;
     font-family: 'Poppins', sans-serif;
