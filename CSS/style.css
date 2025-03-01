@@ -337,6 +337,7 @@ footer#nav_footer {
     font-weight: 300;
     padding-top: 10px;
     padding-bottom: 10px;
+    font-size: 2.5rem;
 }
 main .main_container {
     display: flex;              
