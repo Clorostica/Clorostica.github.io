@@ -354,22 +354,32 @@ main .main_container {
     width: 60%;
     box-sizing: border-box;
 }
-
-/* Contenedor de cada tarjeta y su texto */
 .grid_container1 {
     display: flex;
-    flex-direction: column; /* Apila el card y el texto verticalmente */
+    flex-direction: column; /* Alinea la tarjeta y el texto verticalmente */
     align-items: center;
     width: 100%;
+    height: 200px; /* Altura fija para todos los contenedores */
+    justify-content: space-between; /* Distribuye los elementos dentro */
 }
 
-/* Cada card ocupa el 100% de su celda */
 .grid_card1 {
     width: 100%;
+    height: 150px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    padding: 20px;
+}
+
+.grid_card1 img {
+    width: 80%;
+    height: auto;
+    max-height: 100px; 
+    border-radius: 10px;
+}
 
 #about_me p {
     justify-content: flex-start; 
