@@ -300,23 +300,7 @@ footer#nav_footer {
 }
 
 /*RESUME*/
-main {
-    width: 100%;
-}
 
-main .main_container {
-    width: 100%;   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /
-    margin: 0 auto;
-    padding-bottom:50px;
-}
-
-.main_container h2 {
-    font-size: 40px;
-}
 .experience {
     width: 60%;
     text-align: center;
@@ -340,9 +324,53 @@ main .main_container {
     padding: 10px;
     transition: transform 0.2s ease, filter 0.3s ease;
 }
+/*Experience */
 
+main {
+    width: 100%;
+}
+
+main .main_container {
+    width: 100%;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /
+    margin: 0 auto;
+    padding-bottom:50px;
+}
+
+.main_container h2 {
+    font-size: 40px;
+}
 /* certificates */
 /* Contenedor principal del grid */
+.main_grid1 {
+    display: grid;
+    grid-template-columns: repeat(3, 30%); /* 3 columnas del 30% cada una */
+    gap: 5%; /* Espacio entre los elementos */
+    justify-content: center; /* Centra el contenido */
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Contenedor de cada tarjeta y su texto */
+.grid_container1 {
+    display: flex;
+    flex-direction: column; /* Apila el card y el texto verticalmente */
+    align-items: center;
+    width: 100%;
+}
+
+/* Cada card ocupa el 100% de su celda */
+.grid_card1 {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+
 #about_me p {
     justify-content: flex-start; 
     align-items: flex-end;
@@ -374,6 +402,7 @@ main .main_container {
 .main_container a span {
     color: var(--main-color);
 }
+/*Experience */
 .main_grid {
     width: 60%;
     display: flex;            
@@ -404,6 +433,21 @@ main .main_container {
     font-size: 20px;
     color:#64ffda;
     padding-bottom: 30px;
+}
+
+.div_p {
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute; 
+    width: 30%; 
+    color: #CDD6F6; 
+    padding: 10px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
+    z-index: 2; 
+}
+
+
+.image-hover {
+    opacity: 0; 
 }
 
 .grid_container_img {
@@ -449,21 +493,6 @@ main .main_container {
 
 .main_grid:nth-child(even) .grid_container {
     text-align: left;
-}
-
-.div_p {
-    background-color: rgba(255, 255, 255, 0.2);
-    position: absolute; 
-    width: 30%; 
-    color: #CDD6F6; 
-    padding: 10px; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); 
-    z-index: 2; 
-}
-
-
-.image-hover {
-    opacity: 0; 
 }
 
 /*Experience fin */
@@ -666,5 +695,7 @@ footer .footer_container .footer_element span, a {
     }
 }
 
+
+ 
 
  
