@@ -36,6 +36,7 @@ h2 {
     color: #ccd5f6; 
     font-family: 'Poppins', sans-serif;
     cursor: default;
+    font-size: 2.5rem;
 }
 
 h3 {
@@ -336,7 +337,6 @@ footer#nav_footer {
 #about_me h2 {
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: 2.5rem;
 }
 main .main_container {
     display: flex;              
