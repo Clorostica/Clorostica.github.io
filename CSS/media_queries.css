@@ -189,73 +189,81 @@
 
 /* Para pantallas de 650px o menos */
 @media only screen and (max-width: 650px) {
-    .button {
+            .button {
         height: auto;
         width: auto;
         margin-top: 10px;
         margin-bottom: 10px;
     }
 
-    header .banner {
+            header .banner {
         padding: 20 10px;
-    }
+            }
 
-    header .banner h1 {
+            header .banner h1 {
         padding-top: 10px;
         font-size: 35px;
-    }
+            }
 
-    header .banner h2 {
+            header .banner h2 {
         font-size: 25px;
-    }
+            }
 
-    header .banner h3 {
+            header .banner h3 {
         font-size: 18px;
-    }
+            }
 
-    .main_grid, #certificates_grid {
+            .main_grid, #certificates_grid {
         grid-template-columns: auto;
-    }
-    .main_container h2 {
-    text-align: center;
-padding-left:30px;
-padding-right:30px;
-}
-    .mobilecut {
-        display: none;
-    }
-
-    .introduction {
-        padding-top:130px;
-        flex-direction: column;
-        width: 90%; 
-        margin: 0 5%; 
-    }
-    .banner {
-        width: 80%;
-    }
-
-        .experience {
-    width: 94%;
-    }
-    .drop-shadow-div.blob {
-    display: block;
-    margin: 0 auto;
-    width: 70%;
-    max-width: 300px;
-    }
-.grid_container .grid_card{
-        max-width:300px;
-.main_container {
-    width: 100%; 
-    padding: 0 10px; 
+            }
+            .main_container h2 {
+            text-align: center;
+        padding-left:30px;
+        padding-right:30px;
         }
+                 .mobilecut {
+          display: none;
+            }
+
+            .introduction {
+                padding-top:130px;
+                flex-direction: column;
+                width: 90%; 
+                margin: 0 5%; 
+            }
+            .banner {
+                width: 80%;
+            }
+
+                .experience {
+            width: 94%;
+            }
+            .drop-shadow-div.blob {
+            display: block;
+            margin: 0 auto;
+            width: 70%;
+            max-width: 300px;
+            }
+        .grid_container .grid_card{
+        max-width:300px;
+        }
+        .main_container {
+            width: 100%; 
+            padding: 0 10px; 
+        }
+        .grid_container h3{
+        text-align:center;
+}
 }
 /* Para pantallas de 550px o menos */
 @media only screen and (max-width: 550px) {
 .certificate_container {
         grid-template-columns: 1fr; 
     }
+        
+.grid_container h3{
+        text-align:center;
+}
 .mobilecut {
     background-color: #f8f8f8;
 }
@@ -306,40 +314,43 @@ header .banner h3 {
         width: 85%;
     }
 
-#about_me p {
+        #about_me p {
         width: 94%;
     }
-.main_container {
-width: 100%; 
-padding: 0 10px; 
-}
         
-.main_container h2 {
-text-align: center;
-padding-left:30px;
-padding-right:30px;
+        .main_container {
+        width: 100%; 
+        padding: 0 10px; 
         }
-.experience {
-width: 100%;
-    }
-.introduction {
-padding-top:130px;
-flex-direction: column;
-width: 90%; 
-margin: 0 5%; 
+        
+        .main_container h2 {
+        text-align: center;
+        padding-left:30px;
+        padding-right:30px;
     }
         
-.drop-shadow-div.blob {
-display: block;
-margin: 0 auto;
-width: 80%;
-max-width: 300px; /* Ajustar según diseño */
+        .experience {
+        width: 100%;
     }
         
-.grid_container .grid_card{
+        .introduction {
+        padding-top:130px;
+        flex-direction: column;
+        width: 90%; 
+        margin: 0 5%; 
+    }
+        
+        .drop-shadow-div.blob {
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+        max-width: 300px; 
+    }
+        
+        .grid_container .grid_card{
         max-width: 250px;
 }
-            .banner {
+        .banner {
         width: 80%;
     }
 
