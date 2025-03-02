@@ -362,19 +362,71 @@ main .main_container {
 .main_container a span {
     color: var(--main-color);
 }
-
 .main_grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 60%;
-    display: flex;            
-    align-items: center;      
-    justify-content: flex-start; 
-    padding-bottom: 80px;
+    margin-bottom: 40px;
 }
 
-.grid_container {
-    align-items: center; 
+/* Contenedor de imagen */
+.grid_container_img {
+    position: relative;
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Imágenes con hover */
+.grid_container_img img {
     width: 100%;
-    padding: 10px;
+    height: auto;
+    border-radius: 10px;
+    transition: opacity 0.5s ease, transform 0.3s ease-in-out;
+}
+
+.grid_container_img .image-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.grid_container_img:hover .image-default {
+    opacity: 0;
+}
+
+.grid_container_img:hover .image-hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Contenedor del texto */
+.grid_container {
+    width: 45%;
+    text-align: left;
+}
+
+.grid_container h2 {
+    font-size: 24px;
+    color: #CDD6F6;
+}
+
+.grid_container h3 {
+    font-size: 20px;
+    color: #64ffda;
+}
+
+.div_p {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    color: #CDD6F6;
+    font-size: 14px;
 }
 
 .grid_container p {
@@ -382,48 +434,9 @@ main .main_container {
     padding: 20px;
     z-index: 2; 
 }
-.grid_container h2{
-    font-size: 30px;
-    color:#CDD6F6;
-    margin-top: -100px;
-    padding-bottom: 5px;
-}
-.grid_container h3{
-    font-size: 20px;
-    color:#64ffda;
-    padding-bottom: 30px;
-}
-
-.div_p {
-    background-color: #0b1930;
-    position: absolute; 
-    width: 30%; 
-    color: #CDD6F6; 
-    padding: 10px; 
-    z-index: 2; 
-    font-size: 14px;
-    background-color: rgba(255, 255, 255, 0.2);
-}
 
 .image-hover {
     opacity: 0; 
-}
-
-.grid_container_img {
-    position: relative;
-    width: 900px; 
-    height: 240px; 
-}
-
-.grid_container_img img {
-    border-radius: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transition: opacity 1s ease;  
-    z-index: 1; 
 }
 
 .grid_container_img .image-hover {
@@ -438,9 +451,7 @@ main .main_container {
     transition: transform 0.4s ease-in-out; 
 }
 
-.grid_container_img:hover img {
-    transform: scale(1.05); 
-}
+
 
 .grid_container_img:hover .image-hover {
     opacity: 1;
