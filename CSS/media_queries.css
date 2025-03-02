@@ -165,18 +165,26 @@
         .experience {
     width: 90%;
     }
-    .main_container h2 {
-    text-align: center;
- padding-left:30px;
-padding-right:30px;
+         .main_grid {
+        flex-direction: column; /* Apila elementos en columna */
+        align-items: center;
+        width: 90%;
+        text-align: center;
     }
 
-.grid_container .grid_card{
-        max-width:300px;
-        .main_container {
-    width: 100%; 
-    padding: 0 10px; 
-        }
+    .grid_container_img {
+        width: 100%; /* Imagen ocupa todo el ancho */
+    }
+
+    .grid_container {
+        width: 100%; /* Texto ocupa todo el ancho */
+        padding-top: 20px;
+    }
+
+    .div_p {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 /* Para pantallas de 650px o menos */
