@@ -418,6 +418,7 @@ main .main_container {
 .grid_container h3 {
     font-size: 20px;
     color: #64ffda;
+    padding-bottom:12px;
 }
 
 .div_p {
