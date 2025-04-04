@@ -70,6 +70,25 @@ p{
 header {
     width: 100%;
 }
+.toggle-btn {
+    z-index: 999; 
+    position: fixed;
+    bottom: 1vh; 
+    left: 1vw; 
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000 !important; /* Fondo negro */
+    font-size: 24px;
+    transition: opacity 0.5s ease-in-out;
+}
+.toggle-btn:hover {
+    transform: scale(1.1);
+}
 
 .button {
     font-size: 13px;
@@ -89,16 +108,16 @@ header {
 
 .button:hover{
     cursor: pointer;
-    filter: drop-shadow(0 0 1.5rem #64FFDA); /* Actualizado a nuevo color */
+    filter: drop-shadow(0 0 1.5rem #64FFDA); 
 }
 
 .introduction {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centrar horizontalmente */
+    justify-content: center; 
     gap: 20px;
     width: 60%;
-    margin: auto; /* Centrar en la página */
+    margin: auto; 
     flex-wrap: wrap;
 }
 
@@ -106,7 +125,7 @@ header {
     justify-content: flex-start; 
     width: 38%; 
     gap: 20px;
-    box-sizing: border-box;  /* Incluye los márgenes y rellenos dentro del ancho */
+    box-sizing: border-box; 
 }
 
 .drop-shadow-div.blob {
