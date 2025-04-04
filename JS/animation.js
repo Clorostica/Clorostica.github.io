@@ -13,3 +13,20 @@ function reveal() {
   }
 
   window.addEventListener("scroll", reveal);
+
+document.addEventListener("DOMContentLoaded", () => {
+    const togglebtn = document.getElementById("toggleTheme");
+    let isDarkMode = false;
+
+    togglebtn.addEventListener("click", () => {
+        isDarkMode = !isDarkMode;
+
+        if (isDarkMode) {
+            document.body.classList.add("isDarkMode");
+            togglebtn.textContent = "☀️";  
+        } else {
+            document.body.classList.remove("isDarkMode");
+            togglebtn.textContent = "🌙"; 
+        }
+    });
+});
