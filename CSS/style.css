@@ -18,19 +18,19 @@
 }
 
 body {
-    background: #8992b1; 
+    color: #0B1930;
+    background: #8992B1; 
     position: relative;
     overflow-x: hidden;
     -webkit-overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
 }
 body.isDarkMode {
-    background-color: black;  
-    color: #0B1930;             
+    background-color: #0B1930;  
+    color: #8992b1;             
 }
 
 h1 {
-    color: #8992b1; 
     font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
     cursor: default;
     font-size: 32px;
