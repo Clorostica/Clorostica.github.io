@@ -7,9 +7,9 @@
 }
 
 :root {
-    --main-body-color: #0B1930; /* Fondo */
+    --main-body-color: #0B1930; 
     --main-color: #ccd6f6;
-    --text-color: #64ffda; /* Color destacado */
+    --text-color: #64ffda; 
 }
 
 ::placeholder {
@@ -18,11 +18,15 @@
 }
 
 body {
-    background: #0B1930; 
+    background: #8992b1; 
     position: relative;
     overflow-x: hidden;
     -webkit-overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
+}
+body.isDarkMode {
+    background-color: black;  
+    color: #0B1930;             
 }
 
 h1 {
