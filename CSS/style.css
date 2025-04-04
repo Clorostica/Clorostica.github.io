@@ -9,12 +9,16 @@
 :root {
     --main-body-color: #0B1930; 
     --main-color: #ccd6f6;
-    --text-color: #64ffda; 
+    --text-color: #64ffda;
 }
 
 ::placeholder {
     color: var(--text-color);
     opacity: 0.8;
+}
+.isDarkMode {
+    background-color: #0B1930;  
+    color: #8992b1;   
 }
 
 body {
@@ -24,10 +28,6 @@ body {
     overflow-x: hidden;
     -webkit-overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
-}
-body.isDarkMode {
-    background-color: #0B1930;  
-    color: #8992b1;             
 }
 
 h1 {
@@ -63,7 +63,7 @@ a {
     font-family: 'Poppins', sans-serif;
 }
 p{
-    color: #CCD5F6;
+    color: #ccd5f6;
 }
 /*-------------*/
 
