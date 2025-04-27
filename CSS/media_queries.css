@@ -5,10 +5,7 @@
 /*-------------*/
 
 /* Para pantallas de 1700px o menos */
-@media only screen and (max-width: 1700px) {
-        #header-nav-bar-menu {
-        width: 60%;
-    }
+@media only screen and (max-width: 2000px) {
 
     .main_grid {
         grid-template-columns: auto auto auto auto;
@@ -18,30 +15,15 @@
         display: none;
     }
 
-    .introduction {
-        padding-top:150px;
-        width: 60%;
-        flex-direction: row; 
-        gap: 70px; 
-    }
-
 }
 
 /* Para pantallas de 1500px o menos */
 @media only screen and (max-width: 1500px) {
-    #header-nav-bar-menu {
-        width: 70%;
-    }
 
     #header-nav-bar-menu li a { 
         font-size: 20px;
     }
-.introduction {
-        padding-top:150px;
-        width: 60%;
-        flex-direction: row; 
-        gap: 30px; 
-        }
+
 }
 /* Para pantallas de 1300px o menos */
 @media only screen and (max-width: 1300px) {
@@ -57,12 +39,6 @@
         display: none;
     }
 
-    .introduction {
-        padding-top:150px;
-        width: 60%;
-        flex-direction: row; 
-        gap: 30px; 
-    }
     .experience_item {
         flex-direction: row;
     }
@@ -78,13 +54,6 @@
         font-size: 16px;
     }
 
-    .introduction {
-        padding-top:150px;
-        width: 60%;
-        flex-direction: row; 
-        gap: 30px; 
-            
-    }
 
     header .banner h2 {
         font-size: 30px;
@@ -129,12 +98,7 @@
         display: none; 
     }
 
-    .introduction {
-        padding-top:130px;
-        flex-direction: column;
-        width: 90%; 
-        margin: 0 5%; 
-    }
+
     .banner {
         width: 80%;
     }
@@ -226,7 +190,6 @@
             }
 
             .introduction {
-                padding-top:130px;
                 flex-direction: column;
                 width: 90%; 
                 margin: 0 5%; 
@@ -334,7 +297,6 @@ header .banner h3 {
     }
         
         .introduction {
-        padding-top:130px;
         flex-direction: column;
         width: 90%; 
         margin: 0 5%; 
@@ -362,3 +324,4 @@ header .banner h3 {
     to {
         width: 100%; 
     }
+}
