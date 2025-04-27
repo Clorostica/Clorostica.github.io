@@ -368,6 +368,12 @@ footer#nav_footer {
     gap: 10px;
     cursor: default; 
 }
+.cert_card img{
+    width: 250px;
+    height:auto;
+    display:block;
+    border-radius: 5px;
+}
 .certificate_container {
     width: 65%;  
     display: grid;
@@ -549,7 +555,8 @@ main .main_container {
 
 .div_p {
     background-color: rgba(255, 255, 255, 0.1);
-    padding: 15px;
+    padding-bottom: 15px;
+    padding-top: 25px;
     border-radius: 8px;
     color: #CDD6F6;
     font-size: 14px;
@@ -643,7 +650,36 @@ main .main_container {
     gap: 10px;
     margin-top: 10px;
 }
+#message::placeholder {
+    color: #787777; 
+  }
+input[type="text"]::placeholder {
+    color: #787777; 
+  }
+  #submit {
+    background-color: #64FFDA; 
+    color: rgb(0, 0, 0);
+    border: none; 
+    padding: 12px 24px; 
+    font-size: 18px;
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: all 0.3s ease; 
+    width: 100%; 
+    box-sizing: border-box;
+  }
+  
 
+  #submit:hover {
+    background-color: #50d1c0; 
+    transform: translateY(-4px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  }
+  
+  #submit:active {
+    background-color: #3db7a5; 
+    transform: translateY(2px); 
+  }
 #contact_me_container {
     width: 100%;
     display: flex;
