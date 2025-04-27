@@ -650,6 +650,11 @@ main .main_container {
     gap: 10px;
     margin-top: 10px;
 }
+
+#message{
+    resize:none;
+}
+
 #message::placeholder {
     color: #787777; 
   }
