@@ -1,4 +1,3 @@
-
 /*-------------*/
 
 /*MEDIA QUERIES*/
@@ -88,7 +87,8 @@
         .grid_container .grid_card{
         max-width:300px;
         height:300px;
-}}
+    }
+}
 
 
 @media (max-width: 700px) {
@@ -120,8 +120,8 @@
     }
 
     .drop-shadow-div.blob {
-    display: block;
-    margin: 0 auto;
+        display: block;
+        margin: 0 auto;
         width: 70%;
         max-width: 300px;
     }
@@ -142,10 +142,12 @@
     header .banner h3 {
         font-size: 20px;
     }
-        .experience {
-    width: 90%;
+    
+    .experience {
+        width: 90%;
     }
-         .main_grid {
+    
+    .main_grid {
         flex-direction: column; 
         align-items: center;
         width: 90%;
@@ -156,16 +158,32 @@
         width: 100%; 
     }
 
+    /* Modificación para la sección de proyectos en dispositivos móviles */
     .grid_container {
-        width: 100%; 
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding-top: 20px;
     }
-
+    
+    .grid_container h3 {
+        width: 100%;
+        text-align: center;
+        order: 1; /* Esto coloca el título primero */
+    }
+    
+    .grid_container .grid_card {
+        max-width: 300px;
+        order: 2; /* La imagen va después del título */
+    }
+    
     .div_p {
         width: 100%;
         text-align: center;
-        margin-bottom:15px;
         margin-top: 15px;
+        margin-bottom: 15px;
+        order: 3; /* El párrafo va al final */
     }
 
     #contact_me_container .contact_me_form {
@@ -174,6 +192,7 @@
         margin-right: 0; 
         padding: 30px 15px; 
     }
+    
     .certificate_container {
         width: 90%;  
         grid-template-columns: repeat(2, 1fr); 
@@ -187,80 +206,88 @@
     .cert_text span {
         font-size: 20px;  
     }
-  }
+}
 
 /* Para pantallas de 650px o menos */
 @media only screen and (max-width: 650px) {
-            .button {
+    .button {
         height: auto;
         width: auto;
         margin-top: 10px;
         margin-bottom: 10px;
     }
 
-            header .banner {
+    header .banner {
         padding: 20 10px;
-            }
+    }
 
-            header .banner h1 {
+    header .banner h1 {
         padding-top: 10px;
         font-size: 35px;
-            }
-
-            header .banner h2 {
-        font-size: 25px;
-            }
-
-            header .banner h3 {
-        font-size: 18px;
-            }
-
-            .main_grid, #certificates_grid {
-        grid-template-columns: auto;
-            }
-            .main_container h2 {
-            text-align: center;
-        padding-left:30px;
-        padding-right:30px;
-        }
-                 .mobilecut {
-          display: none;
-            }
-
-            .introduction {
-                flex-direction: column;
-                width: 90%; 
-                margin: 0 5%; 
-            }
-            .banner {
-                width: 80%;
-            }
-
-                .experience {
-            width: 94%;
-            }
-            .drop-shadow-div.blob {
-            display: block;
-            margin: 0 auto;
-            width: 70%;
-            max-width: 300px;
-            }
-        .grid_container .grid_card{
-        max-width:300px;
-        }
-        .main_container {
-            width: 100%; 
-            padding: 0 10px; 
-        }
-        .grid_container h3{
-        text-align:center;
     }
-        .div_p {
-            width: 100%;
-            text-align: center;
-            margin-bottom:15px;
-            margin-top: 15px;
-        }
+
+    header .banner h2 {
+        font-size: 25px;
+    }
+
+    header .banner h3 {
+        font-size: 18px;
+    }
+
+    .main_grid, #certificates_grid {
+        grid-template-columns: auto;
+    }
+    
+    .main_container h2 {
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .mobilecut {
+        display: none;
+    }
+
+    .introduction {
+        flex-direction: column;
+        width: 90%; 
+        margin: 0 5%; 
+    }
+    
+    .banner {
+        width: 80%;
+    }
+
+    .experience {
+        width: 94%;
+    }
+    
+    .drop-shadow-div.blob {
+        display: block;
+        margin: 0 auto;
+        width: 70%;
+        max-width: 300px;
+    }
+    
+    .grid_container .grid_card {
+        max-width: 300px;
+    }
+    
+    .main_container {
+        width: 100%; 
+        padding: 0 10px; 
+    }
+    
+    .grid_container h3 {
+        text-align: center;
+    }
+    
+    .div_p {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
 }
 
 @media only screen and (max-width: 550px) {
@@ -276,24 +303,25 @@
         font-size: 18px;  
     }
         
-.grid_container h3{
-        text-align:center;
-}
-.mobilecut {
-    background-color: #f8f8f8;
-}
+    .grid_container h3 {
+        text-align: center;
+    }
+    
+    .mobilecut {
+        background-color: #f8f8f8;
+    }
 
-.mobilecut .cert_card {
-    background-color: #ffeb3b; 
-    color: #333;
-    height: auto;
-}
+    .mobilecut .cert_card {
+        background-color: #ffeb3b; 
+        color: #333;
+        height: auto;
+    }
 
-.mobilecut .cert_text {
-    color: #ff5722;
-}
+    .mobilecut .cert_text {
+        color: #ff5722;
+    }
 
-header .banner h1 {
+    header .banner h1 {
         margin-top: 10px;
         font-size: 20px;
         white-space: nowrap;  
@@ -301,18 +329,18 @@ header .banner h1 {
         width: 100%;     
     }
 
-header .banner h2 {
+    header .banner h2 {
         font-size: 18px;          
         width: 100%;             
         word-wrap: break-word;    
         line-height: 1.4;         
     }
 
-header .banner h3 {
+    header .banner h3 {
         font-size: 16px;
     }
 
-#contact_me_container .contact_me_form {
+    #contact_me_container .contact_me_form {
         width: 350px;
         box-shadow: none;
     }
@@ -329,57 +357,60 @@ header .banner h3 {
         width: 85%;
     }
 
-        #about_me p {
+    #about_me p {
         width: 94%;
     }
         
-        .main_container {
+    .main_container {
         width: 100%; 
         padding: 0 10px; 
-        }
-        
-        .main_container h2 {
-        text-align: center;
-        padding-left:30px;
-        padding-right:30px;
     }
         
-        .experience {
+    .main_container h2 {
+        text-align: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+        
+    .experience {
         width: 100%;
     }
         
-        .introduction {
+    .introduction {
         flex-direction: column;
         width: 90%; 
         margin: 0 5%; 
     }
         
-        .drop-shadow-div.blob {
+    .drop-shadow-div.blob {
         display: block;
         margin: 0 auto;
         width: 80%;
         max-width: 300px; 
-        }
+    }
         
-        .grid_container .grid_card{
+    .grid_container .grid_card {
         max-width: 250px;
-        }
-        .banner {
+    }
+    
+    .banner {
         width: 80%;
     }
+    
     .div_p {
         width: 100%;
         text-align: center;
-        margin-bottom:15px;
+        margin-bottom: 15px;
         margin-top: 15px;
     }
-
+}
 
 @media (max-width: 480px) {
     .introduction {
         padding-top: 130px;
         width: 100%;
-        }
+    }
+    
     .certificate_container {
         grid-template-columns: 1fr; 
     }
@@ -391,6 +422,7 @@ header .banner h3 {
     .cert_text span {
         font-size: 18px;  
     }
+    
     #contact_me_container .contact_me_form {
         width: 95%; 
         padding: 20px 10px; 
@@ -398,10 +430,11 @@ header .banner h3 {
         margin-right: 0; 
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2); 
     }
+    
     .div_p {
         width: 100%;
         text-align: center;
-        margin-bottom:15px;
+        margin-bottom: 15px;
         margin-top: 15px;
     }
 }
