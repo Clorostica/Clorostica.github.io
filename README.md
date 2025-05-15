@@ -1,21 +1,38 @@
-Clorostica – Portfolio of Claudia Sáez
-Welcome to my portfolio! I’m Claudia Sáez, a Front-End Developer passionate about building intuitive, responsive, and accessible web experiences. I love combining UI/UX design with creative, clean code to deliver engaging digital products.
+# Clorostica – Portfolio of Claudia Sáez
 
-About Me
-With a strong focus on detail and user-centric design, I create clean and efficient interfaces that provide excellent experiences across all devices. My goal is to merge design and functionality to build attractive, usable web applications.
+![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=flat-square) ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat-square) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white&style=flat-square) ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer) 
 
-Technologies & Tools
-Languages & Frameworks: JavaScript (ES6+), React
+Welcome to my portfolio! I’m Claudia Sáez, a **Front-End Developer** passionate about building intuitive, responsive, and accessible web experiences. I love combining UI/UX design with creative, clean code to deliver engaging digital products.
 
-Styling & Animations: Tailwind CSS, Framer Motion
+> “Passionate about UI/UX and creative coding.”
 
-Currently Learning: Web Accessibility (a11y), advanced animations with GSAP
+---
 
-Featured Project: Task List
+## 🚀 Technologies & Tools  
+- JavaScript (ES6+)  
+- React  
+- Tailwind CSS  
+- Framer Motion  
+
+## 🧠 Currently Learning  
+- Web Accessibility (a11y)  
+- Advanced Animations with GSAP
+
+---
+
+## 📂 Featured Project: Task List  
+
 A React-based task management app designed for simple and efficient daily task tracking. Users can add, complete, and delete tasks within a clean, responsive interface — showcasing strong React state management and component design skills.
 
-I’m Open To
-Freelance projects
-Creative collaborations
-New Front-End job opportunities
+![Task List Preview](https://clorostica.github.io/Task-List/static/media/screenshot.9ec68e8b.png)
+
+---
+
+## 📫 Get in Touch  
+[🌐 Visit my portfolio](https://clorostica.github.io/)  
+✉️ Open to freelance projects, collaborations, and new Front-End job opportunities.
+
+---
+
+Thanks for stopping by! 😊
 
