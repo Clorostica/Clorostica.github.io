@@ -533,7 +533,6 @@ main .main_container {
 
 .grid_container_img:hover .image-hover {
     opacity: 1;
-    transform: scale(1.05);
 }
 
 /* Contenedor del texto */
