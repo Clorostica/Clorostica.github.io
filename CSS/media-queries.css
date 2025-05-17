@@ -1,10 +1,13 @@
 @media (max-width: 1000px) {
   #header-nav-bar-menu {
     width: 100%;
+    display: none;
+    text-align: center;
   }
 
   #header-nav-bar-menu li a {
     font-size: 16px;
+    margin: 0 8px;
   }
 
   header .banner h2 {
@@ -22,27 +25,51 @@
 
   #contact_me_container {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
   }
 
-  #contact_me_container .contact_me_form {
-    margin-left: 0;
-  }
-
+  #contact_me_container .contact_me_form,
   #contact_me_container .map_container {
-    margin-right: 0;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 0;
   }
 
   .experience_item {
     padding: 30px;
+    text-align: center;
   }
 
   footer .footer_container {
     grid-template-columns: 1fr;
+    text-align: center;
   }
 
   .grid_container .grid_card {
     max-width: 300px;
-    height: 300px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .certificate_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .cert_container {
+    max-width: 100%;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .cert_text span {
+    font-size: 20px;
   }
 }
 
@@ -67,12 +94,9 @@
     margin-top: 30px;
   }
 
-  #header-nav-bar-menu {
-    display: none;
-  }
-
   .banner {
     width: 80%;
+    text-align: center;
   }
 
   .drop-shadow-div.blob {
@@ -89,6 +113,9 @@
   .button {
     margin-top: 10px;
     margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   header .banner h2 {
@@ -101,6 +128,7 @@
 
   .experience {
     width: 90%;
+    text-align: center;
   }
 
   .main_grid {
@@ -120,11 +148,11 @@
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
+    text-align: center;
   }
 
   .grid_container h3 {
     width: 100%;
-    text-align: center;
     order: 1;
   }
 
@@ -143,16 +171,11 @@
 
   #contact_me_container .contact_me_form {
     width: 90%;
-    margin-left: 0;
-    margin-right: 0;
     padding: 30px 15px;
   }
 
   .certificate_container {
-    width: 90%;
-    display: grid;
-    grid-template-columns: 1fr; /* Esto hace que queden en columna */
-    gap: 15px;
+    grid-template-columns: 1fr;
   }
 
   .cert_container {
@@ -180,6 +203,7 @@
   header .banner h1 {
     padding-top: 10px;
     font-size: 35px;
+    margin: 10px 0;
   }
 
   header .banner h2 {
@@ -193,7 +217,7 @@
   .main_grid,
   #certificates_grid,
   .certificate_container {
-    grid-template-columns: 1fr; /* Aquí también aseguramos que sea una columna */
+    grid-template-columns: 1fr !important;
   }
 
   .main_container h2 {
