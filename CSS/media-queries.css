@@ -1,4 +1,3 @@
-/* ====== Media queries para pantallas <= 1000px ====== */
 @media (max-width: 1000px) {
   #header-nav-bar-menu {
     width: 100%;
@@ -10,28 +9,27 @@
 
   header .banner h2 {
     font-size: 30px;
-    text-align: center;
   }
 
   header .banner h3 {
     font-size: 20px;
-    text-align: center;
   }
 
   .main_grid,
   #certificates_grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto auto;
   }
 
   #contact_me_container {
     flex-direction: column;
-    align-items: center;
   }
 
-  #contact_me_container .contact_me_form,
+  #contact_me_container .contact_me_form {
+    margin-left: 0;
+  }
+
   #contact_me_container .map_container {
-    margin: 0;
-    width: 100%;
+    margin-right: 0;
   }
 
   .experience_item {
@@ -40,49 +38,69 @@
 
   footer .footer_container {
     grid-template-columns: 1fr;
-    text-align: center;
   }
 
   .grid_container .grid_card {
     max-width: 300px;
     height: 300px;
-    margin: 0 auto;
   }
 }
 
-/* ====== Media queries para pantallas <= 700px ====== */
 @media (max-width: 700px) {
-  /* Contenedor introducción */
   .introduction {
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     width: 100%;
-    text-align: center;
   }
 
   .introduction .banner {
     width: 100%;
-    margin-bottom: 20px;
-    text-align: center;
+  }
+
+  .introduction .banner:first-child {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .introduction .banner:last-child {
+    align-items: flex-end;
+    margin-top: 30px;
   }
 
   #header-nav-bar-menu {
     display: none;
   }
 
+  .banner {
+    width: 80%;
+  }
+
+  .drop-shadow-div.blob {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    max-width: 300px;
+  }
+
   .small_screen#nav_burger {
     display: flex;
-    justify-content: center;
   }
 
-  .banner {
-    width: 90%;
-    margin: 0 auto;
+  .button {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
-  header .banner h2,
+  header .banner h2 {
+    font-size: 30px;
+  }
+
   header .banner h3 {
-    font-size: 24px;
+    font-size: 20px;
+  }
+
+  .experience {
+    width: 90%;
   }
 
   .main_grid {
@@ -90,17 +108,51 @@
     align-items: center;
     width: 90%;
     text-align: center;
-    margin: 0 auto;
   }
 
-  .grid_container,
-  .certificate_container {
-    display: grid;
-    grid-template-columns: 1fr; /* certificados en columna */
-    gap: 15px;
-    width: 90%;
-    margin: 0 auto 30px;
+  .grid_container_img {
+    width: 100%;
+  }
+
+  .grid_container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .grid_container h3 {
+    width: 100%;
     text-align: center;
+    order: 1;
+  }
+
+  .grid_container .grid_card {
+    max-width: 300px;
+    order: 2;
+  }
+
+  .div_p {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    order: 3;
+  }
+
+  #contact_me_container .contact_me_form {
+    width: 90%;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 30px 15px;
+  }
+
+  .certificate_container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr; /* Esto hace que queden en columna */
+    gap: 15px;
   }
 
   .cert_container {
@@ -111,56 +163,49 @@
   .cert_text span {
     font-size: 20px;
   }
-
-  #contact_me_container .contact_me_form {
-    width: 90%;
-    margin: 0 auto 20px;
-    padding: 30px 15px;
-  }
 }
 
-/* ====== Media queries para pantallas <= 650px ====== */
 @media (max-width: 650px) {
+  .button {
+    height: auto;
+    width: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
   header .banner {
     padding: 20px 10px;
   }
 
   header .banner h1 {
-    font-size: 35px;
     padding-top: 10px;
-    margin-bottom: 10px;
+    font-size: 35px;
   }
 
   header .banner h2 {
-    font-size: 22px;
+    font-size: 25px;
   }
 
   header .banner h3 {
     font-size: 18px;
   }
 
-  .button {
-    width: auto;
-    height: auto;
-    margin: 10px 0;
-  }
-
   .main_grid,
   #certificates_grid,
   .certificate_container {
-    grid-template-columns: 1fr; /* certificados y grids en columna */
-  }
-
-  .cert_container {
-    max-width: 100%;
-    padding: 10px 0;
-  }
-
-  .cert_text span {
-    font-size: 18px;
+    grid-template-columns: 1fr; /* Aquí también aseguramos que sea una columna */
   }
 
   .main_container h2 {
     text-align: center;
+  }
+
+  .cert_container {
+    max-width: 100%;
+    padding: 15px 0;
+  }
+
+  .cert_text span {
+    font-size: 20px;
   }
 }
