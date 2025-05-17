@@ -148,10 +148,10 @@
     padding: 30px 15px;
   }
 
-  .certificate_container {
-    width: 90%;
-    grid-template-columns: repeat(2, 1fr);
-  }
+.certificate_container {
+  width: 90%;
+  grid-template-columns: repeat(2, 
+
 
   .cert_container {
     max-width: 100%;
@@ -189,11 +189,21 @@
   }
 
   .main_grid,
-  #certificates_grid {
-    grid-template-columns: auto;
+  #certificates_grid,
+  .certificate_container {
+    grid-template-columns: 1fr;
   }
 
   .main_container h2 {
     text-align: center;
+  }
+
+  .cert_container {
+    max-width: 100%;
+    padding: 15px 0;
+  }
+
+  .cert_text span {
+    font-size: 20px;
   }
 }
