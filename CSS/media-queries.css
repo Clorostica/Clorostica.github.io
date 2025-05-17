@@ -25,11 +25,11 @@
   }
 
   #contact_me_container .contact_me_form {
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   #contact_me_container .map_container {
-    margin-right: 0px;
+    margin-right: 0;
   }
 
   .experience_item {
@@ -148,10 +148,12 @@
     padding: 30px 15px;
   }
 
-.certificate_container {
-  width: 90%;
-  grid-template-columns: repeat(2, 
-
+  .certificate_container {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr; /* Esto hace que queden en columna */
+    gap: 15px;
+  }
 
   .cert_container {
     max-width: 100%;
@@ -191,7 +193,7 @@
   .main_grid,
   #certificates_grid,
   .certificate_container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Aquí también aseguramos que sea una columna */
   }
 
   .main_container h2 {
@@ -207,3 +209,4 @@
     font-size: 20px;
   }
 }
+
