@@ -181,6 +181,10 @@
     margin-left: auto;
     margin-right: auto;
   }
+  #about_me p {
+    text-align: left; 
+    width: 90%;
+}
 }
 
 @media (max-width: 650px) {
