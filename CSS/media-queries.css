@@ -180,10 +180,13 @@
     margin-left: auto;
     margin-right: auto;
   }
-  #about_me p {
-    text-align: left; 
+#about_me p {
+    text-align: left;
     width: 90%;
     font-size: 14px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px; 
 }
 }
 
@@ -241,10 +244,13 @@
     margin-left: auto;
     margin-right: auto;
   }
-    #about_me p {
-    text-align: left; 
+  #about_me p {
+    text-align: left;
     width: 90%;
     font-size: 14px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px; 
 }
   ..introduction{
       padding-top: 120px;
