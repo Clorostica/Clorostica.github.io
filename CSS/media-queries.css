@@ -35,7 +35,6 @@
   }
 
   .experience_item {
-    padding: 30px;
     text-align: center;
   }
 
@@ -72,7 +71,10 @@
     width: 80%;
     text-align: center;
   }
-
+  .experience_item {
+    text-align: center;
+    display: block; 
+  }
   .drop-shadow-div.blob {
     display: block;
     margin: 0 auto;
