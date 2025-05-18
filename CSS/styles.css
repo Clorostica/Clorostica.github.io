@@ -454,7 +454,12 @@ footer#nav_footer {
     width: 100%;
     margin: 14px 0;  
 }
-
+#moreDetails {
+  padding: 10px 15px;  
+  box-sizing: border-box; 
+  width: 100%;         
+  overflow-wrap: break-word; 
+}
 #about_me h2 {
     padding-top: 22px;
     padding-bottom: 10px;
