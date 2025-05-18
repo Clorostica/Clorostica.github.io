@@ -364,6 +364,12 @@ footer#nav_footer {
     gap: 10px;
     cursor: default; 
 }
+.button-container {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start; 
+}
+
 .cert_card img{
     width: 250px;
     height:auto;
