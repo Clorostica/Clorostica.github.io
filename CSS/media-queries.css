@@ -65,7 +65,7 @@
     display: none;
   }
  .button-container {
-    justify-content: center; 
+    display: block; 
   }
 
   .banner {
@@ -267,4 +267,8 @@ h4{
     margin-bottom: 15px;
     order: 3;
   }
+   .button-container {
+    display: block; 
+  }
+
 }
