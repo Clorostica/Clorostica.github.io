@@ -563,9 +563,8 @@ main .main_container {
 }
 
 .button_container {
-    display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 40px;
     margin-top: 10px;
 }
 
