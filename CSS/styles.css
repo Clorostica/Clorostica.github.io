@@ -359,15 +359,13 @@ footer#nav_footer {
 }
 
 
-.button_container {
-    display: flex;
-    gap: 10px;
-    cursor: default; 
-}
 .button-container {
   display: flex;
+  flex-direction: row; 
   gap: 16px;
-  justify-content: flex-start; 
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 20px 0;
 }
 
 .cert_card img{
