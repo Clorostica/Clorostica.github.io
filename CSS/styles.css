@@ -82,7 +82,6 @@ p{
     flex-wrap: wrap;
     gap: 40px;
 }
-
 .introduction .banner {
     flex: 1 1 45%;
     display: flex;
@@ -91,7 +90,7 @@ p{
 }
 
 .introduction .banner:first-child {
-    align-items: flex-start; 
+    align-items: flex-start;
     text-align: left;
 }
 
