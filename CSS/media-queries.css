@@ -64,8 +64,10 @@
   #header-nav-bar-menu {
     display: none;
   }
- .button-container {
-    display: block; 
+.button-container {
+    display: flex;
+    gap: 10px; 
+    padding-left: 10px; 
   }
 
   .banner {
@@ -267,8 +269,10 @@ h4{
     margin-bottom: 15px;
     order: 3;
   }
-   .button-container {
-    display: block; 
+.button-container {
+    display: flex;
+    gap: 10px; 
+    padding-left: 10px; 
   }
 
 }
