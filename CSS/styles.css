@@ -450,10 +450,9 @@ footer#nav_footer {
 #about_me p {
     text-align: justify; 
     font-family: 'Poppins', sans-serif;
-    text-align: left; 
     color: #CCD5F6;
-    width: 60%;
-    margin: 14px 0;
+    width: 100%;
+    margin: 14px 0;  
 }
 
 #about_me h2 {
