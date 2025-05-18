@@ -358,11 +358,8 @@ footer#nav_footer {
 
 .button-container {
   display: flex;
-  flex-direction: row; 
-  gap: 16px;
-  justify-content: flex-start;
   flex-wrap: wrap;
-  margin: 20px 0;
+  gap: 16px;
 }
 
 .cert_card img{
