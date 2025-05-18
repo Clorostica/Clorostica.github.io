@@ -13,6 +13,12 @@
     <script src="https://kit.fontawesome.com/c3b56a7551.js" crossorigin="anonymous"></script>
 </head>
 <style>
+#projects {
+  width: 60%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
 .project {
   margin-bottom: 3rem;
 }
@@ -20,37 +26,35 @@
 .project-text h2 {
   color: var(--text-color);
   font-weight: 400;
-  margin: 0 0 4px 0;
-  font-size: 1rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
+  margin: 0;
+  font-size: 1.1rem;
 }
 
 .project-text h3 {
   color: var(--main-color);
-  font-size: 2rem; /* Más grande */
-  margin: 0 0 1rem 0;
   font-weight: 700;
+  font-size: 2rem;
+  margin: 0.2rem 0 1rem 0;
 }
 
 .project-content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .project-description {
   flex: 1;
-  color: var(--text-color);
+  color: var(--main-color);
   font-size: 1rem;
   line-height: 1.5;
 }
 
 .project-image {
   flex-shrink: 0;
-  max-width: 350px;
-  transition: transform 0.3s ease;
+  max-width: 300px;
+  cursor: pointer;
+  position: relative;
 }
 
 .project-image img {
@@ -58,51 +62,51 @@
   height: auto;
   display: block;
   border-radius: 8px;
+  transition: opacity 0.3s ease;
 }
 
-.project-image:hover {
-  transform: scale(1.05);
-  cursor: pointer;
+.image-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
 }
 
-/* Móviles */
+.project-image:hover .image-hover {
+  opacity: 1;
+}
+
+.project-image:hover .image-default {
+  opacity: 0;
+}
+
+/* Responsive */
+
 @media (max-width: 768px) {
-  .project-content {
-    flex-direction: row;
-    align-items: flex-start;
-    gap: 0.5rem;
+  #projects {
+    width: 90%;
   }
 
-  .project-text h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem; /* menos espacio debajo del título */
-  }
-
-  .project-description {
-    font-size: 0.9rem;
-    flex: 1;
-  }
-
-  .project-image {
-    max-width: 120px; /* imagen más pequeña en móviles */
-  }
-}
-
-/* Pantallas muy pequeñas - más compactas */
-@media (max-width: 480px) {
   .project-content {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .project-image {
     max-width: 100%;
-    margin-top: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   .project-description {
-    margin-top: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .project-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.7rem;
   }
 }
+
 </style>
 <body>
     <header>
