@@ -55,7 +55,10 @@
     width: 100%;
     text-align: center;
   }
-
+.introduction .banner:first-child {
+    align-items: flex-start; 
+    text-align: center;
+}
   .introduction .banner {
     width: 100%;
     align-items: center;
