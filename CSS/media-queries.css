@@ -69,7 +69,9 @@
   #header-nav-bar-menu {
     display: none;
   }
-
+  .button-container {
+    justify-content: center;
+  }
   .banner {
     width: 80%;
     text-align: center;
