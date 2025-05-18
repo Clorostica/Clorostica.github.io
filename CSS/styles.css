@@ -143,20 +143,21 @@ header {
 }
 
 .drop-shadow-div.blob {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    width: 330px; 
-    height: 330px; 
-    border-radius: 50%; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-    margin-top: 10px; 
-    background-image: url("/IMG/yo.jpg"); 
-    background-color: #64ffda; 
-    background-size: cover; 
-    background-position: center;
-    animation: morph 3.6s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 330px;
+  height: 330px;
+  border-radius: 50%; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  background-image: url("/IMG/yo.jpg");
+  background-color: #64ffda;
+  background-size: cover;
+  background-position: center;
+  animation: morph 3.6s linear infinite;
 }
+
 
 .drop-shadow-div{
     -webkit-appearance: none;
