@@ -562,12 +562,12 @@ main .main_container {
 }
 
 .button_container {
-  display: flex;   
-  flex-wrap: wrap;
-  gap: 40px;
-  margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 10px;
+    justify-content: center;  
 }
-
 #message{
     resize:none;
 }
