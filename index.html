@@ -14,30 +14,33 @@
 </head>
 <style>
 
+
 .project {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 4rem;
   gap: 2rem;
-  flex-wrap: wrap;
 }
 
-.project-description {
+.project-text {
   flex: 1;
-  min-width: 300px;
+  padding-right: 2rem;
 }
 
-.project-description h2 {
+.project-text h2 {
   color: var(--text-color);
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
 }
 
-.project-description h3 {
+.project-text h3 {
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+
+.project-description {
+  flex: 1;
 }
 
 .project-description p {
@@ -48,9 +51,8 @@
 
 .project-image {
   flex: 1;
+  max-width: 550px;
   position: relative;
-  min-width: 300px;
-  max-width: 500px;
   overflow: hidden;
 }
 
@@ -79,15 +81,20 @@
   transform: scale(1.05);
 }
 
-/* Responsive */
+/* Mobile */
 @media (max-width: 768px) {
   .project {
     flex-direction: column;
     text-align: center;
   }
 
+  .project-text {
+    padding-right: 0;
+  }
+
+  .project-image,
   .project-description,
-  .project-image {
+  .project-text {
     max-width: 100%;
   }
 }
