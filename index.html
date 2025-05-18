@@ -13,101 +13,99 @@
     <script src="https://kit.fontawesome.com/c3b56a7551.js" crossorigin="anonymous"></script>
 </head>
 <style>
-#projects {
-  width: 60%;
-  margin: 0 auto;
-  padding: 2rem 0;
-}
-
 .project {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 .project-text h2 {
+  font-size: 1.5rem;
   color: var(--text-color);
-  font-weight: 400;
-  margin: 0;
-  font-size: 1.1rem;
-}
-
-.project-text h3 {
-  color: var(--main-color);
-  font-weight: 700;
-  font-size: 2rem;
-  margin: 0.2rem 0 1rem 0;
+  margin-bottom: 1rem;
 }
 
 .project-content {
   display: flex;
-  gap: 1.5rem;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .project-description {
   flex: 1;
+}
+
+.project-description h3 {
+  font-size: 1.8rem;
   color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.project-description p {
   font-size: 1rem;
-  line-height: 1.5;
+  line-height: 1.6;
+  color: var(--text-color);
 }
 
 .project-image {
-  max-width: 450px;
-  height: 300px;    
-  overflow: hidden; 
-  cursor: pointer;
-  position: relative;
+  flex: 1;
+  max-width: 400px;
 }
 
 .project-image img {
   width: 100%;
-  height: auto;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: opacity 0.3s ease-in-out;
   display: block;
-  border-radius: 8px;
-  transition: opacity 0.3s ease;
 }
 
-.image-hover {
+.project-image .image-hover {
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
 }
 
-.project-image:hover .image-hover {
-  opacity: 1;
-}
-
-.project-image:hover .image-default {
+.project-image a:hover .image-default {
   opacity: 0;
 }
 
+.project-image a:hover .image-hover {
+  opacity: 1;
+}
 
+/* 📱 Responsive para móviles */
 @media (max-width: 768px) {
-  #projects {
+  .main_container {
     width: 90%;
+    padding: 1rem;
   }
 
   .project-content {
     flex-direction: column;
-    align-items: centert;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-description h3 {
+    font-size: 1.5rem;
+  }
+
+  .project-description p {
+    font-size: 0.95rem;
   }
 
   .project-image {
-    max-width: 100%;
-    margin-bottom: 1rem;
+    max-width: 300px;
+    margin-top: 1rem;
   }
 
-  .project-description {
-    font-size: 0.95rem;
-    align-items: center;
-  }
-
-  .project-text h3 {
-    font-size: 1.5rem;
-    margin-bottom: 0.7rem;
-    align-items: center;
+  .project-image img {
+    height: 180px;
   }
 }
-
 </style>
 <body>
     <header>
