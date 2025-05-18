@@ -95,10 +95,6 @@ p{
     text-align: left;
 }
 
-.introduction .banner:last-child {
-    align-items: flex-end;
-}
-
 header {
     width: 100%;
 }
