@@ -602,7 +602,8 @@ main .main_container {
     padding-right: 20px;
     text-align: left;
     align-self: flex-start; 
-    margin-top: 5px; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
 }
 
 .details {
