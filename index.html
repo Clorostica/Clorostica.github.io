@@ -105,31 +105,31 @@
         </div>
     </header>
     <main>
-        <div class="main_container reveal" id="about_me">
-             <h2>About Me</h2>
-            <h4>Hi there, I'm glad to have you here!</h4>
-            <p>Currently, Berlin is my home, where I've been involved in a wide range of projects, 
-                from corporate branding to web design. My main focus is on capturing the essence of 
-                each project through captivating visuals, always striving to deliver impactful and 
-                meaningful results. </p>
-
-                <p>I'm excited to share my passion and expertise, working together 
-                    to create exceptional outcomes. For more details, feel free to visit my website. 
-                    Over the years, I have developed products for companies and businesses worldwide, 
-                    ranging from marketing websites to complex solutions and enterprise applications, 
-                    always with a strong emphasis on delivering fast, elegant, and accessible user experiences.</p>
-                
-                <p>Currently, I work as a freelancer for various small businesses. Prior to this, I held 
-                    a position as a front-end developer for a startup called JFX, where I contributed to 
-                    the creation of web pages for Banco de Chile and Banco Estado. In other companies, 
-                    I served as a web designer, with roles focused on interface development through 
-                    an interactive design process. This included the creation of sketches, mock-ups, 
-                    prototypes, and ultimately user interface design. </p>
-                
-                <p>I constantly seek to learn new software 
-                    and tools. My objective is to continually push the boundaries of my abilities, 
-                    learn something new every day, and approach challenges head-on with a solution-driven
-                   mindset.</p>
+          <div class="main_container reveal" id="about_me">
+          <h2>About Me</h2>
+          <h4>Hi there, I'm glad to have you here!</h4>
+        
+          <p>
+            Based in Berlin, I work as a freelancer creating fast, elegant, and accessible web experiences. 
+            I've collaborated with startups and companies worldwide on projects ranging from branding to complex applications.
+          </p>
+        
+          <p>
+            Passionate about design and continuous learning, I approach each challenge with creativity and a solution-driven mindset.
+          </p>
+        
+          <button id="readMoreBtn" onclick="toggleDetails()">Read More</button>
+        
+          <div id="moreDetails" style="display: none;">
+            <p>
+              Over the years, I have developed products for companies worldwide, including marketing websites and enterprise apps.
+              Previously, I worked as a front-end developer at JFX, contributing to sites for Banco de Chile and Banco Estado.
+            </p>
+            <p>
+              My roles have included web design and interface development through sketches, mock-ups, and prototypes.
+              I constantly seek to learn new tools and push the boundaries of my skills.
+            </p>
+          </div>
         </div>
              <div class="main_container reveal">
             <div class="experience">
@@ -485,5 +485,18 @@ const globe = createGlobe(canvas, {
   },
 })
   </script>
+    <script>
+  function toggleDetails() {
+    const details = document.getElementById('moreDetails');
+    const btn = document.getElementById('readMoreBtn');
+    if (details.style.display === 'none') {
+      details.style.display = 'block';
+      btn.textContent = 'Read Less';
+    } else {
+      details.style.display = 'none';
+      btn.textContent = 'Read More';
+    }
+  }
+</script>
   <script src="/JS/animation.js"></script>
 </html>
