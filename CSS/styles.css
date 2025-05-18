@@ -452,7 +452,7 @@ footer#nav_footer {
     font-family: 'Poppins', sans-serif;
     color: #CCD5F6;
     width: 60%;
-    margin: 14px 0;  
+    margin: 14px auto;
 }
 #moreDetails {
   padding: 10px 15px;  
@@ -462,7 +462,7 @@ footer#nav_footer {
 }
 #readMoreBtn {
   font-family: 'Poppins', sans-serif;
-  background-color: #4A90E2; 
+  background-color: #0A1930; 
   color: white;
   border: none;
   border-radius: 5px;
@@ -473,7 +473,7 @@ footer#nav_footer {
 }
 
 #readMoreBtn:hover {
-  background-color: #357ABD; 
+  background-color: #0B1930
 }
 #about_me h2 {
     padding-top: 22px;
