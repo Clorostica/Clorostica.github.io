@@ -514,100 +514,72 @@ main .main_container {
     width: 60%;
     margin-bottom: 40px;
 }
-
-/* Contenedor de imagen */
-.grid_container_img {
-    position: relative;
-    width: 50%;
-    height: auto;
-    overflow: hidden;
-    border-radius: 10px;
+.project {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin: 3rem 0;
+  flex-wrap: wrap; 
+}
+.project-text {
+  flex: 1 1 300px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* Imágenes con hover */
-.grid_container_img img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    transition: opacity 0.5s ease, transform 0.3s ease-in-out;
+
+.project-image {
+  flex: 1 1 400px; 
+  max-width: 500px;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
 }
 
-.grid_container_img .image-hover {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease;
+  border-radius: 8px; 
 }
 
-.grid_container_img:hover .image-default {
-    opacity: 0;
+
+.image-default {
+  opacity: 1;
+  position: relative;
+  z-index: 1;
 }
 
-.grid_container_img:hover .image-hover {
-    opacity: 1;
-}
-
-/* Contenedor del texto */
-.grid_container {
-    width: 45%;
-    text-align: left;
-}
-
-.grid_container h2 {
-    font-size: 24px;
-    color: #CDD6F6;
-}
-
-.grid_container h3 {
-    font-size: 20px;
-    color: #64ffda;
-    padding-bottom:12px;
-}
-
-.div_p {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding-bottom: 15px;
-    padding-top: 25px;
-    border-radius: 8px;
-    color: #CDD6F6;
-    font-size: 14px;
-}
-
-.grid_container p {
-    color: #CDD6F6;
-    padding: 20px;
-    z-index: 2; 
-}
 
 .image-hover {
-    opacity: 0; 
-}
-
-.grid_container_img .image-hover {
-    opacity: 0;
-    z-index: 2; 
-}
-
-.grid_container_img:hover .image-default {
-    opacity: 0;
-}
-.grid_container_img img {
-    transition: transform 0.4s ease-in-out; 
+  opacity: 0;
+  z-index: 2;
 }
 
 
-.grid_container_img:hover .image-hover {
-    opacity: 1;
+.project-image:hover .image-default {
+  opacity: 0;
+  transform: scale(1.05);
 }
 
-.main_grid:nth-child(odd) .grid_container {
-    text-align: right;
+.project-image:hover .image-hover {
+  opacity: 1;
+  transform: scale(1);
 }
 
-.main_grid:nth-child(even) .grid_container {
-    text-align: left;
+
+.project-description {
+  flex-basis: 100%;
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #444;
 }
 
 .experience_item:hover {
