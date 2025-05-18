@@ -13,129 +13,96 @@
     <script src="https://kit.fontawesome.com/c3b56a7551.js" crossorigin="anonymous"></script>
 </head>
 <style>
-
 .project {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 
-/* Título arriba */
 .project-text h2 {
   color: var(--text-color);
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-  text-align: center; /* Cambia a left si prefieres */
+  font-weight: 400;
+  margin: 0 0 4px 0;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .project-text h3 {
   color: var(--main-color);
-  font-weight: 600;
-  margin: 0 0 1.5rem 0;
-  text-align: center; /* Cambia a left si prefieres */
+  font-size: 2rem; /* Más grande */
+  margin: 0 0 1rem 0;
+  font-weight: 700;
 }
 
-/* Contenedor para imagen y párrafo */
-.project-image,
+.project-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
 .project-description {
   flex: 1;
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 .project-image {
-  max-width: 550px;
-  position: relative;
-  overflow: hidden;
-  margin-left: 2rem;
+  flex-shrink: 0;
+  max-width: 350px;
+  transition: transform 0.3s ease;
 }
 
 .project-image img {
   width: 100%;
+  height: auto;
   display: block;
   border-radius: 8px;
-  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.project-image:hover {
+  transform: scale(1.05);
   cursor: pointer;
-  position: relative;
-  z-index: 1;
 }
 
-.project-image .image-hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-  transition: opacity 0.4s ease;
-  z-index: 2;
-}
-
-.project-image:hover .image-default {
-  opacity: 0;
-  transform: scale(1.05);
-}
-
-.project-image:hover .image-hover {
-  opacity: 1;
-  transform: scale(1.05);
-}
-
-.project-description p {
-  color: var(--main-color);
-  font-size: 1.05rem;
-  line-height: 1.6;
-  margin: 0;
-  text-align: left;
-}
-
-/* Contenedor flex para imagen y texto */
-.project {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Wrapper para imagen y párrafo en la misma línea */
-.project-content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 0.5rem;
-  gap: 2rem;
-}
-
-/* Imagen a la derecha, texto a la izquierda */
-.project-content .project-description {
-  order: 1;
-}
-
-.project-content .project-image {
-  order: 2;
-}
-
-/* Responsive - móviles */
+/* Móviles */
 @media (max-width: 768px) {
-  .project-text h2,
-  .project-text h3 {
-    text-align: center;
+  .project-content {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.5rem;
   }
 
+  .project-text h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem; /* menos espacio debajo del título */
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+    flex: 1;
+  }
+
+  .project-image {
+    max-width: 120px; /* imagen más pequeña en móviles */
+  }
+}
+
+/* Pantallas muy pequeñas - más compactas */
+@media (max-width: 480px) {
   .project-content {
     flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
   }
 
-  .project-content .project-image,
-  .project-content .project-description {
-    order: unset;
+  .project-image {
     max-width: 100%;
+    margin-top: 0.5rem;
   }
 
-  .project-description p {
-    text-align: center;
+  .project-description {
+    margin-top: 0.5rem;
   }
 }
-
-
 </style>
 <body>
     <header>
