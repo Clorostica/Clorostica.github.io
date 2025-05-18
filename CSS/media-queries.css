@@ -93,7 +93,7 @@
   }
 
   header .banner h2 {
-    font-size: 30px;
+    font-size: 1.4rem;
   }
 
   header .banner h3 {
@@ -215,7 +215,7 @@
   }
 
   header .banner h2 {
-    font-size: 25px;
+    font-size: 1.4rem;
   }
 
   header .banner h3 {
@@ -252,7 +252,7 @@
     padding-left: 10px;
     padding-right: 10px; 
 }
-  ..introduction{
+  .introduction{
       padding-top: 120px;
 }
 }
