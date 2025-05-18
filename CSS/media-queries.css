@@ -55,17 +55,11 @@
     width: 100%;
     text-align: center;
   }
-.introduction .banner:first-child {
-    align-items: flex-start; 
-    text-align: center;
-}
-  .introduction .banner {
-    width: 100%;
+
+  .introduction .banner:first-child {
     align-items: center;
     text-align: center;
-    margin-top: 20px;
   }
-
   #header-nav-bar-menu {
     display: none;
   }
