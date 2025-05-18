@@ -69,9 +69,12 @@
   #header-nav-bar-menu {
     display: none;
   }
-  .button-container {
-    justify-content: center;
+ .button-container {
+    justify-content: center; 
+    flex-wrap: wrap;        
+    gap: 16px;
   }
+
   .banner {
     width: 80%;
     text-align: center;
