@@ -150,7 +150,13 @@
     margin-right: 0;
     padding: 30px 15px;
   }
-
+  .drop-shadow-div.blob {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px; 
+    margin-top: 5px;
+    animation: none; 
+  }
   .certificate_container {
     width: 90%;
     display: grid;
@@ -188,7 +194,13 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
-
+  .drop-shadow-div.blob {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px; 
+    margin-top: 5px;
+    animation: none; 
+  }
   header .banner {
     padding: 20px 10px;
     text-align: center;
