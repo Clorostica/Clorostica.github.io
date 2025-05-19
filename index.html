@@ -481,29 +481,48 @@
 
 
         <div class="main_container reveal" id="contact_me">
-            <h2>Contact Me</h2>
-            <div id="contact_me_container">
-                <form class="contact_me_form" action="https://formsubmit.co/clsaez1018@gmail.com " method="POST">
-                    <label for="first_name">First Name</label>
-                    <input type="text" name="First-name" id="first_name" placeholder="Enter your First name..." minlength="2" maxlength="30" required>
-                    <label for="last_name">Last Name</label>
-                    <input type="text" name="Last-name" id="last_name" placeholder="Enter your Last name..." minlength="2" maxlength="30" required>
-                    <label for="email">Email</label>
-                    <input type="text" name="Email" id="email" placeholder="Enter your E-mail..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                    <label for="message">Message</label>
-                    <textarea name="Message" id="message" placeholder="How can I help you?" required></textarea>
-                    <input type="submit" id="submit" value="Send">
-                </form>
-                <div class="map_container">
-                    <canvas
-                        id="cobe"
-                        style="width: 350; height: 350;"
-                        width="350"
-                        height="350"
-                    >
-                    </canvas>
-                </div>
-            </div>
+      <div class="contact_me_form">
+    <h2 style="color: var(--text-color); margin-bottom: 0.5rem;">Contact Me</h2>
+
+    <form action="#" method="POST">
+      <input 
+        type="text" 
+        name="name" 
+        placeholder="Your name" 
+        required 
+        maxlength="50"
+      >
+
+      <input 
+        type="email" 
+        name="email" 
+        placeholder="Your email" 
+        required 
+        maxlength="100"
+      >
+
+      <textarea 
+        name="message" 
+        rows="5" 
+        placeholder="Your message..." 
+        required 
+        maxlength="1000"
+      ></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <div class="map_container">
+    <canvas 
+      id="cobe"
+      style="width: 350px; height: 350px;"
+      width="350"
+      height="350"
+    ></canvas>
+  </div>
+
+</section>
         </div>
     </main>
     <footer>
