@@ -406,6 +406,7 @@ footer#nav_footer {
 }
 
 .cert_text span {
+    text-align: center;
     font-size: 26px;
     font-weight: bold;
     color: #64ffda;
