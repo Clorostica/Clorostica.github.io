@@ -445,13 +445,6 @@ footer#nav_footer {
   margin: 0;
 }
 
-.date {
-  color: #64ffda;
-  font-weight: 600;
-  font-size: 1rem;
-  white-space: nowrap;
-}
-
 .experience_item ul {
   list-style: none; 
   padding-left: 0;
@@ -532,7 +525,6 @@ main .main_container {
 }
 
 .date {
-    width: 320px;
     font-size: 16px;
     font-weight: bold;
     color: var(--main-color);
