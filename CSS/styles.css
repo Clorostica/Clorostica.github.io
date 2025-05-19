@@ -92,7 +92,10 @@ p{
     align-items: flex-start;
     text-align: left;
 }
-
+.introduction h4{
+    padding-bottom:10px;
+    padding-top:10px;
+}
 header {
     width: 100%;
 }
