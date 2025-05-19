@@ -594,10 +594,12 @@ main .main_container {
 }
 
 .button_container {
-    display: flex;
-    gap: 40px;
-    margin-top: 10px;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px 15px;          
+  margin-top: 1rem;
 }
 #message{
     resize:none;
