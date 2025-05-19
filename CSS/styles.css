@@ -654,48 +654,72 @@ textarea {
 /*-------------*/
 
 footer {
-    width: 100%;
-    padding: 50px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border-top: 2px solid var(--text-color);
+  background-color: var(--main-body-color);
+  color: var(--main-color);
+  padding: 2rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 
-footer .footer_container {
-    width: 80%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 30px 0;
+.footer_container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto 1.5rem auto;
 }
 
-footer .footer_container .footer_element {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+.footer_element {
+  flex: 1 1 200px;
+  min-width: 180px;
 }
 
-footer .footer_container .footer_element h4 {
-    color: var(--main-color);
-    font-family: 'Bungee', sans-serif;
-    text-align: center;
-    cursor: default;
+.footer_element h4 {
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
 }
 
-footer .footer_container .footer_element span, a {
-    color: var(--text-color);
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-    margin: 5px 0;
+.footer_element span,
+.footer_element a {
+  display: block;
+  color: var(--main-color);
+  font-size: 0.95rem;
+  margin: 0.2rem 0;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.copyright {
-    color: var(--main-color);
-    font-family: 'Poppins', sans-serif;
+.footer_element a:hover {
+  color: var(--text-color);
 }
 
+.footer_element a svg,
+.footer_element a i {
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  fill: var(--text-color);
+  font-size: 1.1rem;
+}
+
+.footer_element a svg {
+  width: 18px;
+  height: 18px;
+}
+
+.footer_element a i {
+  font-size: 18px;
+}
+
+footer .copyright {
+  font-size: 0.9rem;
+  color: var(--main-color);
+  opacity: 0.7;
+  margin-top: 1rem;
+  font-style: italic;
+}
 .reveal {
     position: relative;
     transform: translateY(150px);
