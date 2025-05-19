@@ -552,79 +552,94 @@ main .main_container {
     padding: 15px;
 }
 
-.button_container {
-  display: flex;
-  flex-wrap: wrap;  
-  justify-content: flex-start;
-  align-items: center;
-  gap: 10px 15px;          
-  margin-top: 1rem;
-}
-#message{
-    resize:none;
-}
 
-#message::placeholder {
-    color: #787777; 
-  }
-input[type="text"]::placeholder {
-    color: #787777; 
-  }
-  #submit {
-    background-color: #64FFDA; 
-    color: rgb(0, 0, 0);
-    border: none; 
-    padding: 12px 24px; 
-    font-size: 18px;
-    border-radius: 8px; 
-    cursor: pointer; 
-    transition: all 0.3s ease; 
-    width: 100%; 
-    box-sizing: border-box;
-  }
-  
-
-  #submit:hover {
-    background-color: #50d1c0; 
-    transform: translateY(-4px); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-  }
-  
-  #submit:active {
-    background-color: #3db7a5; 
-    transform: translateY(2px); 
-  }
-#contact_me_container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 2rem;
-  margin-top: 2rem;
-  flex-wrap: wrap; 
-}
 
 /* Formulario */
 .contact_me_form {
   width: 400px;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
-  background-color: #1a1a1a; /* color opcional */
-  padding: 2rem;
-  border-radius: 10px;
+  gap: 1.2rem;
+  background: linear-gradient(135deg, #222, #111);
+  padding: 2.5rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #eee;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Mapa */
+.contact_me_form:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.9);
+}
+
+.contact_me_form input,
+.contact_me_form textarea {
+  background-color: #2a2a2a;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  color: #ddd;
+  font-size: 1rem;
+  box-shadow: inset 2px 2px 5px #1c1c1c, inset -2px -2px 5px #333;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  resize: vertical;
+}
+
+.contact_me_form input:focus,
+.contact_me_form textarea:focus {
+  outline: none;
+  background-color: #3c3c3c;
+  box-shadow: 0 0 8px 2px #00aaff;
+  color: #fff;
+}
+
+.contact_me_form button {
+  background: #00aaff;
+  border: none;
+  border-radius: 12px;
+  padding: 0.9rem 0;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  box-shadow: 0 6px 12px rgba(0, 170, 255, 0.7);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.contact_me_form button:hover {
+  background: #008fcc;
+  box-shadow: 0 8px 20px rgba(0, 143, 204, 0.9);
+  transform: scale(1.05);
+}
+
 .map_container {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #111, #222);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .map_container canvas {
   width: 350px;
   height: 350px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 170, 255, 0.5);
+  transition: box-shadow 0.3s ease;
 }
+
+.map_container canvas:hover {
+  box-shadow: 0 8px 30px rgba(0, 170, 255, 0.9);
+}
+
 
 /*-------------*/
 
