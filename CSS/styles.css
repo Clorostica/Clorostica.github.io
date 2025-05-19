@@ -397,8 +397,9 @@ footer#nav_footer {
 }
 
 .cert_text {
-  margin-top: 10px;
-  text-align: center;
+    font-size: 2.0rem;
+    color: var(--text-color);
+    margin-bottom: 1rem
 }
 /*RESUME*/
 .experience {
@@ -599,7 +600,7 @@ input[type="text"]::placeholder {
   align-items: flex-start;
   gap: 2rem;
   margin-top: 2rem;
-  flex-wrap: wrap; /* Esto permite que en móviles se acomode en columna */
+  flex-wrap: wrap; 
 }
 
 /* Formulario */
