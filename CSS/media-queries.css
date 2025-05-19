@@ -23,7 +23,7 @@
   }
 
   #contact_me_container {
-       display: flex;
+       display: block;
     justify-content: center;   
     align-items: center;        
     min-height: 100vh;        
@@ -180,6 +180,9 @@
     padding: 30px 15px;
     flex-direction: column;
     align-items: center;
+  }
+  #contact_me_container{
+    
   }
   .drop-shadow-div.blob {
     width: 200px;
