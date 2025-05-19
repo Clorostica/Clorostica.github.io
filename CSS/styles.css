@@ -610,68 +610,34 @@ input[type="text"]::placeholder {
   }
 #contact_me_container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
-  gap: 20px;
-  width: 100%;
-  max-width: 900px;
-  margin: 0 auto;
-  padding-top:20px;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap; /* Esto permite que en móviles se acomode en columna */
 }
 
-
-#contact_me_container .contact_me_form input {
-    width: 65%;
-    height: 2.5rem;
-    margin: 10px 0;
-    border-radius: 14px;
-    padding-left: 10px;
-    font-family: 'Poppins', sans-serif;
-    border: none;
-    background-color: #F7F7FF;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-}
-
-#contact_me_container .contact_me_form textarea {
-    width: 65%;
-    height: 7.5rem;
-    border-radius: 14px;
-    padding: 10px;
-    margin: 10px 0;
-    font-family: 'Poppins', sans-serif;
-    border: none;
-    background-color: #F7F7FF;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-}
-
-#contact_me_container .map_container {
-  flex: 0 0 35%; 
+/* Formulario */
+.contact_me_form {
+  width: 400px;
   display: flex;
-  justify-content: flex-start; 
+  flex-direction: column;
+  gap: 1rem;
+  background-color: #1a1a1a; /* color opcional */
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+/* Mapa */
+.map_container {
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
-#contact_me_container .contact_me_form {
-    width: 450px;
-    padding: 40px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border-radius: 24px;
-    background-color: var(--main-color);
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
-}
-#contact_me_container .contact_me_form label {
-    color: var(--main-body-color);
-    font-family: 'Poppins', sans-serif;
-}
-canvas {
-    transition: all 1s;
-}
 
-canvas:hover {
-    transform: scale(1.2);
-    transition: all 1s;
+.map_container canvas {
+  width: 350px;
+  height: 350px;
 }
 
 /*-------------*/
