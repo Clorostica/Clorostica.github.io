@@ -244,12 +244,15 @@
   }
 
   .project-image {
-    max-width: 300px;
-    margin-top: 1rem;
+    width: 100%;
+    max-width: 90%; 
+    margin: 0 auto; 
   }
-
   .project-image img {
-    height: 180px;
+    width: 100%;
+    max-width: 300px; 
+    height: auto;
+    border-radius: 12px;
   }
     .project-title h2{
     font-size: 1.9rem;
