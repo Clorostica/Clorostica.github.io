@@ -54,7 +54,6 @@
         width: 95%;
     }
   .header {
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0.4rem;
@@ -275,7 +274,7 @@
         width: 95%;
     }
   .header {
-    flex-direction: column;
+    text-align: center;
     align-items: flex-start;
     gap: 0.4rem;
   }
