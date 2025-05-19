@@ -399,7 +399,8 @@ footer#nav_footer {
 .cert_text {
     font-size: 2.0rem;
     color: var(--text-color);
-    margin-bottom: 1rem
+    margin-bottom: 1rem;
+      align-items: center;
 }
 /*RESUME*/
 .experience {
