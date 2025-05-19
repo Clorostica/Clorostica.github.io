@@ -64,12 +64,11 @@
   #header-nav-bar-menu {
     display: none;
   }
-.button-container {
-    display: flex;
-    gap: 10px; 
-    padding-left: 10px; 
+  .button-container {
+    flex-direction: column; 
+    align-items: center; 
+    gap: 15px;              
   }
-
   .banner {
     width: 80%;
     text-align: center;
@@ -269,10 +268,10 @@ h4{
     margin-bottom: 15px;
     order: 3;
   }
-.button-container {
-    display: flex;
-    gap: 10px; 
-    padding-left: 10px; 
+  .button-container {
+    flex-direction: column; 
+    align-items: center;   
+    gap: 15px;            
   }
 
 }
