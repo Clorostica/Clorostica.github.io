@@ -434,6 +434,7 @@ footer#nav_footer {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  width:100%;
 }
 
 .experience_item {
@@ -530,6 +531,7 @@ main .main_container {
     justify-content: center;    
     margin: 0 auto;
     padding-bottom:80px;
+    width: 60%
 }
 
 .main_container a {
