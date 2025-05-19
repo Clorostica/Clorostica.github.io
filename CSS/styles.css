@@ -372,10 +372,10 @@ footer#nav_footer {
 }
 
 .cert_card img{
-    width: 250px;
+    width: 350px;
     height:auto;
     display:block;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 .certificate_container {
     width: 65%;  
