@@ -50,8 +50,9 @@
 
 @media (max-width: 700px) {
 
-    .main_container {
+  .main_container {
     width: 95%;
+    margin: 0 auto; 
   }
   .header {
     flex-direction: column;
@@ -252,8 +253,9 @@
 }
 }
 @media (max-width: 650px) {
-    .main_container {
+  .main_container {
     width: 95%;
+    margin: 0 auto; 
   }
   .header {
     flex-direction: column;
