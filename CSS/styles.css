@@ -524,8 +524,7 @@ footer#nav_footer {
     padding-bottom: 10px;
 }
 
-main .main_container {
-    display: flex;              
+main .main_container {           
     align-items: center;  
     flex-direction: column;
     justify-content: center;    
