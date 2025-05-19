@@ -444,10 +444,16 @@ footer#nav_footer {
 }
 
 .experience_item {
-  background-color: #0a192f; 
-  padding: 1.5rem 2rem;
+  text-align: left; 
+  justify-content: flex-start;
+  align-items: stretch;
+  margin-bottom: 30px;
   border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.2s ease, filter 0.3s ease;
+  color: #CDD6F6;
 }
+
 
 .header {
   display: flex;
