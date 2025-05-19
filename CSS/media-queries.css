@@ -247,9 +247,13 @@
     text-align: center;
 
 }
-  #readMoreBtn{
-    text-align: center;
-}
+  #moreDetails {
+    text-align: center;  
+  }
+  #readMoreBtn {
+    display: block;    
+    margin: 10px auto;   
+  }
 }
 @media (max-width: 650px) {
   main .main_container {
@@ -372,7 +376,11 @@
     font-size: 1.9rem;
     text-align: center;
 }
-  #readMoreBtn{
-    text-align: center;
+  #moreDetails {
+    text-align: center;  
+  }
+  #readMoreBtn {
+    display: block;    
+    margin: 10px auto;   
   }
 }
