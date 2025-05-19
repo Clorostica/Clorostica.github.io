@@ -687,7 +687,6 @@ input[type="text"]::placeholder {
     cursor: pointer;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 #contact_me_container .contact_me_form {
     width: 450px;
