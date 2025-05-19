@@ -373,16 +373,17 @@ footer#nav_footer {
 
 .certificate_container {
   display: flex;
+  justify-content: center;
+  gap: 2rem;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
 }
 
 .container {
-  flex: 1 1 calc(33.33% - 20px);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center;  
+  text-align: center;   
+  width: 150px;      
 }
 
 .cert_container {
