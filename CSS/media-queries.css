@@ -206,7 +206,6 @@
 
   .cert_container {
     max-width: 100%;
-    padding: 15px;
   }
 
   .cert_text span {
@@ -347,7 +346,6 @@
 
   .cert_container {
     max-width: 100%;
-    padding: 15px 0;
     text-align: center;
   }
 
