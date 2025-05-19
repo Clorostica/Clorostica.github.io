@@ -48,6 +48,16 @@
     max-width: 300px;
     height: 300px;
   }
+  
+  .certificate_container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .container {
+    flex: 1 1 calc(50% - 15px); /* 2 por fila */
+  }
 }
 
 @media (max-width: 700px) {
