@@ -378,10 +378,10 @@ footer#nav_footer {
 }
 
 .certificate_container {
-    width: 65%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px; /* más espacio entre elementos */
+    gap: 40px; 
     justify-content: center;
     margin: 20px auto;
 }
