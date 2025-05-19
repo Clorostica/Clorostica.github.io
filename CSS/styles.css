@@ -355,9 +355,10 @@ footer#nav_footer {
 
 .button-container {
   display: flex;
+  gap: 20px;
   flex-wrap: wrap;
-  gap: 16px;
-  justify-content: flex-start; 
+  justify-content: center;
+  margin-top: 10px;
 }
 .cert_card img{
     width: 250px;
