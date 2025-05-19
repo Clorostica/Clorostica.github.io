@@ -689,7 +689,7 @@ input[type="text"]::placeholder {
     justify-content: center;
 }
 #contact_me_container .contact_me_form {
-    width: 450px;
+    width: 550px;
     margin-left: 150px;
     padding: 40px 0;
     display: flex;
