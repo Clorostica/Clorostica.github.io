@@ -395,8 +395,7 @@ footer#nav_footer {
     text-align: center;
     padding: 20px; 
     border-radius: 8px;
-    width: 100%; 
-    max-width: 280px; 
+    width: 330px; 
     margin: auto;
     transition: transform 0.3s ease, filter 0.3s ease;
 }
