@@ -430,13 +430,6 @@ footer#nav_footer {
 
 
 /*RESUME*/
-.main_container {
-  width: 80%;
-  margin: 0 auto;
-  font-family: 'Poppins', sans-serif;
-  color: #CDD6F6;
-}
-
 .experience {
   display: flex;
   flex-direction: column;
