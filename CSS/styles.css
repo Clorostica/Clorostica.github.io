@@ -634,19 +634,19 @@ main .main_container {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #111, #1a1a1a);
   border-radius: 15px;
   padding: 1rem;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
 }
 
 .map_container canvas {
   width: 350px;
   height: 350px;
   border-radius: 12px;
-  box-shadow: 0 4px 15px rgba(
-
-
+  box-shadow: 0 4px 15px rgba
+}
+textarea {
+  resize: none;
+}
 /*-------------*/
 
 /*FOOTER SECTION CSS*/
