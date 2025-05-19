@@ -205,6 +205,9 @@
     padding-left: 10px;
     padding-right: 10px; 
 }
+  #about_me h2{
+      text-align: center;
+}
 }
 
 @media (max-width: 650px) {
@@ -248,9 +251,9 @@
     font-size: 1.6rem;
   }
   h4{
-  margin-top: 10px;
-  margin-bottom: 10px;
+      text-align: center;
   }
+
   header .banner h3 {
     font-size: 18px;
   }
@@ -288,12 +291,8 @@
   .introduction{
       padding-top: 120px;
 }
-  .div_p {
-    text-align: left;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    order: 3;
-  }
-
+#about_me h2{
+      text-align: center;
+}
 
 }
