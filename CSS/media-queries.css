@@ -113,8 +113,6 @@
     font-size: 1.6rem;
   }
   h4{
-  margin-top: 10px;
-  margin-bottom: 10px;
   text-align: center;
 }
   header .banner h3 {
@@ -310,7 +308,7 @@
 
   h2 {
     font-size: 1.6rem;
-      text-align: center;
+  text-align: center;
   }
   h4{
       text-align: center;
