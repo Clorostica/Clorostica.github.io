@@ -481,23 +481,6 @@ footer#nav_footer {
   color: cdd6f6;
 }
 
-
-
-/* Responsive para móviles */
-@media (max-width: 650px) {
-  .main_container {
-    width: 95%;
-  }
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.4rem;
-  }
-  .button_container {
-    justify-content: flex-start;
-  }
-}
-
 #moreDetails {
   padding: 10px 15px;  
   box-sizing: border-box; 
