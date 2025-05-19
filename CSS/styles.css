@@ -398,8 +398,6 @@ footer#nav_footer {
     width: 100%; 
     max-width: 280px; 
     margin: auto;
-    background-color: white;  
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
