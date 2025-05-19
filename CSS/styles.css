@@ -116,16 +116,23 @@ header {
 }
 
 .button {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px; 
-  padding: 10px 16px;
-  border: 1px solid #64FFDA;
-  color: #64FFDA;
-  font-weight: 500;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+    flex: 1; 
+    max-width: 150px; 
+    font-size: 13px;
+    text-align: center;
+    padding: 10px 16px;
+    border-radius: 18px;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid #64FFDA;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #64FFDA;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
 }
 
 .button:hover {
@@ -565,10 +572,9 @@ main .main_container {
 
 .button_container {
     display: flex;
-    flex-wrap: wrap;
     gap: 40px;
     margin-top: 10px;
-    justify-content: center;  
+    justify-content: center;
 }
 #message{
     resize:none;
