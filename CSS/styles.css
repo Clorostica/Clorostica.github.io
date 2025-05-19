@@ -444,7 +444,7 @@ footer#nav_footer {
 }
 
 .experience_item {
-  background-color: #0a192f; /* un fondo oscuro para que resalte el texto */
+  background-color: #0a192f; 
   padding: 1.5rem 2rem;
   border-radius: 8px;
 }
@@ -457,7 +457,7 @@ footer#nav_footer {
 }
 
 .header h3 {
-  color: #4fc3f7; /* tono azul para el título */
+  color: #4fc3f7; 
   font-size: 1.5rem;
   margin: 0;
 }
@@ -470,7 +470,7 @@ footer#nav_footer {
 }
 
 .experience_item ul {
-  list-style: none; /* quita los puntos */
+  list-style: none; 
   padding-left: 0;
   margin-bottom: 1rem;
 }
