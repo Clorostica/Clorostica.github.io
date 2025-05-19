@@ -198,6 +198,9 @@
     text-align: center;
     display: block;
   }
+  .cert_card img{
+    width: 350px;
+  }
 
   h3 {
     margin-left: auto;
@@ -328,7 +331,10 @@
     font-size: 20px;
     text-align: center;
   }
-
+  
+  .cert_card img{
+    width: 350px;
+  }
   h3 {
     margin-left: auto;
     margin-right: auto;
