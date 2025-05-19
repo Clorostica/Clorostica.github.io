@@ -563,7 +563,6 @@ main .main_container {
   justify-content: center;
   align-items: flex-start;
   gap: 2rem;
-  padding: 2rem;
   flex-wrap: wrap;
   max-width: 1000px;
   margin: 0 auto;
