@@ -568,12 +568,12 @@ main .main_container {
 }
 
 /* FORM */
+/* FORMULARIO */
 .contact_me_form {
   width: 400px;
-  flex-shrink: 0;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.8rem;
   background: linear-gradient(135deg, #222, #111);
   padding: 2.5rem 3rem;
   border-radius: 15px;
@@ -588,17 +588,25 @@ main .main_container {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.9);
 }
 
+.contact_me_form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  margin: 0;
+  padding: 0;
+}
+
 .contact_me_form input,
 .contact_me_form textarea {
   background-color: #2a2a2a;
   border: none;
   border-radius: 8px;
-  padding: 0.8rem 1rem;
+  padding: 1rem 1.2rem;
   color: #ddd;
-  font-size: 1rem;
+  font-size: 1.1rem;
   box-shadow: inset 2px 2px 5px #1c1c1c, inset -2px -2px 5px #333;
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  resize: vertical;
+  resize: none;
 }
 
 .contact_me_form input:focus,
@@ -610,40 +618,41 @@ main .main_container {
 }
 
 .contact_me_form button {
+  width: 100%;
+  padding: 1.4rem 0;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #fff;
   background: #00aaff;
   border: none;
-  border-radius: 12px;
-  padding: 0.9rem 0;
-  font-weight: 700;
-  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 18px rgba(0, 170, 255, 0.7);
   cursor: pointer;
-  font-size: 1.1rem;
-  box-shadow: 0 6px 12px rgba(0, 170, 255, 0.7);
   transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
 }
 
 .contact_me_form button:hover {
   background: #008fcc;
-  box-shadow: 0 8px 20px rgba(0, 143, 204, 0.9);
+  box-shadow: 0 10px 22px rgba(0, 143, 204, 0.9);
   transform: scale(1.05);
 }
 
-/* CANVAS */
+/* MAPA */
 .map_container {
-  flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 15px;
-  padding: 1rem;
+  margin-top: 1rem;
 }
 
 .map_container canvas {
   width: 350px;
   height: 350px;
-  border-radius: 12px;
-  box-shadow: 0 4px 15px rgba
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  background-color: #111; /* fondo oscuro para el mapa */
 }
+
 textarea {
   resize: none;
 }
