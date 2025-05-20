@@ -366,7 +366,7 @@ footer#nav_footer {
 .button-container {
   display: flex;
   justify-content: center; 
-  gap: 15px;
+  gap: 22px;
   margin-top: 10px;
   padding: 0 10px; 
 }
