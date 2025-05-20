@@ -56,7 +56,7 @@
   }
 
   .container {
-    flex: 1 1 calc(50% - 15px); /* 2 por fila */
+    flex: 1 1 calc(50% - 15px); 
   }
 }
 
@@ -213,8 +213,8 @@
     text-align: center;
     display: block;
   }
-  .cert_card img{
-    width: 350px;
+  .cert_card img {
+    max-width: 95%;
   }
   .container {
     flex: 1 1 100%; 
@@ -337,16 +337,11 @@
     font-size: 18px;
   }
 
-  .main_grid,
-  #certificates_grid,
-  .certificate_container {
-    grid-template-columns: 1fr;
+    .cert_card img {
+    max-width: 95%;
   }
-
-
-  .cert_container {
-    max-width: 100%;
-    text-align: center;
+  .container {
+    flex: 1 1 100%; 
   }
 
   .cert_text span {
@@ -354,12 +349,6 @@
     text-align: center;
   }
   
-  .cert_card img{
-    width: 350px;
-  }
-    .container {
-    flex: 1 1 100%; 
-  }
   h3 {
     margin-left: auto;
     margin-right: auto;
