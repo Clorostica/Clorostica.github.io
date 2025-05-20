@@ -84,7 +84,7 @@ p{
     flex-wrap: wrap;
     gap: 40px;
 }
-.introduction .banner {
+.introduction .banner .banner2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -149,7 +149,13 @@ header {
 
 .banner {
     justify-content: flex-start; 
-    width: 38%; 
+    width: 48%; 
+    gap: 20px;
+    box-sizing: border-box; 
+}
+.banner2 {
+    justify-content: flex-start; 
+    width: 40%; 
     gap: 20px;
     box-sizing: border-box; 
 }
