@@ -582,7 +582,7 @@ const globe = createGlobe(canvas, {
   glowColor: [1, 1, 1],
   offset: [0, 0],
   markers: [
-    { location: [52.52, 13.405], size: 0.04 }, // Marcador en Berlín, Alemania
+    { location: [52.52, 13.405], size: 0.04 }, 
   ],
   onRender: (state) => {
     state.phi = phi
@@ -604,4 +604,19 @@ const globe = createGlobe(canvas, {
   }
 </script>
   <script src="/JS/animation.js"></script>
+    <script>
+  const backToTop = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      backToTop.classList.add("show");
+    } else {
+      backToTop.classList.remove("show");
+    }
+  });
+
+  backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
 </html>
