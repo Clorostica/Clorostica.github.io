@@ -379,6 +379,8 @@ footer#nav_footer {
   margin-top: 10px;
   padding: 0 10px;
   width: 100%;
+  overflow-x: auto;       
+  flex-wrap: nowrap;      
 }
 .certificate_container {
   display: flex;
