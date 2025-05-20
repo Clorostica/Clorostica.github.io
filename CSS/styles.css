@@ -377,10 +377,10 @@ footer#nav_footer {
   justify-content: center;
   gap: 2.5rem;
   padding: 1rem 0;
-  width: 100%; /* asegúrate de que use todo el ancho disponible */
+  width: 100%; 
 }
 
-/* Cada certificado */
+
 .container {
   flex: 1 1 250px;
   max-width: 300px;
@@ -402,7 +402,7 @@ footer#nav_footer {
 .cert_text span {
   display: block;
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.8rem;
   color: #ccd6f6;
 }
 /*RESUME*/
@@ -568,9 +568,6 @@ main .main_container {
   max-width: 1000px;
   margin: 0 auto;
 }
-
-/* FORM */
-/* FORMULARIO */
 .contact_me_form {
   width: 400px;
   display: flex;
