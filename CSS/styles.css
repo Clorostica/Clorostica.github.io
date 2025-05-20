@@ -141,7 +141,11 @@ header {
 .button:hover {
     filter: drop-shadow(0 0 1.5rem #64FFDA); 
 }
-
+.button svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
 
 .banner {
     justify-content: flex-start; 
