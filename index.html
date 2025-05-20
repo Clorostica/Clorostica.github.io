@@ -98,7 +98,6 @@
                 <li><a href="#certificates">Certificates</a></li>
                 <li><a href="#contact_me">Contact Me</a></li>
                 <button id="toggleTheme" class="toggle-btn">🌙</button>
-                <button id="backToTop" class="toggle-btn" title="backToTop">↑</button>
             </ul>
             <div class="small_screen" id="nav_burger">
                 <span id="nav_burger_icon"><i class="fa-solid fa-bars fa-xl"></i></span>
@@ -604,19 +603,4 @@ const globe = createGlobe(canvas, {
   }
 </script>
   <script src="/JS/animation.js"></script>
-    <script>
-  const backToTop = document.getElementById("backToTop");
-
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-      backToTop.classList.add("show");
-    } else {
-      backToTop.classList.remove("show");
-    }
-  });
-
-  backToTop.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-</script>
 </html>
