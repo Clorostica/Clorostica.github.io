@@ -380,7 +380,7 @@ footer#nav_footer {
 
 .button-container {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   gap: 22px;
   margin-top: 10px;
   padding: 0 10px;
