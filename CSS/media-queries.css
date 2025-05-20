@@ -192,8 +192,7 @@
     animation: none; 
   }
   .certificate_container {
-    width: 90%;
-    display: grid;
+    width: 100%;
     grid-template-columns: 1fr;
     gap: 15px;
     text-align: center;
@@ -332,13 +331,18 @@
     font-size: 18px;
   }
 
-    .cert_card img {
+  .cert_card img {
     max-width: 95%;
   }
   .container {
     flex: 1 1 100%; 
   }
-
+.certificate_container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    text-align: center;
+  }
   .cert_text span {
     font-size: 20px;
     text-align: center;
