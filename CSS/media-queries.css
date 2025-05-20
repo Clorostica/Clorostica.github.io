@@ -17,13 +17,8 @@
     text-align: center;
   }
 
-  .main_grid,
-  #certificates_grid {
-    grid-template-columns: auto auto;
-  }
-
   #contact_me_container {
-       display: block;
+    display: block;
     justify-content: center;   
     align-items: center;        
     min-height: 100vh;        
@@ -70,7 +65,7 @@
     align-items: center;
     gap: 0.4rem;
   }
-  .button_container {
+  .button-container {
     justify-content: center;
     gap: 10px 15px;
     row-gap: 10px;
@@ -295,7 +290,7 @@
     align-items: flex-start;
     gap: 0.4rem;
   }
-  .button_container {
+  .button-container {
     justify-content: center;
     gap: 10px 15px;
     row-gap: 10px;
