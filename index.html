@@ -694,17 +694,14 @@ const globe = createGlobe(canvas, {
       btn.addEventListener("click", function () {
         const details = btn.nextElementSibling;
 
-        if (details.style.display === "none" || details.style.display === "") {
-          details.style.display = "block";
-          btn.textContent = "Read Less";
-        } else {
-          details.style.display = "none";
-          btn.textContent = "Read More";
+        if (details && details.classList.contains("moreDetails")) {
+          const isVisible = details.style.display === "block";
+          details.style.display = isVisible ? "none" : "block";
+          btn.textContent = isVisible ? "Read More" : "Read Less";
         }
       });
     });
   });
 </script>
-
   <script src="/JS/animation.js"></script>
 </html>
