@@ -33,12 +33,14 @@
   gap: 2rem;
 }
 
-/* Tarjeta del proyecto */
 .project-card {
-  background: #1a1a1a;
+  background: rgba(255, 255, 255, 0.1); /* fondo blanco con transparencia */
+  backdrop-filter: blur(10px);          /* desenfoque del fondo */
+  -webkit-backdrop-filter: blur(10px);  /* para compatibilidad con Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* borde suave */
   border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0, 255, 213, 0.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
