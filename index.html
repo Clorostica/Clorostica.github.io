@@ -33,10 +33,10 @@
 }
 
 .project-card {
-  background: rgba(255, 255, 255, 0.1); /* fondo blanco con transparencia */
-  backdrop-filter: blur(10px);          /* desenfoque del fondo */
-  -webkit-backdrop-filter: blur(10px);  /* para compatibilidad con Safari */
-  border: 1px solid rgba(255, 255, 255, 0.2); /* borde suave */
+  background: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px);          
+  -webkit-backdrop-filter: blur(10px); 
+  border: 1px solid rgba(255, 255, 255, 0.2); 
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
@@ -50,7 +50,6 @@
   box-shadow: 0 12px 24px rgba(0, 255, 213, 0.4);
 }
 
-/* Contenedor de imágenes con efecto hover */
 .project-card__image {
   position: relative;
   width: 100%;
@@ -85,7 +84,6 @@
   opacity: 0;
 }
 
-/* Info del proyecto */
 .project-card__info {
   padding: 1.2rem;
 }
@@ -102,10 +100,10 @@
   color: #f0f0f0;
 }
 
-/* Botón de ver más */
+
 .toggle-details {
   margin-top: 0.8rem;
-  background-color: transparent;
+  background-color: var(--main-body-color);
   color: #00ffd5;
   border: 1px solid #00ffd5;
   padding: 0.4rem 1rem;
