@@ -14,83 +14,131 @@
 </head>
 <style>
 .projects {
-  padding: 2rem 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 4rem 2rem;
+  background-color: #0a0a0a;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 .projects__heading {
+  text-align: center;
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: var(--text-color);
-  text-align: center;
+  color: #00ffd5;
 }
 
-.project {
-  margin-bottom: 4rem;
-  width: 100%;
-}
-
-.project__content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+.projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
-.project__description {
-  flex: 1 1 300px;
-}
-
-.project__title {
-  font-size: 2rem;
-  color: var(--text-color);
-  margin-bottom: 1rem;
-}
-
-.project__description p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: white;
-  white-space: pre-line; /* para respetar los saltos de línea con <br> */
-}
-
-.project-card__image {
-  height: 160px;
+/* Tarjeta del proyecto */
+.project-card {
+  background: #1a1a1a;
+  border-radius: 16px;
   overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 255, 213, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 255, 213, 0.4);
+}
+
+/* Contenedor de imágenes con efecto hover */
+.project-card__image {
+  position: relative;
+  width: 100%;
+  height: 200px;
 }
 
 .project-card__image img {
+  position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: block;
-}
-
-.project__image-hover {
-  position: absolute;
+  transition: opacity 0.4s ease;
   top: 0;
   left: 0;
+}
+
+.project-card__image .image-default {
+  opacity: 1;
+  z-index: 1;
+}
+
+.project-card__image .image-hover {
   opacity: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 12px;
+  z-index: 2;
 }
 
-.project__image a {
-  display: block;
-  position: relative;
-}
-
-.project__image a:hover .project__image-default {
-  opacity: 0;
-}
-
-.project__image a:hover .project__image-hover {
+.project-card__image:hover .image-hover {
   opacity: 1;
 }
 
+.project-card__image:hover .image-default {
+  opacity: 0;
+}
+
+/* Info del proyecto */
+.project-card__info {
+  padding: 1.2rem;
+}
+
+.project-card__info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #00ffd5;
+}
+
+.project-card__info p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #f0f0f0;
+}
+
+/* Botón de ver más */
+.toggle-details {
+  margin-top: 0.8rem;
+  background-color: transparent;
+  color: #00ffd5;
+  border: 1px solid #00ffd5;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.toggle-details:hover {
+  background-color: #00ffd5;
+  color: #0a0a0a;
+}
+
+.project-details {
+  display: none;
+  margin-top: 0.8rem;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  background-color: #111;
+  padding: 0.8rem;
+  border-radius: 8px;
+}
+
+.project-details ul {
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
+.project-details ul li {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+  color: #cdd6f6;
+}
 
 </style>
 <body>
@@ -329,115 +377,156 @@
   <h2 class="projects__heading">Mis Proyectos Destacados</h2>
 
   <div class="projects__grid">
+  <!-- Epica -->
+  <div class="project-card">
+    <a href="https://clorostica.github.io/Epica" target="_blank" class="project-card__image">
+      <img src="https://clorostica.github.io/IMG/1.png" alt="Epica default" class="image-default">
+      <img src="https://clorostica.github.io/IMG/epica1.png" alt="Epica hover" class="image-hover">
+    </a>
+    <div class="project-card__info">
+      <h3>Épica</h3>
+      <p>Fashion-focused brand from Chile, combining design and innovation.</p>
+      <button class="toggle-details">View More</button>
+      <div class="project-details">
+        <ul>
+          <li><strong>Project:</strong> Épica Web</li>
+          <li><strong>Tech:</strong> HTML, CSS, JavaScript</li>
+          <li><strong>Role:</strong> Full frontend development</li>
+          <li><strong>Description:</strong> Stylish responsive showcase for fashion trends.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-    <!-- Proyecto 1 -->
-    <article class="project-card">
-      <div class="project-card__image">
-        <a href="https://clorostica.github.io/Epica" target="_blank">
-          <img src="https://clorostica.github.io/IMG/1.png" alt="Epica">
-        </a>
+  <!-- Cordillera -->
+  <div class="project-card">
+    <a href="https://clorostica.github.io/Cordillera" target="_blank" class="project-card__image">
+      <img src="https://clorostica.github.io/IMG/2.png" alt="Cordillera default" class="image-default">
+      <img src="https://clorostica.github.io/IMG/floreria.png" alt="Cordillera hover" class="image-hover">
+    </a>
+    <div class="project-card__info">
+      <h3>Cordillera</h3>
+      <p>Floral arrangements crafted with elegance and natural beauty.</p>
+      <button class="toggle-details">View More</button>
+      <div class="project-details">
+        <ul>
+          <li><strong>Project:</strong> Cordillera</li>
+          <li><strong>Tech:</strong> HTML, CSS, JS</li>
+          <li><strong>Role:</strong> Web design & development</li>
+          <li><strong>Description:</strong> Aesthetic landing page for a floral business.</li>
+        </ul>
       </div>
-      <div class="project-card__info">
-        <h3>Epica</h3>
-        <p>Brand chilena que fusiona moda y creatividad con innovación. 🚀</p>
-      </div>
-    </article>
+    </div>
+  </div>
 
-    <!-- Proyecto 2 -->
-    <article class="project-card">
-      <div class="project-card__image">
-        <a href="https://clorostica.github.io/Cordillera" target="_blank">
-          <img src="https://clorostica.github.io/IMG/2.png" alt="Cordillera">
-        </a>
+  <!-- Little Lemon -->
+  <div class="project-card">
+    <a href="https://clorostica.github.io/LittleLemon2/" target="_blank" class="project-card__image">
+      <img src="https://clorostica.github.io/IMG/3.png" alt="Little Lemon default" class="image-default">
+      <img src="https://clorostica.github.io/IMG/Littlelemon.png" alt="Little Lemon hover" class="image-hover">
+    </a>
+    <div class="project-card__info">
+      <h3>Little Lemon</h3>
+      <p>Restaurant site offering homemade dishes with a modern twist.</p>
+      <button class="toggle-details">View More</button>
+      <div class="project-details">
+        <ul>
+          <li><strong>Project:</strong> Little Lemon</li>
+          <li><strong>Tech:</strong> HTML, CSS</li>
+          <li><strong>Role:</strong> Layout and branding</li>
+          <li><strong>Description:</strong> Promo website for a family-owned restaurant.</li>
+        </ul>
       </div>
-      <div class="project-card__info">
-        <h3>Cordillera</h3>
-        <p>Arte floral chileno con un toque de elegancia y naturalidad. 🌿✨</p>
-      </div>
-    </article>
+    </div>
+  </div>
 
-    <!-- Proyecto 3 -->
-    <article class="project-card">
-      <div class="project-card__image">
-        <a href="https://clorostica.github.io/LittleLemon2/" target="_blank">
-          <img src="https://clorostica.github.io/IMG/3.png" alt="Little Lemon">
-        </a>
+  <!-- Egg Timer -->
+  <div class="project-card">
+    <a href="https://clorostica.github.io/Eggtimer/" target="_blank" class="project-card__image">
+      <img src="https://clorostica.github.io/IMG/eggtimer.png" alt="Egg Timer default" class="image-default">
+      <img src="https://clorostica.github.io/IMG/eggtimer1.png" alt="Egg Timer hover" class="image-hover">
+    </a>
+    <div class="project-card__info">
+      <h3>Egg Timer</h3>
+      <p>Simple timer app for boiling eggs to your preferred level.</p>
+      <button class="toggle-details">View More</button>
+      <div class="project-details">
+        <ul>
+          <li><strong>Project:</strong> Egg Timer</li>
+          <li><strong>Tech:</strong> JavaScript, HTML, CSS</li>
+          <li><strong>Role:</strong> Functionality and design</li>
+          <li><strong>Description:</strong> Choose between soft, medium, or hard boiled eggs.</li>
+        </ul>
       </div>
-      <div class="project-card__info">
-        <h3>Little Lemon</h3>
-        <p>Restaurante con sabor casero y diseño elegante.</p>
-      </div>
-    </article>
+    </div>
+  </div>
 
-    <!-- Proyecto 4 -->
-    <article class="project-card">
-      <div class="project-card__image">
-        <a href="https://clorostica.github.io/Eggtimer/" target="_blank">
-          <img src="https://clorostica.github.io/IMG/eggtimer.png" alt="Egg Timer">
-        </a>
+  <!-- Notes App -->
+  <div class="project-card">
+    <a href="https://clorostica.github.io/notes/" target="_blank" class="project-card__image">
+      <img src="https://clorostica.github.io/IMG/notes2.png" alt="Notes App default" class="image-default">
+      <img src="https://clorostica.github.io/IMG/notes1.png" alt="Notes App hover" class="image-hover">
+    </a>
+    <div class="project-card__info">
+      <h3>Notes App</h3>
+      <p>Lightweight app for note creation, search, and deletion with local storage.</p>
+      <button class="toggle-details">View More</button>
+      <div class="project-details">
+        <ul>
+          <li><strong>Project:</strong> Notes App</li>
+          <li><strong>Tech:</strong> Vanilla JS, HTML, CSS</li>
+          <li><strong>Role:</strong> Full development</li>
+          <li><strong>Description:</strong> Manage personal notes, persistent via localStorage.</li>
+        </ul>
       </div>
-      <div class="project-card__info">
-        <h3>Egg Timer</h3>
-        <p>Temporizador para huevos perfecto y personalizado. 🍳⏲️</p>
-      </div>
-    </article>
+    </div>
+  </div>
 
-    <!-- Proyecto 5 -->
-    <article class="project-card">
-      <div class="project-card__image">
-        <a href="https://clorostica.github.io/notes/" target="_blank">
-          <img src="https://clorostica.github.io/IMG/notes2.png" alt="Notes App">
-        </a>
+  <!-- Budget Tracker -->
+  <div class="project-card">
+    <a href="https://clorostica.github.io/BudgetTracker/" target="_blank" class="project-card__image">
+      <img src="https://clorostica.github.io/IMG/budgettracker1.png" alt="Budget Tracker default" class="image-default">
+      <img src="https://clorostica.github.io/IMG/budgertracker2.png" alt="Budget Tracker hover" class="image-hover">
+    </a>
+    <div class="project-card__info">
+      <h3>Budget Tracker</h3>
+      <p>Track income and expenses with categorized inputs and clean UI.</p>
+      <button class="toggle-details">View More</button>
+      <div class="project-details">
+        <ul>
+          <li><strong>Project:</strong> Budget Tracker</li>
+          <li><strong>Tech:</strong> JavaScript, HTML, CSS</li>
+          <li><strong>Role:</strong> Design and logic</li>
+          <li><strong>Description:</strong> Personal finance management with real-time totals.</li>
+        </ul>
       </div>
-      <div class="project-card__info">
-        <h3>Notes App</h3>
-        <p>App simple de notas con almacenamiento local.</p>
-      </div>
-    </article>
+    </div>
+  </div>
 
-    <!-- Proyecto 6 -->
-    <article class="project-card">
-      <div class="project-card__image">
-        <a href="https://clorostica.github.io/BudgetTracker/" target="_blank">
-          <img src="https://clorostica.github.io/IMG/budgettracker1.png" alt="Budget Tracker">
-        </a>
+  <!-- Task Manager (New Interactive Project) -->
+  <div class="project-card">
+    <a href="https://clorostica.github.io/Task-List/" target="_blank" class="project-card__image">
+      <img src="https://clorostica.github.io/IMG/tasklist1.png" alt="Task Manager default" class="image-default">
+      <img src="https://clorostica.github.io/IMG/tasklist2.png" alt="Task Manager hover" class="image-hover">
+    </a>
+    <div class="project-card__info">
+      <h3>Task Manager App</h3>
+      <p>Daily task management app with cloud storage and authentication.</p>
+      <button class="toggle-details">View More</button>
+      <div class="project-details">
+        <ul>
+          <li><strong>Project:</strong> Task Manager App</li>
+          <li><strong>Tech:</strong> React, Tailwind, Firebase</li>
+          <li><strong>Role:</strong> Full frontend & database integration</li>
+          <li><strong>Description:</strong> Responsive app for daily task management with cloud sync and authentication</li>
+          <li><strong>Challenges:</strong> Real-time state management with Firebase</li>
+          <li><strong>What I Learned:</strong> Advanced hooks, performance optimization</li>
+        </ul>
       </div>
-      <div class="project-card__info">
-        <h3>Budget Tracker</h3>
-        <p>Control de gastos con interfaz clara y balance en tiempo real.</p>
-      </div>
-    </article>
+    </div>
+  </div>
+</div>
 
-    <!-- Proyecto 7 -->
-    <article class="project-card">
-      <div class="project-card__image">
-        <a href="https://clorostica.github.io/Task-List/" target="_blank">
-          <img src="https://clorostica.github.io/IMG/tasklist1.png" alt="Task List">
-        </a>
-      </div>
-      <div class="project-card__info">
-        <h3>Task List</h3>
-        <p>Gestor de tareas con React y experiencia fluida.</p>
-      </div>
-    </article>
-
-    <!-- Proyecto NUEVO (App de Tareas con Firebase) -->
-    <article class="project-card">
-      <div class="project-card__image">
-        <a href="#" target="_blank">
-          <img src="https://tuimagen.com/tareas-default.png" alt="App de Tareas">
-        </a>
-      </div>
-      <div class="project-card__info">
-        <h3>Task App con Firebase</h3>
-        <p>
-          Tecnologías: React, Tailwind, Firebase<br>
-          Rol: Desarrollo frontend + conexión a base de datos<br>
-          App responsive con autenticación y sincronización en tiempo real.<br>
-          Aprendizaje: hooks personalizados y optimización.
-        </p>
-      </div>
-    </article>
 
   </div>
 </section>
@@ -602,5 +691,15 @@ const globe = createGlobe(canvas, {
     }
   }
 </script>
+    <script>
+  document.querySelectorAll('.toggle-details').forEach(button => {
+    button.addEventListener('click', () => {
+      const details = button.nextElementSibling;
+      details.style.display = details.style.display === 'block' ? 'none' : 'block';
+      button.textContent = details.style.display === 'block' ? 'Hide Details' : 'View More';
+    });
+  });
+</script>
+
   <script src="/JS/animation.js"></script>
 </html>
