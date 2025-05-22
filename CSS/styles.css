@@ -450,7 +450,7 @@ footer#nav_footer {
 .header h3 {
   color: #64ffda; 
   font-size: 1.5rem;
-  margin: 0;
+  margin-left: 1.5rem; 
 }
 
 .experience_item ul {
