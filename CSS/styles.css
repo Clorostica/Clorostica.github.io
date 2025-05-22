@@ -466,13 +466,13 @@ footer#nav_footer {
   color: #cdd6f6;
 }
 
-#moreDetails {
+.moreDetails {
   padding: 10px 15px;  
   box-sizing: border-box; 
   width: 100%;         
   overflow-wrap: break-word; 
 }
-#readMoreBtn {
+.readMoreBtn {
   font-family: 'Poppins', sans-serif;
   background-color: #f0f4f8; 
   color: #0A1930; 
