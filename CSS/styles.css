@@ -460,9 +460,9 @@ footer#nav_footer {
 }
 
 .experience_item ul li {
-  margin-bottom: 0.6rem;
+  margin: 0.6rem 1rem; 
   line-height: 1.4;
-  color: cdd6f6;
+  color: #cdd6f6;
 }
 
 #moreDetails {
