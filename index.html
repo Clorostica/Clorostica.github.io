@@ -686,18 +686,24 @@ const globe = createGlobe(canvas, {
   },
 })
   </script>
-    <script>
-  function toggleDetails() {
-    const details = document.getElementById('moreDetails');
-    const btn = document.getElementById('readMoreBtn');
-    if (details.style.display === 'none') {
-      details.style.display = 'block';
-      btn.textContent = 'Read Less';
-    } else {
-      details.style.display = 'none';
-      btn.textContent = 'Read More';
-    }
-  }
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".readMoreBtn");
+
+    buttons.forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        const details = btn.nextElementSibling;
+
+        if (details.style.display === "none" || details.style.display === "") {
+          details.style.display = "block";
+          btn.textContent = "Read Less";
+        } else {
+          details.style.display = "none";
+          btn.textContent = "Read More";
+        }
+      });
+    });
+  });
 </script>
 
   <script src="/JS/animation.js"></script>
