@@ -541,32 +541,14 @@ const globe = createGlobe(canvas, {
 function toggleDetails(button) {
   console.log('Button clicked:', button);
   
-  const parent = button.closest('.project-card__info'); 
-  console.log('Parent found:', parent);
+  let details = null;
   
-  if (!parent) {
-    console.error('No parent with class .project-card__info found');
-    return;
-  }
-  
-  const details = parent.querySelector('.moreDetails'); 
-  console.log('Details found:', details);
-  
-  if (!details) {
-    console.error('No .moreDetails found within parent');
-    return;
-  }
-  
-  if (details.style.display === "none" || details.style.display === "") {
-    details.style.display = "block";
-    button.textContent = "Read Less";
-    console.log('Showing details');
+  details = button.nextElementSibling;
+  if (details && details.classList.contains('moreDetails')) {
+    console.log('Found details using nextElementSibling');
   } else {
-    details.style.display = "none";
-    button.textContent = "Read More";
-    console.log('Hiding details');
+
   }
-}
 </script>
   <script src="/JS/animation.js"></script>
 </html>
