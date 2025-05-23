@@ -257,7 +257,7 @@
         <div class="project-card__info">
           <h3>Cordillera</h3>
           <p>Floral arrangements crafted with elegance and natural beauty.</p>
-          <button class="readMoreBtn" onclick="toggleDetails(this)">Read More</button>
+        <button class="readMoreBtn" onclick="toggleDetails(this)">Read More</button>
           <div class="moreDetails" style="display: none;">
             <div class="project-details">
               <ul>
@@ -280,7 +280,7 @@
         <div class="project-card__info">
           <h3>Little Lemon</h3>
           <p>Restaurant site offering homemade dishes with a modern twist.</p>
-          <button class="readMoreBtn" onclick="toggleDetails(this)">Read More</button>
+             <button class="readMoreBtn" onclick="toggleDetails(this)">Read More</button>
           <div class="moreDetails" style="display: none;">
             <div class="project-details">
               <ul>
@@ -372,7 +372,7 @@
         <div class="project-card__info">
           <h3>Task Manager App</h3>
           <p>Daily task management app with cloud storage and authentication.</p>
-        <button class="readMoreBtn" onclick="toggleDetails(this)"">Read More</button>
+       <button class="readMoreBtn" onclick="toggleDetails(this)">Read More</button>
           <div class="moreDetails" style="display: none;">
             <div class="project-details">
               <ul>
@@ -539,17 +539,15 @@ const globe = createGlobe(canvas, {
   </script>
 <script>
 function toggleDetails(button) {
-
-  const details = button.nextElementSibling;
+  const parent = button.closest('.project-card__info'); 
+  const details = parent.querySelector('.moreDetails'); 
   
-  if (details && details.classList.contains('moreDetails')) {
-    if (details.style.display === "none" || details.style.display === "") {
-      details.style.display = "block";
-      button.textContent = "Read Less";
-    } else {
-      details.style.display = "none";
-      button.textContent = "Read More";
-    }
+  if (details.style.display === "none" || details.style.display === "") {
+    details.style.display = "block";
+    button.textContent = "Read Less";
+  } else {
+    details.style.display = "none";
+    button.textContent = "Read More";
   }
 }
 </script>
