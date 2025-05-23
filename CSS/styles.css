@@ -582,10 +582,10 @@ main .main_container {
 }
 
 .projects__heading {
-  text-align: center;
+  text-align: left;
   font-size: 2.5rem;
   margin-bottom: 3rem;
-  color: #00ffd5;
+  color: #CCD5F6;
 }
 
 .projects__grid {
