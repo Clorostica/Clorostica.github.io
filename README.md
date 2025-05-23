@@ -20,14 +20,6 @@ Welcome to my portfolio! I’m Claudia Sáez, a **Front-End Developer** passiona
 
 ---
 
-## 📂 Featured Project: Task List  
-
-A React-based task management app designed for simple and efficient daily task tracking. Users can add, complete, and delete tasks within a clean, responsive interface — showcasing strong React state management and component design skills.
-
-![Task List Preview](https://clorostica.github.io/Task-List/static/media/screenshot.9ec68e8b.png)
-
----
-
 ## 📫 Get in Touch  
 [🌐 Visit my portfolio](https://clorostica.github.io/)  
 ✉️ Open to freelance projects, collaborations, and new Front-End job opportunities.
