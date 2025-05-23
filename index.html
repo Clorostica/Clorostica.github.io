@@ -124,7 +124,7 @@
             My background in graphic design gives me a strong eye for aesthetics and usability, which I combine with solid technical skills in React, Next.js, Tailwind CSS, and JavaScript. I enjoy creating intuitive interfaces that not only look great but also provide smooth user experiences.
           </p>
         
-          <button class="readMoreBtn">Read More</button>
+        <button class="readMoreBtn" onclick="toggleDetails(this)">Read More</button>
         
             <div class="moreDetails" style="display: none;"
             <p>
@@ -538,18 +538,28 @@ const globe = createGlobe(canvas, {
 })
   </script>
 <script>
-  function toggleDetails(button) {
-    const parent = button.closest('.project-card__info'); 
-    const details = parent.querySelector('.moreDetails'); 
+document.addEventListener('DOMContentLoaded', function() {
+  const readMoreBtns = document.querySelectorAll('.readMoreBtn');
+  
+  readMoreBtns.forEach(function(button) {
+    button.addEventListener('click', function() {
+      toggleDetails(this);
+    });
+  });
+});
 
-    if (details.style.display === "none" || details.style.display === "") {
-      details.style.display = "block";
-      button.textContent = "Read Less";
-    } else {
-      details.style.display = "none";
-      button.textContent = "Read More";
-    }
+function toggleDetails(button) {
+  const parent = button.closest('.project-card__info'); 
+  const details = parent.querySelector('.moreDetails'); 
+  
+  if (details.style.display === "none" || details.style.display === "") {
+    details.style.display = "block";
+    button.textContent = "Read Less";
+  } else {
+    details.style.display = "none";
+    button.textContent = "Read More";
   }
+}
 </script>
   <script src="/JS/animation.js"></script>
 </html>
