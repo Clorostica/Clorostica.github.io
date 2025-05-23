@@ -536,22 +536,17 @@ const globe = createGlobe(canvas, {
     phi += 0.008
   },
 })
-<script>
-function toggleDetails(button) {
-  const details = button.nextElementSibling;
-  
-  if (details && details.classList.contains('moreDetails')) {
-    if (details.style.display === "none" || details.style.display === "") {
-      details.style.display = "block";
-      button.textContent = "Read Less";
-    } else {
-      details.style.display = "none";
-      button.textContent = "Read More";
+  <script>
+    function toggleDetails(button) {
+      const details = button.nextElementSibling;
+      if (details.style.display === "none" || details.style.display === "") {
+        details.style.display = "block";
+        button.textContent = "Read Less";
+      } else {
+        details.style.display = "none";
+        button.textContent = "Read More";
+      }
     }
-  } else {
-    console.log('No se encontró el elemento moreDetails');
-  }
-}
-</script>
+  </script>
   <script src="/JS/animation.js"></script>
 </html>
