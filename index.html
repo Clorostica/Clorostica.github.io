@@ -540,9 +540,9 @@ const globe = createGlobe(canvas, {
 <script>
 function toggleDetails(button) {
 
-  const details = button.nextElementSibling;
+  const details = parent.querySelector('.moreDetails');
   
-  if (details && details.classList.contains('moreDetails')) {
+  if (details) {
     if (details.style.display === "none" || details.style.display === "") {
       details.style.display = "block";
       button.textContent = "Read Less";
