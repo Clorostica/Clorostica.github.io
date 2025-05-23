@@ -536,13 +536,11 @@ const globe = createGlobe(canvas, {
     phi += 0.008
   },
 })
-  </script>
 <script>
 function toggleDetails(button) {
-
-  const details = parent.querySelector('.moreDetails');
+  const details = button.nextElementSibling;
   
-  if (details) {
+  if (details && details.classList.contains('moreDetails')) {
     if (details.style.display === "none" || details.style.display === "") {
       details.style.display = "block";
       button.textContent = "Read Less";
