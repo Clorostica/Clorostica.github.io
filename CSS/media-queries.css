@@ -2,10 +2,11 @@
   .banner{
   width: 100%;
   }
- .banner2 {
-  justify-content: center;
-  width: 100%;
-    }
+  .banner2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
   .introduction{
   width: 80%;
   }
