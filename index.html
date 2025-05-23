@@ -537,21 +537,16 @@ const globe = createGlobe(canvas, {
 })
   </script>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll(".readMoreBtn");
-
-    buttons.forEach(function (btn) {
-      btn.addEventListener("click", function () {
-        const details = btn.nextElementSibling;
-
-        if (details && details.classList.contains("moreDetails")) {
-          const isVisible = details.style.display === "block";
-          details.style.display = isVisible ? "none" : "block";
-          btn.textContent = isVisible ? "Read More" : "Read Less";
-        }
-      });
-    });
-  });
+  function toggleDetails(button) {
+    const details = button.nextElementSibling;
+    if (details.style.display === "none") {
+      details.style.display = "block";
+      button.textContent = "Read Less";
+    } else {
+      details.style.display = "none";
+      button.textContent = "Read More";
+    }
+  }
 </script>
   <script src="/JS/animation.js"></script>
 </html>
