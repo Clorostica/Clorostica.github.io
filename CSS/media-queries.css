@@ -6,6 +6,9 @@
   justify-content: center;
   width: 100%;
     }
+  .introduction{
+  width: 80%;
+  }
   #header-nav-bar-menu {
     width: 100%;
   }
