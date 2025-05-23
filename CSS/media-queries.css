@@ -1,4 +1,11 @@
 @media (max-width: 1000px) {
+  .banner{
+  width: 100%;
+  }
+ .banner2 {
+  justify-content: center;
+  width: 100%;
+    }
   #header-nav-bar-menu {
     width: 100%;
   }
@@ -25,8 +32,9 @@
     padding: 20px;              
     box-sizing: border-box;
   }
-
-
+  .button-container {
+    justify-content: center; 
+      }
   #contact_me_container .map_container {
     margin-right: 0;
   }
