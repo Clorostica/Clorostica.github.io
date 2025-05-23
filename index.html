@@ -244,34 +244,11 @@
 
   </div>
 </div>
-<div class="main_container reveal" id="projects">
+<div class="main_container reveal">
   <section class="projects" id="projects">
     <h2 class="projects__heading">Featured Projects</h2>
 
     <div class="projects__grid">
-      <!-- Epica -->
-      <div class="project-card">
-        <a href="https://clorostica.github.io/Epica" target="_blank" class="project-card__image">
-          <img src="https://clorostica.github.io/IMG/1.png" alt="Epica default" class="image-default">
-          <img src="https://clorostica.github.io/IMG/epica1.png" alt="Epica hover" class="image-hover">
-        </a>
-        <div class="project-card__info">
-          <h3>Épica</h3>
-          <p>Fashion-focused brand from Chile, combining design and innovation.</p>
-          <button class="readMoreBtn">Read More</button>
-          <div class="moreDetails">
-            <div class="project-details">
-              <ul>
-                <li><strong>Project:</strong> Épica Web</li>
-                <li><strong>Tech:</strong> HTML, CSS, JavaScript</li>
-                <li><strong>Role:</strong> Full frontend development</li>
-                <li><strong>Description:</strong> Stylish responsive showcase for fashion trends.</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <!-- Cordillera -->
       <div class="project-card">
         <a href="https://clorostica.github.io/Cordillera" target="_blank" class="project-card__image">
@@ -281,8 +258,8 @@
         <div class="project-card__info">
           <h3>Cordillera</h3>
           <p>Floral arrangements crafted with elegance and natural beauty.</p>
-          <button class="readMoreBtn">Read More</button>
-          <div class="moreDetails">
+          <button class="readMoreBtn" onclick="toggleDetails(this)">Read More</button>
+          <div class="moreDetails" style="display: none;">
             <div class="project-details">
               <ul>
                 <li><strong>Project:</strong> Cordillera</li>
@@ -304,8 +281,8 @@
         <div class="project-card__info">
           <h3>Little Lemon</h3>
           <p>Restaurant site offering homemade dishes with a modern twist.</p>
-          <button class="readMoreBtn">Read More</button>
-          <div class="moreDetails">
+          <button class="readMoreBtn" onclick="toggleDetails(this)">Read More</button>
+          <div class="moreDetails" style="display: none;">
             <div class="project-details">
               <ul>
                 <li><strong>Project:</strong> Little Lemon</li>
@@ -327,8 +304,8 @@
         <div class="project-card__info">
           <h3>Egg Timer</h3>
           <p>Simple timer app for boiling eggs to your preferred level.</p>
-          <button class="readMoreBtn">Read More</button>
-          <div class="moreDetails">
+          <button class="readMoreBtn" onclick="toggleDetails(this)">Read More</button>
+          <div class="moreDetails" style="display: none;">
             <div class="project-details">
               <ul>
                 <li><strong>Project:</strong> Egg Timer</li>
@@ -350,8 +327,8 @@
         <div class="project-card__info">
           <h3>Notes App</h3>
           <p>Lightweight app for note creation, search, and deletion with local storage.</p>
-          <button class="readMoreBtn">Read More</button>
-          <div class="moreDetails">
+          <button class="readMoreBtn" onclick="toggleDetails(this)">Read More</button>
+          <div class="moreDetails" style="display: none;">
             <div class="project-details">
               <ul>
                 <li><strong>Project:</strong> Notes App</li>
@@ -373,8 +350,8 @@
         <div class="project-card__info">
           <h3>Budget Tracker</h3>
           <p>Track income and expenses with categorized inputs and clean UI.</p>
-          <button class="readMoreBtn">Read More</button>
-          <div class="moreDetails">
+          <button class="readMoreBtn" onclick="toggleDetails(this)">Read More</button>
+          <div class="moreDetails" style="display: none;">
             <div class="project-details">
               <ul>
                 <li><strong>Project:</strong> Budget Tracker</li>
@@ -396,8 +373,8 @@
         <div class="project-card__info">
           <h3>Task Manager App</h3>
           <p>Daily task management app with cloud storage and authentication.</p>
-          <button class="readMoreBtn">Read More</button>
-          <div class="moreDetails">
+          <button class="readMoreBtn" onclick="toggleDetails(this)">Read More</button>
+          <div class="moreDetails" style="display: none;">
             <div class="project-details">
               <ul>
                 <li><strong>Project:</strong> Task Manager App</li>
