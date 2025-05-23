@@ -109,7 +109,11 @@
     margin-top: 10px;
     margin-bottom: 10px;
   }
-
+.readMoreBtn{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
  h2 {
     text-align: center;
     font-size: 1.6rem;
@@ -229,12 +233,15 @@
    .details h3{
     font-size: 1.6rem;
     }
-  #moreDetails {
-    text-align: center;  
+  .moreDetails {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
   }
-  #readMoreBtn {
-    display: block;    
-    margin: 10px auto;   
+  .readMoreBtn {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
   }
    .project-content {
     flex-direction: column;
@@ -367,13 +374,16 @@
     font-size: 1.6rem;
     }
 
-  #moreDetails {
-    text-align: center;  
+  .moreDetails {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
   }
-  #readMoreBtn {
-    display: block;    
-    margin: 10px auto;   
-  }
+  .readMoreBtn{
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
 
    .experience {
    width: 90%;
