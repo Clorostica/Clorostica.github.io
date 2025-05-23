@@ -65,6 +65,9 @@
   .container {
     flex: 1 1 calc(50% - 15px); 
   }
+}  #about_me h2{
+      text-align: center;
+      font-size: 2.5 rem;
 }
 
 @media (max-width: 700px) {
@@ -132,7 +135,6 @@
 }
  h2 {
     text-align: center;
-    font-size: 1.6rem;
   }
   h4{
   text-align: center;
@@ -350,11 +352,11 @@
   }
 
   h2 {
-    font-size: 1.6rem;
+
   text-align: center;
   }
   h4{
-      text-align: center;
+  text-align: center;
   }
 
   header .banner h3 {
@@ -399,6 +401,7 @@
       padding-top: 120px;
 }
 #about_me h2{
+      font-size: 2.5rem;
       text-align: center;
 }
   .date{
@@ -449,17 +452,21 @@
 
   .project-description h3 {
     font-size: 1.8rem;
+    align-items: center;
   }
 
   .project-description p {
     font-size: 1rem;
+    align-items: center;
   }
 
   .project-title h2 {
-    font-size: 2rem;
+    align-items: center;
+    font-size: 2.5rem;
   }
 
   .project-text h2 {
+    align-items: center;
     font-size: 1.4rem;
   }
   #contact_me_container {
