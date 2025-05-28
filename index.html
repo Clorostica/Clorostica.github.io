@@ -12,17 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c3b56a7551.js" crossorigin="anonymous"></script>
 </head>
-      <style>
-        
-        .readMoreBtn:hover {
-            background: #0056b3;
-        }
-        
-        
-        .hidden {
-            display: none;
-        }
-    </style>
 <body>
     <header>
         <nav id="nav">
@@ -545,25 +534,36 @@ const globe = createGlobe(canvas, {
 })
     </script>
 <script>
-       function toggleDetails(targetId, button) {
-            const details = document.getElementById(targetId);
-            const isHidden = details.classList.contains('hidden');
-            
-            if (isHidden) {
-                details.classList.remove('hidden');
-                button.textContent = 'Read Less';
-            } else {
-                details.classList.add('hidden');
-                button.textContent = 'Read More';
-            }
-        }
-
-
-        document.addEventListener('click', function(e) {
-            if (e.target.classList.contains('readMoreBtn') && e.target.dataset.target) {
-                toggleDetails(e.target.dataset.target, e.target);
-            }
-        });
+function toggleDetails(button) {
+    // Busca el siguiente elemento hermano que sea .moreDetails
+    let details = button.nextElementSibling;
+    
+    // Si el siguiente elemento no es .moreDetails, busca en los siguientes hermanos
+    while (details && !details.classList.contains('moreDetails')) {
+        details = details.nextElementSibling;
+    }
+    
+    // Si no encontró .moreDetails como hermano, busca dentro del contenedor padre
+    if (!details) {
+        const parent = button.parentElement;
+        details = parent.querySelector('.moreDetails');
+    }
+    
+    // Si aún no encontró nada, mostrar error en consola
+    if (!details) {
+        console.error('No se encontró el elemento .moreDetails para este botón');
+        return;
+    }
+    
+    // Hacer el toggle del contenido
+    if (details.style.display === "none" || details.style.display === "") {
+        details.style.display = "block";
+        button.textContent = "Read Less";
+    } else {
+        details.style.display = "none";
+        button.textContent = "Read More";
+    }
+}
 
 </script>
 
