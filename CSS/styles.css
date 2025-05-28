@@ -467,12 +467,13 @@ footer#nav_footer {
 }
 
 .moreDetails {
+margin-top: 10px;
   box-sizing: border-box; 
   width: 100%;         
   overflow-wrap: break-word; 
 }
 .readMoreBtn {
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     background-color: #f0f4f8;
     color: #0A1930;
     border: 1px solid #d0d7de;
