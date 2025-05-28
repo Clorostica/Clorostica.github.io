@@ -478,7 +478,6 @@ footer#nav_footer {
   color: #0A1930; 
   border: 1px solid #d0d7de; 
   border-radius: 6px;
-  padding: 6px 14px;
   cursor: pointer;
   margin: 10px 0;
   transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
