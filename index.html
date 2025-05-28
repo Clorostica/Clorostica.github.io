@@ -124,7 +124,7 @@
             My background in graphic design gives me a strong eye for aesthetics and usability, which I combine with solid technical skills in React, Next.js, Tailwind CSS, and JavaScript. I enjoy creating intuitive interfaces that not only look great but also provide smooth user experiences.
           </p>
             
-     <button class="readMoreBtn" data-target="details1">Read More</button>
+<button class="readMoreBtn" onclick="toggleDetailsSimple(this)" data-target="details1">Read More</button>
         <div id="details1" class="moreDetails hidden">
             <p>Previously, I worked as a front-end developer at JFX, contributing to high-profile projects like Banco de Chile and Banco Estado. My work includes everything from wireframing and prototyping to front-end implementation and testing.</p>
             <p>I'm constantly learning new tools and technologies and eager to take on challenges that help me grow as a developer and designer.</p>
@@ -533,28 +533,34 @@ const globe = createGlobe(canvas, {
   },
 })
     </script>
+
 <script>
-      function toggleDetailsSimple(button) {
-            console.log("Botón clickeado:", button);
-            const details = button.nextElementSibling;
-            console.log("Elemento encontrado:", details);
-            
-            if (details) {
-                if (details.style.display === "none" || details.style.display === "") {
-                    details.style.display = "block";
-                    button.textContent = "Read Less";
-                    console.log("Mostrando contenido");
-                } else {
-                    details.style.display = "none";
-                    button.textContent = "Read More";
-                    console.log("Ocultando contenido");
-                }
-            } else {
-                console.error("No se encontró el elemento siguiente");
-            }
+    function toggleDetailsSimple(button) {
+    console.log("Botón clickeado:", button);
+    
+    // Obtener el ID del target desde data-target
+    const targetId = button.getAttribute('data-target');
+    console.log("Target ID:", targetId);
+    
+    // Buscar el elemento por ID
+    const details = document.getElementById(targetId);
+    console.log("Elemento encontrado:", details);
+    
+    if (details) {
+        // Usar classList para toggle con clase 'hidden'
+        if (details.classList.contains('hidden')) {
+            details.classList.remove('hidden');
+            button.textContent = "Read Less";
+            console.log("Mostrando contenido");
+        } else {
+            details.classList.add('hidden');
+            button.textContent = "Read More";
+            console.log("Ocultando contenido");
         }
-
+    } else {
+        console.error("No se encontró el elemento con ID:", targetId);
+    }
+}
 </script>
-
   <script src="/JS/animation.js"></script>
 </html>
