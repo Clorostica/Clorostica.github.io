@@ -647,7 +647,10 @@ main .main_container {
 }
 
 .project-card__info {
-  padding: 1.2rem;
+ padding: 1.2rem;
+margin: 1rem; 
+list-style: none; 
+text-align: left;
 }
 
 .project-card h3 {
