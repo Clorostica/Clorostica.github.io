@@ -654,8 +654,15 @@ main .main_container {
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
   color: #00ffd5;
+  margin-left: 1.0rem;
+  margin-top: 1.5rem
 }
-
+.project-card p {
+margin-left: 1.0rem;
+  margin-top: 1.5rem
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
 .project-card__info p {
   font-size: 1rem;
   line-height: 1.5;
