@@ -681,13 +681,16 @@ main .main_container {
 }
 
 .project-details {
-  display: none;
+  display: block; 
   margin-top: 0.8rem;
   color: #e0e0e0;
   font-size: 0.95rem;
-  background-color: var(--main-body-color)
-  padding: 0.8rem;
+  background-color: var(--main-body-color);
+  padding: 0.8rem 1rem;
   border-radius: 8px;
+  border: 1px solid #333;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: all 0.3s ease;
 }
 
 .project-details ul {
