@@ -534,36 +534,25 @@ const globe = createGlobe(canvas, {
 })
     </script>
 <script>
-function toggleDetails(button) {
-    // Busca el siguiente elemento hermano que sea .moreDetails
-    let details = button.nextElementSibling;
-    
-    // Si el siguiente elemento no es .moreDetails, busca en los siguientes hermanos
-    while (details && !details.classList.contains('moreDetails')) {
-        details = details.nextElementSibling;
-    }
-    
-    // Si no encontró .moreDetails como hermano, busca dentro del contenedor padre
-    if (!details) {
-        const parent = button.parentElement;
-        details = parent.querySelector('.moreDetails');
-    }
-    
-    // Si aún no encontró nada, mostrar error en consola
-    if (!details) {
-        console.error('No se encontró el elemento .moreDetails para este botón');
-        return;
-    }
-    
-    // Hacer el toggle del contenido
-    if (details.style.display === "none" || details.style.display === "") {
-        details.style.display = "block";
-        button.textContent = "Read Less";
-    } else {
-        details.style.display = "none";
-        button.textContent = "Read More";
-    }
-}
+      function toggleDetailsSimple(button) {
+            console.log("Botón clickeado:", button);
+            const details = button.nextElementSibling;
+            console.log("Elemento encontrado:", details);
+            
+            if (details) {
+                if (details.style.display === "none" || details.style.display === "") {
+                    details.style.display = "block";
+                    button.textContent = "Read Less";
+                    console.log("Mostrando contenido");
+                } else {
+                    details.style.display = "none";
+                    button.textContent = "Read More";
+                    console.log("Ocultando contenido");
+                }
+            } else {
+                console.error("No se encontró el elemento siguiente");
+            }
+        }
 
 </script>
 
