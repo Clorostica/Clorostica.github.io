@@ -650,7 +650,7 @@ main .main_container {
   padding: 1.2rem;
 }
 
-.project-card__info h3 {
+.project-card h3 {
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
   color: #00ffd5;
