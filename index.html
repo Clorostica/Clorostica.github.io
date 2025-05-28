@@ -126,14 +126,12 @@
         
             <button class="readMoreBtn" onclick="toggleDetails(this)">Read More</button>
             
-            <div class="moreDetails" style="display: none;">
-              <p>
-                Previously, I worked as a front-end developer at JFX, contributing to high-profile projects like Banco de Chile and Banco Estado. My work includes everything from wireframing and prototyping to front-end implementation and testing.
-              </p>
-              <p>
-                I'm constantly learning new tools and technologies and eager to take on challenges that help me grow as a developer and designer. Collaboration is key for me, and I love working with teams to create meaningful digital products.
-              </p>
-            </div>
+     <button class="readMoreBtn" data-target="details1">Read More</button>
+        <div id="details1" class="moreDetails hidden">
+            <p>Previously, I worked as a front-end developer at JFX, contributing to high-profile projects like Banco de Chile and Banco Estado. My work includes everything from wireframing and prototyping to front-end implementation and testing.</p>
+            <p>I'm constantly learning new tools and technologies and eager to take on challenges that help me grow as a developer and designer.</p>
+        </div>
+    </div>
         </div>
            <div class="main_container reveal">
   <div class="experience">
@@ -538,23 +536,26 @@ const globe = createGlobe(canvas, {
 })
     </script>
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const buttons = document.querySelectorAll(".readMoreBtn");
+       function toggleDetails(targetId, button) {
+            const details = document.getElementById(targetId);
+            const isHidden = details.classList.contains('hidden');
+            
+            if (isHidden) {
+                details.classList.remove('hidden');
+                button.textContent = 'Read Less';
+            } else {
+                details.classList.add('hidden');
+                button.textContent = 'Read More';
+            }
+        }
 
-    buttons.forEach((button) => {
-      button.addEventListener("click", function () {
 
-        const container = button.closest(".section");
-        const details = container.querySelector(".moreDetails");
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('readMoreBtn') && e.target.dataset.target) {
+                toggleDetails(e.target.dataset.target, e.target);
+            }
+        });
 
-        details.classList.toggle("show");
-
-        button.textContent = details.classList.contains("show")
-          ? "Read Less"
-          : "Read More";
-      });
-    });
-  });
 </script>
 
   <script src="/JS/animation.js"></script>
