@@ -402,12 +402,11 @@ display: inline-flex;
 }
 
 .certificate p {
-  margin-top: 10px;
-  text-align: center;
-  color: #64FFDA;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  font-size: 1rem;
+font-size: 1.4rem;
+margin-bottom: 0.5rem;
+color: #00ffd5;
+margin-left: 1.0rem;
+margin-top: 1.5rem;
 }
 /*RESUME*/
 .experience {
