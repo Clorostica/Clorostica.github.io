@@ -363,7 +363,7 @@ footer#nav_footer {
   flex-shrink: 1;
 }
 
-.certificate_container {
+.certificates-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -372,7 +372,7 @@ footer#nav_footer {
   background-color: rgba(12, 25, 48, 0.7); /* fondo semitransparente */
 }
 
-.cert_card {
+..certificate {
   flex: 1 1 calc(33.33% - 20px); /* 3 columnas con espacio */
   max-width: 320px;
   background-color: rgba(12, 25, 48, 0.7);
@@ -387,14 +387,14 @@ footer#nav_footer {
   box-sizing: border-box;
 }
 
-.cert_card img {
+.certificate img{
   max-width: 100%;
   height: auto;
   border-radius: 8px;
   object-fit: contain;
 }
 
-.cert_text {
+.certificate p {
   margin-top: 10px;
   text-align: center;
   color: #64FFDA;
