@@ -290,6 +290,8 @@ footer#nav_footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    background-color: rgba(0, 0, 0, 0.8); 
+    border-radius: 10px; 
 }
 
 #header-nav-bar-menu::after {
