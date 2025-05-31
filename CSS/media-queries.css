@@ -80,7 +80,7 @@
     text-shadow: 0 0 10px #64FFDA;
   }
 
-  /* Sección hero/introducción - ARREGLADO */
+
   .introduction {
     width: 95%;
     padding-top: 100px;
@@ -88,17 +88,15 @@
     text-align: center;
     gap: 30px;
   }
-  
-  /* CAMBIO PRINCIPAL: Removí los orders y cambié la lógica */
+
   .banner {
     width: 100%;
     text-align: center;
-    /* Sin order - aparece primero naturalmente */
+
   }
   
   .banner2 {
     width: 100%;
-    /* Sin order - aparece segundo naturalmente */
     display: flex;
     justify-content: center;
   }
@@ -333,10 +331,11 @@
 
   /* Certificates section */
   .certificates-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
   }
   
   .certificate {
