@@ -7,10 +7,13 @@
 }
 
 :root {
-    --main-body-color: #0B1930; 
-    --main-color: #ccd6f6;
-    --text-color: #64ffda;
-
+  --main-bg: #0B1930;
+  --text-color: #ccd6f6;
+  --accent-color: #64FFDA;
+  --hover-color: #52d8be;
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
+  --max-width: 900px;
 }
 
 ::placeholder {
@@ -23,50 +26,51 @@
 }
 
 body {
-    color: #0B1930;
-    background: #8992B1; 
-    position: relative;
-    overflow-x: hidden;
-    -webkit-overflow-x: hidden;
-    font-family: 'Poppins', sans-serif;
+  font-family: var(--font-primary);
+  background-color: var(--main-bg);
+  color: var(--text-color);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-secondary);
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--accent-color);
 }
 
 h1 {
-    font-family: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
-    cursor: default;
-    font-size: 32px;
+  font-size: 2.5rem;
 }
 
 h2 {
-    color: #ccd5f6; 
-    font-family: 'Poppins', sans-serif;
-    cursor: default;
-    font-size: 2.5rem;
+  font-size: 2rem;
+  margin-top: 40px;
 }
 
 h3 {
-    color: #ccd5f6;
-    font-family: 'Poppins', sans-serif;
-    cursor: default;
+  font-size: 1.3rem;
 }
 
-h4 {
-    color: #64FFDA;
-    font-family: 'Poppins', sans-serif;
-    cursor: default;
-    text-justify: inter-word; 
-    font-size: 1.3rem;
-    text-align: center;
-    padding-top:10px;
-    padding-bottom:10px;
-}
-
-a {
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-}
-p{
-    color: #ccd5f6;
+p {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-bottom: 15px;
 }
 /*-------------*/
 
