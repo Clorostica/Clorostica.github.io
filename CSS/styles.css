@@ -469,27 +469,35 @@ margin-top: 1.5rem;
   line-height: 1.4;
   color: #cdd6f6;
 }
+.moreDetails.show {
+    max-height: 500px; 
+    opacity: 1;
+    margin-top: 1rem;
+}
 
 .moreDetails {
-margin-top: 10px;
-  box-sizing: border-box; 
-  width: 100%;         
-  overflow-wrap: break-word; 
+    overflow: hidden;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
 }
 .readMoreBtn {
-margin: 0 1rem 1rem 1rem;
-background-color: transparent;
-color: #64FFDA;
-border: 1px solid #64FFDA;
-padding: 8px 16px;
-font-size: 12px;
-border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-#readMoreBtn:hover {
-  background-color: #e2e8f0;
-  color: #0A1930;
-  border-color: #cbd5e0;
+.readMoreBtn:hover {
+    background: rgba(100, 255, 218, 0.1);
+    transform: translateY(-1px);
+}
+
+.readMoreBtn:active {
+    transform: translateY(0);
+}
+.moreDetails.hidden {
+    max-height: 0;
+    opacity: 0;
+    margin-top: 0;
+    padding: 0;
 }
 #about_me h2 {
     padding-top: 22px;
