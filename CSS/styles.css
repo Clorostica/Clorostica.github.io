@@ -421,12 +421,13 @@ display: inline-flex;
   text-align: left; 
   justify-content: flex-start;
   align-items: stretch;
-  margin-bottom: 30px;
+  margin: 30px;         
   border-radius: 8px;
   transition: transform 0.2s ease, filter 0.3s ease;
   color: #CDD6F6;
-  padding-bottom: 30px;
+  padding: 30px;        
 }
+
 
 .header {
   display: flex;
