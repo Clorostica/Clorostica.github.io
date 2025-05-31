@@ -122,13 +122,6 @@ header {
     transform: scale(1.1);
 }
 
-
-.button svg {
-  width: 18px;
-  height: 18px;
-  flex-shrink: 0;
-}
-
 .banner {
     justify-content: flex-start; 
     width: 55%; 
@@ -345,11 +338,18 @@ footer#nav_footer {
   border-radius: 6px;       
   cursor: pointer;
   transition: all 0.3s ease;
-  text-align: center;
-  display: inline-block;
   font-family: 'Poppins', sans-serif;
+display: inline-flex;     
+  align-items: center;        
+  justify-content: center;   
+  gap: 8px;                   
 }
 
+.button svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
 .button:hover {
     filter: drop-shadow(0 0 1.0rem #64FFDA); 
     cursor: default; 
