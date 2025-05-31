@@ -336,12 +336,20 @@ footer#nav_footer {
     transition: all 500ms;
 }
 .button {
-        min-width: auto;
-        font-size: 14px;
-        border: 1px solid #64FFDA;
-        background: transparent;
-        transition: all 0.3s ease;
+  min-width: 120px;          
+  padding: 10px 20px;       
+  font-size: 14px;
+  border: 1px solid #64FFDA;
+  background: transparent;
+  color: #64FFDA;
+  border-radius: 6px;       
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
 }
+
 .button:hover {
     filter: drop-shadow(0 0 1.0rem #64FFDA); 
     cursor: default; 
