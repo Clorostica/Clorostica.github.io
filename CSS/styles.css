@@ -480,8 +480,18 @@ margin-top: 1.5rem;
     margin-top: 1rem;
 }
 .readMoreBtn {
-    cursor: pointer;
-    transition: all 0.3s ease;
+  margin: 0 1rem 1rem 1rem;
+  background: transparent;
+  color: #64FFDA;
+  border: 1px solid #64FFDA;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .readMoreBtn:hover {
