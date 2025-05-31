@@ -393,6 +393,11 @@ footer#nav_footer {
   box-sizing: border-box; 
   overflow-x: hidden; 
 }
+.button-container button {
+  max-width: 100%;
+  flex-shrink: 1;
+}
+
 .certificate_container {
   display: flex;
   flex-wrap: wrap;
