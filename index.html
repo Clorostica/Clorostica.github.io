@@ -508,23 +508,25 @@ const globe = createGlobe(canvas, {
     </script>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelectorAll('.readMoreBtn[data-target]').forEach(button => {
-        button.addEventListener('click', function() {
-            const targetId = this.getAttribute('data-target');
-            const details = document.getElementById(targetId);
-            
-            if (details) {
-                if (details.classList.contains('hidden')) {
-                    details.classList.remove('hidden');
-                    this.textContent = "Read Less";
-                } else {
-                    details.classList.add('hidden');
-                    this.textContent = "Read More";
-                }
-            }
-        });
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.readMoreBtn');
+  
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const targetId = button.getAttribute('data-target');
+      const targetDiv = document.getElementById(targetId);
+      
+      if (targetDiv) {
+        targetDiv.classList.toggle('hidden');
+        
+        if (targetDiv.classList.contains('hidden')) {
+          button.textContent = 'Leer más';
+        } else {
+          button.textContent = 'Leer menos';
+        }
+      }
     });
+  });
 });
 
 </script>
