@@ -362,7 +362,6 @@
   }
   
   .footer_container {
-    flex-direction: column;
     text-align: center;
     gap: 1.5rem;
   }
