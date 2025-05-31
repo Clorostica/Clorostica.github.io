@@ -419,6 +419,12 @@ color: #00ffd5;
 margin-left: 1.0rem;
 margin-top: 1.5rem;
 }
+.certificate:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 255, 213, 0.5);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 /*RESUME*/
 .experience {
   display: flex;
