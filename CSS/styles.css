@@ -378,7 +378,7 @@ footer#nav_footer {
     align-items: center;
 }
 .button:hover {
-    filter: drop-shadow(0 0 1.5rem #64FFDA); 
+    filter: drop-shadow(0 0 1.0rem #64FFDA); 
     cursor: default; 
 }
 
