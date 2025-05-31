@@ -280,55 +280,65 @@ footer#nav_footer {
 }
 
 #header-nav-bar-menu {
-    width: 70%;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgba(12, 25, 48, 0.7);
-    border-radius: 10px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  height: 100px;
+  position: relative;
+  padding: 0 20px;
+  gap: 15px; 
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #64FFDA;
 }
 
+#header-nav-bar-menu::before,
 #header-nav-bar-menu::after {
-    content: '/ >';
-    width: 10%;
-    color: #64FFDA; 
-    font-size: 40px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 36px;
+  color: #64FFDA;
+  user-select: none;
+  pointer-events: none;
 }
 
 #header-nav-bar-menu::before {
-    content: '<';
-    text-align: right;
-    width: 10%;
-    color: #64FFDA; 
-    font-size: 40px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+  content: '<';
+  left: 5px;
+}
+
+#header-nav-bar-menu::after {
+  content: '/ >';
+  right: 5px;
 }
 
 #header-nav-bar-menu li {
-    list-style: none;
-    height: 100%;
-    width: calc(100% / 5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  list-style: none;
+  flex: 1 1 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0; 
 }
 
 #header-nav-bar-menu li a {
-    color: #64FFDA; 
-    font-weight: 600;
-    font-size: 22px;
-    transition: all 500ms;
+  color: #64FFDA;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 8px 12px;
+  text-align: center;
+  white-space: nowrap;
+  transition: font-size 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+  display: block;
+  width: 100%;
 }
 
 #header-nav-bar-menu li a:hover {
-    font-size: 24px;
-    color: #64FFDA; 
-    text-shadow: 2px 2px 8px var(--main-color);
-    transition: all 500ms;
+  font-size: 22px;
+  color: #64FFDA;
+  text-shadow: 2px 2px 8px var(--main-color);
 }
 .button {
   min-width: 120px;          
