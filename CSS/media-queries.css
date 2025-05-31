@@ -85,13 +85,14 @@
     width: 95%;
     padding-top: 100px;
     flex-direction: column;
-    text-align: left;
+    text-align: center;
     gap: 30px;
   }
   
   /* CAMBIO PRINCIPAL: Removí los orders y cambié la lógica */
   .banner {
     width: 100%;
+    text-align: center;
     /* Sin order - aparece primero naturalmente */
   }
   
@@ -132,10 +133,16 @@
 
   /* Botones del hero */
   .button-container {
-    justify-content: flex-start;
+    justify-content: center;
     gap: 15px;
     flex-wrap: wrap;
     padding: 0;
+    width: 100%;
+  }
+  
+  .button-link {
+    display: flex;
+    justify-content: center;
   }
   
   .button-link .button {
@@ -145,6 +152,7 @@
     border: 1px solid #64FFDA;
     background: transparent;
     transition: all 0.3s ease;
+    text-align: center;
   }
   
   .button-link .button:hover {
@@ -159,16 +167,22 @@
   }
   
   /* About Me section */
+  #about_me {
+    text-align: center;
+  }
+  
   #about_me h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
     color: #CDD6F6;
+    text-align: center;
   }
   
   #about_me h4 {
     font-size: 1rem;
     color: #64FFDA;
     margin-bottom: 15px;
+    text-align: center;
   }
   
   #about_me p {
@@ -176,11 +190,13 @@
     line-height: 1.6;
     color: #8892B0;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   /* Experience section */
   .experience {
     gap: 1.5rem;
+    text-align: center;
   }
   
   .experience_item {
@@ -189,11 +205,12 @@
     padding: 20px;
     border-left: 2px solid #64FFDA;
     margin-bottom: 25px;
+    text-align: center;
   }
   
   .header {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 5px;
     margin-bottom: 15px;
   }
@@ -202,6 +219,7 @@
     font-size: 1.1rem;
     margin: 0;
     color: #CDD6F6;
+    text-align: center;
   }
   
   .date {
@@ -233,6 +251,7 @@
     flex-wrap: wrap;
     gap: 8px;
     margin-top: 15px;
+    justify-content: center;
   }
   
   .button {
@@ -249,12 +268,14 @@
   /* Projects section */
   .projects {
     padding: 2rem 0;
+    text-align: center;
   }
   
   .projects__heading {
     font-size: 1.8rem;
     margin-bottom: 2rem;
     color: #CDD6F6;
+    text-align: center;
   }
   
   .projects__grid {
@@ -266,6 +287,7 @@
     background: rgba(255, 255, 255, 0.02);
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 8px;
+    text-align: center;
   }
   
   .project-card__image {
@@ -276,6 +298,7 @@
     font-size: 1.2rem;
     margin: 1rem 1rem 0.5rem 1rem;
     color: #CDD6F6;
+    text-align: center;
   }
   
   .project-card p {
@@ -283,6 +306,7 @@
     color: #8892B0;
     margin: 0 1rem 1rem 1rem;
     line-height: 1.5;
+    text-align: center;
   }
   
   .readMoreBtn {
@@ -290,27 +314,30 @@
     background: transparent;
     color: #64FFDA;
     border: 1px solid #64FFDA;
-    padding: 8px 16px;
-    font-size: 12px;
+    padding: 12px 20px;
+    font-size: 14px;
     border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-height: 44px;
+    min-width: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .readMoreBtn:hover {
     background: rgba(100, 255, 218, 0.1);
+    transform: translateY(-2px);
   }
 
   /* Certificates section */
-.certificates-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 40px 0;
-  background-color: rgba(12, 25, 48, 0.7);
-  max-width: 1000px; 
-  margin: 0 auto; 
-}
-
+  .certificates-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem 0;
+  }
   
   .certificate {
     text-align: center;
