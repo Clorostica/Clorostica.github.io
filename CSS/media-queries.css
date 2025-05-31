@@ -300,12 +300,17 @@
   }
 
   /* Certificates section */
-  .certificates-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    padding: 1rem 0;
-  }
+.certificates-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 0;
+  background-color: rgba(12, 25, 48, 0.7);
+  max-width: 1000px; 
+  margin: 0 auto; 
+}
+
   
   .certificate {
     text-align: center;
