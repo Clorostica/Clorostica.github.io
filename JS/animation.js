@@ -12,16 +12,21 @@ function reveal() {
     }
   }
 
-  window.addEventListener("scroll", reveal);
-const toggleBtn = document.getElementById('toggleTheme');
-const body = document.body;
-
-toggleBtn.addEventListener('click', () => {
-  body.classList.toggle('dark-mode');
-  
-  if (body.classList.contains('dark-mode')) {
-    toggleBtn.textContent = '☀️';
-  } else {
-    toggleBtn.textContent = '🌙'; 
-  }
-});
+function toggleDetails(buttonElement) {
+    const targetId = buttonElement.getAttribute('data-target');
+    const targetElement = document.getElementById(targetId);
+    
+    if (targetElement) {
+        const isHidden = targetElement.classList.contains('hidden');
+        
+        if (isHidden) {
+            targetElement.classList.remove('hidden');
+            targetElement.classList.add('show');
+            buttonElement.textContent = 'Leer menos';
+        } else {
+            targetElement.classList.add('hidden');
+            targetElement.classList.remove('show');
+            buttonElement.textContent = 'Leer más';
+        }
+    }
+}
