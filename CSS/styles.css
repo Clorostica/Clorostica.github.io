@@ -361,6 +361,7 @@ display: inline-flex;
   flex-wrap: wrap; 
   gap: 22px;
   margin-top: 10px;
+  margin-left: 10px;
   padding: 0 10px;
   width: 100%;
   box-sizing: border-box; 
@@ -380,7 +381,7 @@ display: inline-flex;
   background-color: rgba(12, 25, 48, 0.7); /* fondo semitransparente */
 }
 
-..certificate {
+.certificate {
   flex: 1 1 calc(33.33% - 20px); /* 3 columnas con espacio */
   max-width: 320px;
   background-color: rgba(12, 25, 48, 0.7);
