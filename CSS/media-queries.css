@@ -80,7 +80,7 @@
     text-shadow: 0 0 10px #64FFDA;
   }
 
-  /* Sección hero/introducción */
+  /* Sección hero/introducción - ARREGLADO */
   .introduction {
     width: 95%;
     padding-top: 100px;
@@ -89,14 +89,15 @@
     gap: 30px;
   }
   
+  /* CAMBIO PRINCIPAL: Removí los orders y cambié la lógica */
   .banner {
     width: 100%;
-    order: 1;
+    /* Sin order - aparece primero naturalmente */
   }
   
   .banner2 {
     width: 100%;
-    order: 2;
+    /* Sin order - aparece segundo naturalmente */
     display: flex;
     justify-content: center;
   }
@@ -385,9 +386,10 @@
   .footer_element a:hover {
     color: #64FFDA;
   }
+  
   footer#nav_footer{
-  margin-top:30px
-}
+    margin-top: 30px;
+  }
 
   /* Toggle theme button */
   .toggle-btn {
@@ -440,12 +442,13 @@
   .footer_container {
     padding: 0 10px;
   }
-footer#nav_footer{
-  margin-top:30px
-}
+  
+  footer#nav_footer{
+    margin-top: 30px;
+  }
 }
 
-/* Landscape móvil */
+/* Landscape móvil - MEJORADO */
 @media screen and (max-height: 500px) and (orientation: landscape) {
   .introduction {
     padding-top: 60px;
