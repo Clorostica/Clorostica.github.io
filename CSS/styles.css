@@ -103,23 +103,25 @@ header {
     width: 100%;
 }
 .toggle-btn {
-    z-index: 999; 
-    position: fixed;
-    bottom: 1vh; 
-    left: 1vw; 
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000 !important; /* Fondo negro */
-    font-size: 24px;
-    transition: opacity 0.5s ease-in-out;
+  z-index: 999; 
+  position: fixed;
+  bottom: 1vh; 
+  left: 1vw; 
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000 !important; /* Fondo negro */
+  font-size: 24px;
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out, transform 0.3s ease;
 }
+
 .toggle-btn:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .banner {
