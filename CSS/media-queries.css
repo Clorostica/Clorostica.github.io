@@ -385,6 +385,9 @@
   .footer_element a:hover {
     color: #64FFDA;
   }
+  footer#nav_footer{
+  margin-top:30px
+}
 
   /* Toggle theme button */
   .toggle-btn {
@@ -437,6 +440,9 @@
   .footer_container {
     padding: 0 10px;
   }
+footer#nav_footer{
+  margin-top:30px
+}
 }
 
 /* Landscape móvil */
