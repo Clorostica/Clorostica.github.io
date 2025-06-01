@@ -466,7 +466,6 @@ footer#nav_footer {
   align-items: stretch;       
   border-radius: 8px;
   transition: transform 0.2s ease, filter 0.3s ease;
-  color: var(--accent-color);
   padding: 30px;        
 }
 
