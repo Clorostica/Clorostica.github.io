@@ -306,7 +306,7 @@ footer#nav_footer {
   gap: 15px; 
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  color: #64FFDA;
+  color: var(--accent-color)
 }
 
 #header-nav-bar-menu::before,
