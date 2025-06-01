@@ -424,7 +424,6 @@ footer#nav_footer {
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  background-color: #111; /* opcional */
 }
 
 .certificate img {
