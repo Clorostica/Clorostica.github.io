@@ -340,7 +340,7 @@ footer#nav_footer {
 }
 
 #header-nav-bar-menu li a {
-  color: #64FFDA;
+  color: var(--accent-color);
   font-weight: 600;
   font-size: 20px;
   padding: 8px 12px;
@@ -353,7 +353,7 @@ footer#nav_footer {
 
 #header-nav-bar-menu li a:hover {
   font-size: 22px;
-  color: #64FFDA;
+  color: var(--accent-color);
   text-shadow: 2px 2px 8px var(--main-color);
 }
 .button {
