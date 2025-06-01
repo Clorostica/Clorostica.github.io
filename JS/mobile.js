@@ -1,12 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Elementos del menú móvil
     const navBurger = document.getElementById('nav_burger');
     const mobileNav = document.getElementById('mobile_nav');
     const navBurgerIcon = document.getElementById('nav_burger_icon');
     const navExitIcon = document.getElementById('nav_exit_icon');
     const body = document.body;
-    
-    // Función para abrir el menú móvil
+
     function openMobileNav() {
         mobileNav.classList.add('active');
         mobileNav.style.display = 'flex';
@@ -15,7 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
         body.classList.add('mobile-nav-active');
     }
     
-    // Función para cerrar el menú móvil
     function closeMobileNav() {
         mobileNav.classList.remove('active');
         mobileNav.style.display = 'none';
@@ -23,8 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navExitIcon.style.display = 'none';
         body.classList.remove('mobile-nav-active');
     }
-    
-    // Event listener para el botón hamburguesa
+
     if (navBurger) {
         navBurger.addEventListener('click', function() {
             if (mobileNav.classList.contains('active')) {
@@ -71,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     window.addEventListener('scroll', revealOnScroll);
-    revealOnScroll(); // Ejecutar al cargar la página
+    revealOnScroll();
     
     
     document.querySelectorAll('.readMoreBtn[data-target]').forEach(button => {
@@ -155,32 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    
-    const themeToggle = document.getElementById('toggleTheme');
-    if (themeToggle) {
-        themeToggle.addEventListener('click', function() {
-            body.classList.toggle('light-theme');
-            
-            // Cambiar el icono del toggle
-            const icon = this.textContent;
-            this.textContent = icon === '🌙' ? '☀️' : '🌙';
-            
-            // Guardar preferencia en localStorage (si está disponible)
-            if (typeof(Storage) !== "undefined") {
-                localStorage.setItem('theme', body.classList.contains('light-theme') ? 'light' : 'dark');
-            }
-        });
-        
-        // Cargar tema guardado
-        if (typeof(Storage) !== "undefined") {
-            const savedTheme = localStorage.getItem('theme');
-            if (savedTheme === 'light') {
-                body.classList.add('light-theme');
-                themeToggle.textContent = '☀️';
-            }
-        }
-    }
-});
+
 
 function isMobile() {
     return window.innerWidth <= 768;
