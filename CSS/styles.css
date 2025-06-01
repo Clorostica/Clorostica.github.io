@@ -95,14 +95,14 @@ p {
 /*-------------*/
 
 .introduction {
-    padding-top: 200px;
+    padding-top: 150px;
     width: 60%;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 30px;
 }
 .introduction .banner .banner2 {
     display: flex;
