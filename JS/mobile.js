@@ -56,8 +56,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // ===== ANIMACIONES DE SCROLL PARA MÓVIL =====
-    
     function revealOnScroll() {
         const reveals = document.querySelectorAll('.reveal');
         
@@ -184,18 +182,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-
-// Función para detectar si es dispositivo móvil
 function isMobile() {
     return window.innerWidth <= 768;
 }
 
-// Función para obtener la altura del viewport en móvil (considerando la barra de navegación)
 function getViewportHeight() {
     return window.innerHeight || document.documentElement.clientHeight;
 }
 
-// Debounce function para optimizar eventos de scroll/resize
+
 function debounce(func, wait, immediate) {
     let timeout;
     return function executedFunction(...args) {
