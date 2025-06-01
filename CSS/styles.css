@@ -692,7 +692,7 @@ text-align: left;
 .project-card h3 {
   font-size: 1.4rem;
   margin-bottom: 0.5rem;
-  color: #00ffd5;
+  color: var(--accent-color);
   margin-left: 1.0rem;
   margin-top: 1.5rem
 }
@@ -705,7 +705,7 @@ margin-left: 1.0rem;
 .project-card__info p {
   font-size: 1rem;
   line-height: 1.5;
-  color: #f0f0f0;
+  color: var(--text-color);
 }
 
 
