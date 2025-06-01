@@ -21,7 +21,7 @@
 }
 
 body.isLightMode {
-            --main-bg: #FFFFFF;
+            --main-bg: #CED6F6;
             --secondary-bg: #F8FAFC;
             --text-color: #6B7280;
             --text-secondary: #4A5568;
