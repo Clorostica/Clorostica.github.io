@@ -501,8 +501,8 @@ footer#nav_footer {
 }
 .readMoreBtn {
   background: transparent;
-  color: #64FFDA;
-  border: 1px solid #64FFDA;
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
   padding: 12px 20px;
   font-size: 14px;
   border-radius: 4px;
