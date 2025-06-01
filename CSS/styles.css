@@ -404,19 +404,19 @@ footer#nav_footer {
     font-size: 2.5rem;
     margin-bottom: 3rem;
 }
-
 #certificates {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px; 
+  justify-content: space-between; 
+  gap: 20px;
   padding: 40px 0;
+  width: 100%;       
   box-sizing: border-box;
 }
 
 .certificate {
-  flex: 1 1 calc(33.33% - 20px);
-  max-width: calc(33.33% - 20px);
+  flex: 1 1 calc((100% - 40px) / 3);
+  max-width: calc((100% - 40px) / 3);
   padding: 15px 20px;
   border-radius: 12px;
   overflow: hidden;
@@ -426,29 +426,27 @@ footer#nav_footer {
   box-sizing: border-box;
 }
 
-/* Imagen dentro de la tarjeta */
 .certificate img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
   border-radius: 8px;
   object-fit: contain;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Texto dentro de la tarjeta */
+
 .certificate p {
   font-size: 1.4rem;
-  margin: 1.5rem 0 0.5rem 1rem;
+  margin: 1.5rem 0 0.5rem 0;
   color: #00ffd5;
+  text-align: center;
 }
 
-/* Efecto hover solo sobre la imagen */
 .certificate img:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 255, 213, 0.5);
   cursor: pointer;
 }
-
 /*RESUME*/
 .experience {
   display: flex;
