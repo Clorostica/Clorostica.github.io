@@ -404,16 +404,6 @@ display: inline-flex;
   color: #00ffd5;
 }
 
-
-#certificates {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 40px 0;
-  background-color: rgba(12, 25, 48, 0.7);
-}
-
 .certificate {
   flex: 1 1 calc(33.33% - 20px);
   max-width: 100%;
@@ -421,12 +411,10 @@ display: inline-flex;
   padding: 15px 20px;
   border-radius: 12px;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  cursor: pointer;
 }
 
 .certificate img {
@@ -434,19 +422,19 @@ display: inline-flex;
   height: auto;
   border-radius: 8px;
   object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .certificate p {
   font-size: 1.4rem;
-  margin-bottom: 0.5rem;
+  margin: 1.5rem 0 0.5rem 1rem;
   color: #00ffd5;
-  margin-left: 1rem;
-  margin-top: 1.5rem;
 }
 
-.certificate:hover {
+.certificate img:hover {
   transform: scale(1.05);
   box-shadow: 0 8px 20px rgba(0, 255, 213, 0.5);
+  cursor: pointer;
 }
 /*RESUME*/
 .experience {
