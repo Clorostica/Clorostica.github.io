@@ -687,6 +687,7 @@ main .main_container {
 margin: 1rem; 
 list-style: none; 
 text-align: left;
+color: var (--text-secondary)
 }
 
 .project-card h3 {
