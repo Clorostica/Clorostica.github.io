@@ -533,4 +533,19 @@ const globe = createGlobe(canvas, {
   });
 </script>
   <script src="/JS/animation.js"></script>
+<scrip>
+    const toggleBtn = document.getElementById('toggleTheme');
+const body = document.body;
+
+toggleBtn.addEventListener('click', () => {
+  body.classList.toggle('isLightMode');
+
+  if (body.classList.contains('isLightMode')) {
+    toggleBtn.textContent = '☀️'; // Puedes poner el ícono que prefieras
+  } else {
+    toggleBtn.textContent = '🌙';
+  }
+});
+
+</script>
 </html>
