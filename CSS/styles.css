@@ -11,8 +11,8 @@
   --text-color: #E2E8F0;
   --accent-color: #64FFDA;
   --hover-color: #52d8be;
-  --font-primary: 'Poppins', sans-serif;
-  --font-secondary: 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', -apple-system, system-ui, sans-serif;
+  --font-primary:: 'Inter', sans-serif;
+  --font-secondary: 'Roboto Mono', monospace;
   --max-width: 900px;
 }
 
