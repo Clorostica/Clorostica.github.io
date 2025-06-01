@@ -360,14 +360,14 @@ footer#nav_footer {
   min-width: 120px;          
   padding: 10px 20px;       
   font-size: 14px;
-  border: 1px solid #64FFDA;
+   border: 1px solid var(--accent-color);
   background: transparent;
-  color: #64FFDA;
+  color: (--accent-color);
   border-radius: 6px;       
   cursor: pointer;
   transition: all 0.3s ease;
   font-family: 'Poppins', sans-serif;
-display: inline-flex;     
+  display: inline-flex;     
   align-items: center;        
   justify-content: center;   
   gap: 8px;                   
