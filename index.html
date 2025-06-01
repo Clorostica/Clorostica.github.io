@@ -508,27 +508,22 @@ const globe = createGlobe(canvas, {
     </script>
 
 <script>
-document.addEventListener('DOMContentLoaded', () => {
-  const buttons = document.querySelectorAll('.readMoreBtn');
-  
-  buttons.forEach(button => {
+  document.querySelectorAll('.readMoreBtn').forEach(button => {
     button.addEventListener('click', () => {
       const targetId = button.getAttribute('data-target');
-      const targetDiv = document.getElementById(targetId);
-      
-      if (targetDiv) {
-        targetDiv.classList.toggle('hidden');
-        
-        if (targetDiv.classList.contains('hidden')) {
-          button.textContent = 'Leer más';
-        } else {
-          button.textContent = 'Leer menos';
-        }
+      const target = document.getElementById(targetId);
+
+      if (target.classList.contains('show')) {
+        target.classList.remove('show');
+        target.classList.add('hidden');
+        button.textContent = 'Leer más';
+      } else {
+        target.classList.add('show');
+        target.classList.remove('hidden');
+        button.textContent = 'Leer menos';
       }
     });
   });
-});
-
 </script>
   <script src="/JS/animation.js"></script>
 </html>
