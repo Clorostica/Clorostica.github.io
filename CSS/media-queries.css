@@ -333,9 +333,10 @@
     justify-content: center; 
   }
    #certificates h2{
-    font-size: 1.5rem
-    color: #CDD6F6;
-    text-align: center
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      color: var(--text-secondary);
+      text-align: center
 }
     /* Contact section */
   .contact_me_form {
