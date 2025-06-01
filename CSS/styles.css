@@ -404,17 +404,18 @@ footer#nav_footer {
     font-size: 2.5rem;
     margin-bottom: 3rem
 }
-#certificates {
+.certificates-container {
+  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; 
+  justify-content: space-between;
   gap: 20px;
   width: 100%;
-  padding: 40px 0;
+  padding: 2rem 0;
   box-sizing: border-box;
 }
 
 .certificate {
-  width: calc(100% - 40px) / 3;
+  width: calc((100% - 40px) / 3); /* tres certificados con 20px de separación entre ellos */
   padding: 15px 20px;
   border-radius: 12px;
   overflow: hidden;
@@ -422,6 +423,7 @@ footer#nav_footer {
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
+  background-color: #111; /* opcional */
 }
 
 .certificate img {
@@ -431,7 +433,6 @@ footer#nav_footer {
   object-fit: contain;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 
 .certificate p {
   font-size: 1.4rem;
@@ -445,6 +446,7 @@ footer#nav_footer {
   box-shadow: 0 8px 20px rgba(0, 255, 213, 0.5);
   cursor: pointer;
 }
+
 /*RESUME*/
 .experience {
   display: flex;
