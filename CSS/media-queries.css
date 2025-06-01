@@ -158,13 +158,11 @@
     transform: translateY(-2px);
   }
 
-  /* Main container */
   main .main_container {
     width: 95%;
     padding: 60px 20px;
   }
   
-  /* About Me section */
   #about_me {
     text-align: center;
   }
@@ -355,6 +353,10 @@
     color: #8892B0;
     margin-top: 10px;
   }
+    #certificates {
+    text-align: center;
+  }
+  
 
   /* Contact section */
   .contact_section {
@@ -477,9 +479,11 @@
   footer#nav_footer{
     margin-top: 30px;
   }
+      #certificates {
+    text-align: center;
+  }
 }
 
-/* Landscape móvil - MEJORADO */
 @media screen and (max-height: 500px) and (orientation: landscape) {
   .introduction {
     padding-top: 60px;
@@ -501,7 +505,6 @@
   }
 }
 
-/* Animaciones y transiciones mejoradas para móvil */
 @media screen and (max-width: 768px) {
   .reveal {
     transform: translateY(50px);
@@ -533,7 +536,6 @@
 
 /* Estilos adicionales para mejorar la UX móvil */
 @media screen and (max-width: 768px) {
-  /* Mejores áreas de toque */
   a, button, .readMoreBtn {
     min-height: 44px;
     min-width: 44px;
