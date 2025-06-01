@@ -89,18 +89,7 @@
     gap: 30px;
   }
 
-  .banner {
-    width: 100%;
-    text-align: center;
 
-  }
-  
-  .banner2 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  
   .banner h4 {
     font-size: 14px;
     color: #64FFDA;
@@ -120,6 +109,17 @@
     max-width: 100%;
     margin-bottom: 30px;
   }
+    .banner {
+    width: 100%;
+    text-align: center;
+  }
+  
+.banner2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: visible; 
+}
   
   .drop-shadow-div.blob {
     width: 250px;
