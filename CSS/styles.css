@@ -409,8 +409,8 @@ footer#nav_footer {
   flex-wrap: wrap;
   justify-content: space-between; 
   gap: 20px;
+  width: 100%;
   padding: 40px 0;
-  width: 100%;       
   box-sizing: border-box;
 }
 
