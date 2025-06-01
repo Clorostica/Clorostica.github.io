@@ -12,21 +12,4 @@ function reveal() {
     }
   }
 
-function toggleDetails(buttonElement) {
-    const targetId = buttonElement.getAttribute('data-target');
-    const targetElement = document.getElementById(targetId);
-    
-    if (targetElement) {
-        const isHidden = targetElement.classList.contains('hidden');
-        
-        if (isHidden) {
-            targetElement.classList.remove('hidden');
-            targetElement.classList.add('show');
-            buttonElement.textContent = 'Leer menos';
-        } else {
-            targetElement.classList.add('hidden');
-            targetElement.classList.remove('show');
-            buttonElement.textContent = 'Leer más';
-        }
-    }
-}
+
