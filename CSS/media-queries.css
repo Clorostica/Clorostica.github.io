@@ -333,6 +333,7 @@
     justify-content: center; 
   }
    #certificates h2{
+    font-size: 1.5rem
     color: #CDD6F6;
     text-align: center
 }
