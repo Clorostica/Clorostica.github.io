@@ -315,7 +315,7 @@ footer#nav_footer {
   top: 50%;
   transform: translateY(-50%);
   font-size: 36px;
-  color: #64FFDA;
+  color: var(--accent-color)
   user-select: none;
   pointer-events: none;
 }
