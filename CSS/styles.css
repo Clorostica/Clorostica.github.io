@@ -179,7 +179,7 @@ header {
     align-items: flex-end; 
     text-align: justify; 
     text-justify: inter-word; 
-    font-size: 27px;
+    font-size: clamp(40px, 8vw, 80px);
     text-shadow: 1px 1px 5px var(#64ffda);
 }
 .banner h3 {
