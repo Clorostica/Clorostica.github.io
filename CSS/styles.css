@@ -405,14 +405,12 @@ footer#nav_footer {
   color: #00ffd5;
 }
 
-/* Contenedor padre: define flex para distribuir las tarjetas */
 #certificates {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px; /* separación entre tarjetas */
   padding: 40px 0;
-  background-color: rgba(12, 25, 48, 0.7);
   box-sizing: border-box;
 }
 
