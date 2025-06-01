@@ -504,8 +504,8 @@
   });
 </script>
   <script src="/JS/animation.js"></script>
-      <script>
-import createGlobe from 'https://cdn.skypack.dev/cobe'
+<script type="module">
+   import createGlobe from 'https://cdn.skypack.dev/cobe'
 
 let phi = 0
 let canvas = document.getElementById("cobe")
@@ -533,6 +533,7 @@ const globe = createGlobe(canvas, {
     phi += 0.008
   },
 })
+    </script>
 
       </script>
     <script>
