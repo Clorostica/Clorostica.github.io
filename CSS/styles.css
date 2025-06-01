@@ -382,7 +382,10 @@ display: inline-flex;
   max-width: 100%;
   flex-shrink: 1;
 }
-
+#certificates h2{
+    padding-top
+    padding-bottom: 10px
+}
 .certificates-container {
   display: flex;
   flex-wrap: wrap;
