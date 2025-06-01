@@ -11,6 +11,7 @@
   --text-color: #E2E8F0;
   --accent-color: #64FFDA;
   --hover-color: #52d8be;
+  --text-secondary: #ced6f6;
   --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --max-width: 900px;
 }
@@ -475,7 +476,7 @@ display: inline-flex;
 
 .experience_item ul li {
   line-height: 1.4;
-  color: #cdd6f6;
+  color: var(--text-secondary);
 }
 .moreDetails.show {
     max-height: 500px; 
