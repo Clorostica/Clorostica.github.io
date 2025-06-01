@@ -464,7 +464,7 @@ footer#nav_footer {
 }
 
 .header h3 {
-  color: #64ffda; 
+  color: var(--accent-color); 
   font-size: 1.5rem;
  margin-top: 1.5rem; 
 }
