@@ -374,7 +374,7 @@ footer#nav_footer {
 }
 
 .button svg {
- color: (--accent-color);
+ color: var(--accent-color);
   width: 18px;
   height: 18px;
   flex-shrink: 0;
