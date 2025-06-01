@@ -505,22 +505,8 @@
   });
 </script>
   <script src="/JS/animation.js"></script>
-<script>
-    const toggleBtn = document.getElementById('toggleTheme');
-const body = document.body;
-
-toggleBtn.addEventListener('click', () => {
-  body.classList.toggle('isLightMode');
-
-  if (body.classList.contains('isLightMode')) {
-    toggleBtn.textContent = '☀️'; // Puedes poner el ícono que prefieras
-  } else {
-    toggleBtn.textContent = '🌙';
-  }
-});
-</script>
       <script>
-          import createGlobe from 'https://cdn.skypack.dev/cobe'
+import createGlobe from 'https://cdn.skypack.dev/cobe'
 
 let phi = 0
 let canvas = document.getElementById("cobe")
