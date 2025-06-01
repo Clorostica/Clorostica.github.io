@@ -435,10 +435,11 @@ footer#nav_footer {
 }
 
 .certificate p {
-  font-size: 1.4rem;
-  margin: 1.5rem 0 0.5rem 0;
-  color: #00ffd5;
-  text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: #00ffd5;
+    margin-left: 1.0rem;
+    margin-top: 1.5rem
 }
 
 .certificate img:hover {
