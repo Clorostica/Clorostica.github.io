@@ -11,8 +11,7 @@
   --text-color: #E2E8F0;
   --accent-color: #64FFDA;
   --hover-color: #52d8be;
-  --font-primary:: 'Inter', sans-serif;
-  --font-secondary: 'Roboto Mono', monospace;
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --max-width: 900px;
 }
 
@@ -51,7 +50,7 @@ a:hover {
 }
 
 h1, h2, h3, h4 {
-  font-family: var(--font-secondary);
+  font-family: var(--font-primary);
   font-weight: 600;
   margin-bottom: 10px;
   color: var(--accent-color);
@@ -117,7 +116,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000000 !important; /* Fondo negro */
+  background-color: #000000 !important; 
   font-size: 24px;
   cursor: pointer;
   transition: opacity 0.5s ease-in-out, transform 0.3s ease;
