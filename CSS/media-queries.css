@@ -332,8 +332,8 @@
     #certificates {
     justify-content: center; 
   }
-   #certificates h2{
-      font-size: 1.8rem;
+  .certificate__heading {
+     font-size: 1.8rem;
       margin-bottom: 2rem;
       color: var(--text-secondary);
       text-align: center
