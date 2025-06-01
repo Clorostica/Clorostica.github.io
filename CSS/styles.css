@@ -415,8 +415,7 @@ footer#nav_footer {
 }
 
 .certificate {
-  flex: 1 1 calc((100% - 40px) / 3);
-  max-width: calc((100% - 40px) / 3);
+  width: calc((100% - 40px) / 3);
   padding: 15px 20px;
   border-radius: 12px;
   overflow: hidden;
