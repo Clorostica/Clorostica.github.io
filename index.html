@@ -14,6 +14,17 @@
     <script src="https://kit.fontawesome.com/c3b56a7551.js" crossorigin="anonymous"></script>
 </head>
     <style>
+        
+    .arrow {
+      font-size: 24px;
+      display: inline-block;
+      transition: transform 0.3s ease;
+      margin-left: 8px;
+    }
+
+    .project-card:hover .arrow {
+      transform: translate(5px, -5px); /* movimiento diagonal arriba a la derecha */
+    }
     </style>
 <body>
     <header>
@@ -258,7 +269,7 @@
           <img src="https://clorostica.github.io/IMG/2.png" alt="Cordillera default" class="image-default">
           <img src="https://clorostica.github.io/IMG/floreria.png" alt="Cordillera hover" class="image-hover">
         </a>
-        <h3>Cordillera</h3>
+        <h3>Cordillera <span class="flecha">↗</span></h3>
         <p>Floral arrangements crafted with elegance and natural beauty.</p>
         <button class="readMoreBtn" data-target="cordilleraDetails">Read More</button>
         <div id="cordilleraDetails" class="moreDetails hidden">
@@ -279,7 +290,7 @@
           <img src="https://clorostica.github.io/IMG/3.png" alt="Little Lemon default" class="image-default">
           <img src="https://clorostica.github.io/IMG/Littlelemon.png" alt="Little Lemon hover" class="image-hover">
         </a>
-        <h3>Little Lemon</h3>
+        <h3>Little Lemon <span class="flecha">↗</span></h3>
         <p>Restaurant site offering homemade dishes with a modern twist.</p>
         <button class="readMoreBtn" data-target="littleLemonDetails">Read More</button>
         <div id="littleLemonDetails" class="moreDetails hidden">
@@ -300,7 +311,7 @@
           <img src="https://clorostica.github.io/IMG/eggtimer.png" alt="Egg Timer default" class="image-default">
           <img src="https://clorostica.github.io/IMG/eggtimer1.png" alt="Egg Timer hover" class="image-hover">
         </a>
-        <h3>Egg Timer</h3>
+        <h3>Egg Timer <span class="flecha">↗</span></h3>
         <p>Simple timer app for boiling eggs to your preferred level.</p>
         <button class="readMoreBtn" data-target="eggTimerDetails">Read More</button>
         <div id="eggTimerDetails" class="moreDetails hidden">
@@ -321,7 +332,7 @@
           <img src="https://clorostica.github.io/IMG/notes2.png" alt="Notes App default" class="image-default">
           <img src="https://clorostica.github.io/IMG/notes1.png" alt="Notes App hover" class="image-hover">
         </a>
-        <h3>Notes App</h3>
+        <h3>Notes App <span class="flecha">↗</span></h3>
         <p>Lightweight app for note creation, search, and deletion with local storage.</p> 
         <button class="readMoreBtn" data-target="notesAppDetails">Read More</button> 
         <div id="notesAppDetails" class="moreDetails hidden">
@@ -342,7 +353,7 @@
           <img src="https://clorostica.github.io/IMG/budgettracker1.png" alt="Budget Tracker default" class="image-default">
           <img src="https://clorostica.github.io/IMG/budgertracker2.png" alt="Budget Tracker hover" class="image-hover">
         </a>
-        <h3>Budget Tracker</h3>
+        <h3>Budget Tracker <span class="flecha">↗</span></h3>
         <p>Track income and expenses with categorized inputs and clean UI.</p>
         <button class="readMoreBtn" data-target="budgetTrackerDetails">Read More</button>
         <div id="budgetTrackerDetails" class="moreDetails hidden">
@@ -363,7 +374,7 @@
           <img src="https://clorostica.github.io/IMG/tasklist1.png" alt="Task Manager default" class="image-default">
           <img src="https://clorostica.github.io/IMG/tasklist2.png" alt="Task Manager hover" class="image-hover">
         </a>
-        <h3>Task Manager App</h3>
+        <h3>Task Manager App <span class="flecha">↗</span></h3>
         <p>Daily task management app with cloud storage and authentication.</p>
         <button class="readMoreBtn" data-target="taskManagerDetails">Read More</button>
         <div id="taskManagerDetails" class="moreDetails hidden">
