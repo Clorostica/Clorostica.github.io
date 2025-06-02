@@ -485,22 +485,27 @@
 </body>
 <script src="/JS/mobile.js"></script>
 <script>
+document.addEventListener('DOMContentLoaded', function() {
   document.querySelectorAll('.readMoreBtn').forEach(button => {
     button.addEventListener('click', () => {
       const targetId = button.getAttribute('data-target');
       const target = document.getElementById(targetId);
-
       if (target.classList.contains('show')) {
         target.classList.remove('show');
         target.classList.add('hidden');
         button.textContent = 'Read More';
+        button.setAttribute('aria-expanded', 'false');
+        target.setAttribute('aria-hidden', 'true');
       } else {
         target.classList.add('show');
         target.classList.remove('hidden');
         button.textContent = 'Read Less';
+        button.setAttribute('aria-expanded', 'true');
+        target.setAttribute('aria-hidden', 'false');
       }
     });
   });
+});
 </script>
   <script src="/JS/animation.js"></script>
 <script type="module">
