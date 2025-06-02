@@ -645,12 +645,17 @@ main .main_container {
   flex-direction: column;
   padding-bottom: 20px
 }
-
+.arrow {
+  transition: transform 0.3s ease;
+  will-change: transform;
+}
 .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 24px rgba(0, 255, 213, 0.4);
 }
-
+.project-card:hover .arrow {
+      transform: translate(5px, -5px);
+}
 .project-card__image {
   position: relative;
   width: 100%;
