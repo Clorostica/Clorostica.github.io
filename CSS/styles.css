@@ -88,7 +88,7 @@ h3 {
 p {
   font-size: 1rem;
   color: var(--text-color);
-  margin-bottom: 15px;
+  margin: 15px 0;
 }
 /*-------------*/
 
