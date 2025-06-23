@@ -1,16 +1,13 @@
 let mousePosition = { x: 0, y: 0 };
 
-
 function updateMousePosition(event) {
   mousePosition.x = event.clientX;
   mousePosition.y = event.clientY;
   
-
   document.documentElement.style.setProperty('--mouse-x', `${event.clientX}px`);
   document.documentElement.style.setProperty('--mouse-y', `${event.clientY}px`);
   
 }
-
 
 document.addEventListener('mousemove', updateMousePosition);
 document.addEventListener('pointermove', updateMousePosition); 
