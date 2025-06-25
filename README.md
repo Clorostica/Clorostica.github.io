@@ -14,11 +14,6 @@ Welcome to my portfolio! I’m Claudia Sáez, a **Front-End Developer** passiona
 - Tailwind CSS  
 - Framer Motion  
 
-## 🧠 Currently Learning  
-- Web Accessibility (a11y)  
-- Advanced Animations with GSAP
-
----
 
 ## 📫 Get in Touch  
 [🌐 Visit my portfolio](https://clorostica.github.io/)  
