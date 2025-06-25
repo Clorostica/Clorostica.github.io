@@ -4,7 +4,6 @@
 
 Welcome to my portfolio! I’m Claudia Sáez, a **Front-End Developer** passionate about building intuitive, responsive, and accessible web experiences. I love combining UI/UX design with creative, clean code to deliver engaging digital products.
 
-> “Passionate about UI/UX and creative coding.”
 
 ---
 
