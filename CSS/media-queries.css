@@ -91,6 +91,7 @@
 
 
   .banner h4 {
+    text-align: center;
     font-size: 14px;
     color: #64FFDA;
     margin-bottom: 10px;
@@ -98,12 +99,14 @@
   }
   
   .banner h2 {
+    text-align: center;
     font-size: 2.2rem;
     line-height: 1.1;
     margin-bottom: 15px;
   }
   
   .banner p {
+    text-align: center;
     font-size: 1rem;
     line-height: 1.6;
     max-width: 100%;
