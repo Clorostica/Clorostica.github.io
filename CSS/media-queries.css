@@ -14,16 +14,59 @@
   }
 }
 
-/* Dispositivos móviles grandes */
 @media screen and (max-width: 768px) {
-  body {
+    body {
     padding: 10px;
   }
 
   #header-nav-bar-menu {
     display: none;
   }
+    a, button, .readMoreBtn {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
   
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  /* Texto más legible */
+  p, li {
+    line-height: 1.6;
+  }
+  
+  /* Scrolling suave */
+  html {
+    scroll-behavior: smooth;
+  }
+  .reveal {
+    transform: translateY(50px);
+    transition: 1s all ease;
+  }
+  
+  .project-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .experience_item {
+    transition: all 0.2s ease;
+  }
+  
+  .experience_item:hover {
+    transform: none;
+    background: rgba(255, 255, 255, 0.05);
+  }
+  .mobile-nav-active {
+  overflow: hidden;
+}
   .small_screen#nav_burger {
     display: flex !important;
     position: fixed;
@@ -465,54 +508,6 @@
    #certificates {
     text-align: center;
   }
-}
-
-@media screen and (max-width: 768px) {
-    a, button, .readMoreBtn {
-    min-height: 44px;
-    min-width: 44px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  section {
-    margin-bottom: 3rem;
-  }
-  
-  /* Texto más legible */
-  p, li {
-    line-height: 1.6;
-  }
-  
-  /* Scrolling suave */
-  html {
-    scroll-behavior: smooth;
-  }
-  .reveal {
-    transform: translateY(50px);
-    transition: 1s all ease;
-  }
-  
-  .project-card {
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  .project-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .experience_item {
-    transition: all 0.2s ease;
-  }
-  
-  .experience_item:hover {
-    transform: none;
-    background: rgba(255, 255, 255, 0.05);
-  }
-  .mobile-nav-active {
-  overflow: hidden;
-}
 }
 
 
