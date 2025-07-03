@@ -70,18 +70,8 @@
   body {
     padding: 10px;
   }
-
-  .introduction {
-    width: 95%;
-    padding-top: 100px;
-    flex-direction: column;
-    text-align: center;
-    gap: 30px;
-  }
-
-  .banner {
-    width: 100%;
-    text-align: center;
+  .introduction .banner:first-child {
+      width: 95%;
   }
 
   .banner h4 {
