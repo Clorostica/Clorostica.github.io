@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 1024px) {
   .introduction {
     width: 85%;
@@ -337,7 +336,6 @@
       color: var(--text-secondary);
       text-align: center
 }
-    /* Contact section */
   .contact_me_form {
     width: 100%;
     max-width: 400px;
@@ -507,7 +505,6 @@
   }
 }
 
-/* Fix para el menú móvil */
 .mobile-nav-active {
   overflow: hidden;
 }
@@ -527,12 +524,10 @@
     margin-bottom: 3rem;
   }
   
-  /* Texto más legible */
   p, li {
     line-height: 1.6;
   }
   
-  /* Scrolling suave */
   html {
     scroll-behavior: smooth;
   }
