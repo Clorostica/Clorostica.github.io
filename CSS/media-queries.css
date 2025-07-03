@@ -13,6 +13,55 @@
   }
 }
 
+@media screen and (max-width: 767px) and (min-width: 481px) {
+#header-nav-bar-menu {
+  display: block;
+}
+  .introduction {
+    padding-top: 80px;
+  }
+  
+  .banner h2 {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+  
+  .banner p {
+    font-size: 0.9rem;
+  }
+  
+  .drop-shadow-div.blob {
+    width: 200px;
+    height: 200px;
+  }
+  
+  main .main_container {
+    width: 100%;
+    padding: 40px 15px;
+  }
+  
+  .projects__heading,
+  #about_me h2 {
+    font-size: 1.5rem;
+  }
+  
+  .contact_me_form {
+    padding: 1.5rem;
+  }
+  
+  .map_container canvas {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .footer_container {
+    padding: 0 10px;
+  }
+  
+  footer#nav_footer{
+    margin-top: 30px;
+  }
+}
 @media screen and (max-width: 480px) {
   body {
     padding: 10px;
@@ -436,53 +485,3 @@
   overflow: hidden;
 }
 
-
-@media screen and (max-width: 767px) and (min-width: 481px) {
-#header-nav-bar-menu {
-  display: block;
-}
-  .introduction {
-    padding-top: 80px;
-  }
-  
-  .banner h2 {
-    text-align: center;
-    font-size: 1.8rem;
-  }
-  
-  .banner p {
-    font-size: 0.9rem;
-  }
-  
-  .drop-shadow-div.blob {
-    width: 200px;
-    height: 200px;
-  }
-  
-  main .main_container {
-    width: 100%;
-    padding: 40px 15px;
-  }
-  
-  .projects__heading,
-  #about_me h2 {
-    font-size: 1.5rem;
-  }
-  
-  .contact_me_form {
-    padding: 1.5rem;
-  }
-  
-  .map_container canvas {
-    width: 250px;
-    height: 250px;
-  }
-  
-  .footer_container {
-    padding: 0 10px;
-  }
-  
-  footer#nav_footer{
-    margin-top: 30px;
-  }
-}
