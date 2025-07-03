@@ -66,66 +66,6 @@
   body {
     padding: 10px;
   }
-
-  #header-nav-bar-menu {
-    display: none;
-  }
-
-  .small_screen#nav_burger {
-    display: flex !important;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    width: auto;
-    height: auto;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 15px;
-    border-radius: 8px;
-    z-index: 1000;
-  }
-
-  .small_screen#mobile_nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(11, 25, 48, 0.98);
-    backdrop-filter: blur(10px);
-    z-index: 999;
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .small_screen#mobile_nav.active {
-    display: flex;
-  }
-
-  .small_screen#mobile_nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    text-align: center;
-  }
-
-  .small_screen#mobile_nav ul li {
-    font-size: 1.5rem;
-  }
-
-  .small_screen#mobile_nav ul li a {
-    color: #64FFDA;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-
-  .small_screen#mobile_nav ul li a:hover {
-    color: #ffffff;
-    text-shadow: 0 0 10px #64FFDA;
-  }
-
   .introduction {
     width: 95%;
     padding-top: 100px;
@@ -198,6 +138,64 @@
     border: 1px solid rgba(100, 255, 218, 0.3);
     font-size: 11px;
     padding: 5px 12px;
+  }
+  #header-nav-bar-menu {
+    display: none;
+  }
+
+  .small_screen#nav_burger {
+    display: flex !important;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: auto;
+    height: auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 1000;
+  }
+
+  .small_screen#mobile_nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(11, 25, 48, 0.98);
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .small_screen#mobile_nav.active {
+    display: flex;
+  }
+
+  .small_screen#mobile_nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .small_screen#mobile_nav ul li {
+    font-size: 1.5rem;
+  }
+
+  .small_screen#mobile_nav ul li a {
+    color: #64FFDA;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .small_screen#mobile_nav ul li a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #64FFDA;
   }
 
   .button-link .button:hover,
