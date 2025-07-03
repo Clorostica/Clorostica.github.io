@@ -4,7 +4,10 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 /* Dark mode colors */
 :root {
   --main-bg: #0A0E1A;
