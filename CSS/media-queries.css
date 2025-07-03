@@ -13,7 +13,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   body {
     padding: 10px;
   }
@@ -481,8 +481,5 @@
   
   footer#nav_footer{
     margin-top: 30px;
-  }
-      #certificates {
-    text-align: center;
   }
 }
