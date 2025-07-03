@@ -100,7 +100,9 @@
   #about_me {
     text-align: center;
   }
-
+  #about_me p {
+    text-align: center;
+  }
   #about_me h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
