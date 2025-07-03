@@ -438,6 +438,9 @@
 
 
 @media screen and (max-width: 767px) and (min-width: 481px) {
+#header-nav-bar-menu {
+  display: block;
+}
   .introduction {
     padding-top: 80px;
   }
