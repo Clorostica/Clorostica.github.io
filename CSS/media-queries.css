@@ -20,7 +20,6 @@
     padding: 10px;
   }
 
-  /* Header y navegación móvil */
   #header-nav-bar-menu {
     display: none;
   }
@@ -88,8 +87,6 @@
     text-align: center;
     gap: 30px;
   }
-
-
   .banner h4 {
     text-align: center;
     font-size: 14px;
@@ -112,7 +109,7 @@
     max-width: 100%;
     margin-bottom: 30px;
   }
-    .banner {
+  .banner {
     width: 100%;
     text-align: center;
   }
@@ -332,7 +329,7 @@
     flex: 1 1 100%;
     max-width: 100%;
   }
-    #certificates {
+  #certificates {
     justify-content: center; 
   }
   .certificate__heading {
@@ -430,12 +427,6 @@
   .banner2 {
     width: 40%;
   }
-  
-  .drop-shadow-div.blob {
-    width: 180px;
-    height: 180px;
-  }
-  
   .banner p {
     font-size: 0.9rem;
   }
@@ -471,7 +462,7 @@
   footer#nav_footer{
     margin-top: 30px;
   }
-      #certificates {
+   #certificates {
     text-align: center;
   }
 }
@@ -485,7 +476,6 @@
     justify-content: center;
   }
   
-
   section {
     margin-bottom: 3rem;
   }
