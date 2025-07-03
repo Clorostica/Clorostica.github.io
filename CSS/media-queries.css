@@ -406,7 +406,6 @@
     margin-top: 30px;
   }
 
-  /* Toggle theme button */
   .toggle-btn {
     width: 3rem;
     height: 3rem;
@@ -418,12 +417,23 @@
 
 /* Dispositivos móviles pequeños */
 @media screen and (max-width: 480px) {
-  .introduction {
-    padding-top: 80px;
+    .introduction {
+    padding-top: 60px;
+    flex-direction: row;
+    align-items: center;
   }
   
-  .banner h2 {
-    font-size: 1.8rem;
+  .banner {
+    width: 60%;
+  }
+  
+  .banner2 {
+    width: 40%;
+  }
+  
+  .drop-shadow-div.blob {
+    width: 180px;
+    height: 180px;
   }
   
   .banner p {
@@ -466,28 +476,29 @@
   }
 }
 
-@media screen and (max-height: 500px) and (orientation: landscape) {
-  .introduction {
-    padding-top: 60px;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .banner {
-    width: 60%;
-  }
-  
-  .banner2 {
-    width: 40%;
-  }
-  
-  .drop-shadow-div.blob {
-    width: 180px;
-    height: 180px;
-  }
-}
-
 @media screen and (max-width: 768px) {
+    a, button, .readMoreBtn {
+    min-height: 44px;
+    min-width: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  section {
+    margin-bottom: 3rem;
+  }
+  
+  /* Texto más legible */
+  p, li {
+    line-height: 1.6;
+  }
+  
+  /* Scrolling suave */
+  html {
+    scroll-behavior: smooth;
+  }
   .reveal {
     transform: translateY(50px);
     transition: 1s all ease;
@@ -511,33 +522,7 @@
   }
 }
 
-/* Fix para el menú móvil */
 .mobile-nav-active {
   overflow: hidden;
 }
 
-/* Estilos adicionales para mejorar la UX móvil */
-@media screen and (max-width: 768px) {
-  a, button, .readMoreBtn {
-    min-height: 44px;
-    min-width: 44px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-
-  section {
-    margin-bottom: 3rem;
-  }
-  
-  /* Texto más legible */
-  p, li {
-    line-height: 1.6;
-  }
-  
-  /* Scrolling suave */
-  html {
-    scroll-behavior: smooth;
-  }
-}
