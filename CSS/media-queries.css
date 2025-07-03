@@ -126,7 +126,6 @@
   .introduction {
     width: 95%;
     padding-top: 100px;
-    flex-direction: column;
     text-align: center;
     gap: 30px;
   }
