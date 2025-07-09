@@ -132,7 +132,7 @@
   .banner h4 {
     text-align: center;
     font-size: 14px;
-    color: #64FFDA;
+    color: (--accent-primary);
     margin-bottom: 10px;
     font-weight: 400;
   }
