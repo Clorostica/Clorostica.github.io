@@ -65,7 +65,7 @@
     background: rgba(255, 255, 255, 0.05);
   }
   .mobile-nav-active {
-  overflow: hidden;
+   overflow: hidden;
 }
   .small_screen#nav_burger {
     display: flex !important;
@@ -111,7 +111,7 @@
   }
   
   .small_screen#mobile_nav ul li a {
-    color: #64FFDA;
+    color: (--accent-primary);
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -210,13 +210,13 @@
   #about_me h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
-    color: #CDD6F6;
+    color: (--accent-primary);
     text-align: center;
   }
   
   #about_me h4 {
     font-size: 1rem;
-    color: #64FFDA;
+    color: (--accent-primary);
     margin-bottom: 15px;
     text-align: center;
   }
@@ -239,7 +239,7 @@
     background: rgba(255, 255, 255, 0.02);
     border-radius: 8px;
     padding: 20px;
-    border-left: 2px solid #64FFDA;
+    border-left: 2px solid (--accent-primary);
     margin-bottom: 25px;
     text-align: center;
   }
@@ -260,7 +260,7 @@
   
   .date {
     font-size: 13px;
-    color: #64FFDA;
+    color: (--accent-primary);
     font-weight: 500;
     margin: 0;
     padding: 0;
@@ -296,7 +296,7 @@
     height: auto;
     background: rgba(100, 255, 218, 0.1);
     border: 1px solid rgba(100, 255, 218, 0.3);
-    color: #64FFDA;
+    color: (--accent-primary);
   }
 
   /* Projects section */
@@ -346,8 +346,8 @@
   .readMoreBtn {
     margin: 0 1rem 1rem 1rem;
     background: transparent;
-    color: #64FFDA;
-    border: 1px solid #64FFDA;
+    color: (--accent-primary);
+    border: 1px solid (--accent-primary);
     padding: 12px 20px;
     font-size: 14px;
     border-radius: 4px;
