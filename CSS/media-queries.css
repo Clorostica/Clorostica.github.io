@@ -260,6 +260,7 @@
   }
   
   .date {
+    text-align: center;
     font-size: 13px;
     color: (--accent-primary);
     font-weight: 500;
