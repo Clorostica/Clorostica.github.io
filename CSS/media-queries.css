@@ -373,11 +373,11 @@
     justify-content: center; 
   }
   .certificate__heading {
-     font-size: 1.8rem;
-      margin-bottom: 2rem;
-      color: var(--text-secondary);
-      text-align: center
-}
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: var(--text-secondary);
+    text-align: center
+    }
     /* Contact section */
   .contact_me_form {
     width: 100%;
