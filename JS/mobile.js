@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     const navBurger = document.getElementById('nav_burger');
     const mobileNav = document.getElementById('mobile_nav');
