@@ -126,7 +126,7 @@ p {
 
 /*HEADER SECTION CSS*/
 .introduction {
- padding: 200px 0 var(--section-padding) 0;
+    padding-top: 120px;
     max-width: var(--max-width);
     margin: 0 auto;
     display: flex;
