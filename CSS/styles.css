@@ -969,6 +969,7 @@ footer .copyright {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    list-style: none;
 }
 
 .small_screen#mobile_nav ul li {
