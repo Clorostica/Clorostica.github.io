@@ -1,4 +1,4 @@
-* {
+x* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -307,11 +307,6 @@ nav {
     font-weight: 600;
 }
 
-footer#nav_footer {
-    height: 50%;
-    padding: 0px;
-}
-
 .small_screen#mobile_nav ul li {
     list-style: none;
 }
@@ -327,6 +322,11 @@ footer#nav_footer {
 .small_screen#nav_burger span i {
     color: var(--accent-primary);
     cursor: pointer;
+}
+
+footer#nav_footer {
+    height: 50%;
+    padding: 0px;
 }
 #nav_exit_icon {
     display: none;
