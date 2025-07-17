@@ -272,6 +272,7 @@
     margin: 8px 0;
     padding-left: 15px;
     position: relative;
+    list-style: none; 
   }
   
   .experience_item ul li::before {
