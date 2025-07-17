@@ -34,12 +34,10 @@
     margin-bottom: 3rem;
   }
   
-  /* Texto más legible */
   p, li {
     line-height: 1.6;
   }
   
-  /* Scrolling suave */
   html {
     scroll-behavior: smooth;
   }
@@ -169,7 +167,6 @@
     margin: 0 auto;
   }
 
-  /* Botones del hero */
   .button-container {
     justify-content: center;
     gap: 15px;
