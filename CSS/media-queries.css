@@ -18,7 +18,10 @@
     body {
     padding: 10px;
   }
-
+.introduction {
+  padding-right: 50px;
+  padding-left: 50px
+}
   #header-nav-bar-menu {
     display: none;
   }
