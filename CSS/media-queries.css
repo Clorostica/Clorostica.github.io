@@ -98,6 +98,7 @@
   }
   
   .small_screen#mobile_nav ul {
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -268,7 +269,6 @@
     line-height: 1.5;
     margin: 8px 0;
     padding-left: 15px;
-    position: relative;
     list-style: none; 
   }
   
