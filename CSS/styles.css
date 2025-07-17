@@ -127,14 +127,16 @@ p {
 
 /*HEADER SECTION CSS*/
 .introduction {
-    padding-top: 150px;
-    width: 60%;
-    margin: auto;
+ padding: 200px 0 var(--section-padding) 0;
+    max-width: var(--max-width);
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .introduction .banner .banner2 {
@@ -326,14 +328,12 @@ footer#nav_footer {
     align-items: center;
     padding-right: 50px;
 }
-
-#nav_exit_icon {
-    display: none;
-}
-
 .small_screen#nav_burger span i {
     color: var(--accent-primary);
     cursor: pointer;
+}
+#nav_exit_icon {
+    display: none;
 }
 
 #header-nav-bar-menu {
