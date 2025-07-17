@@ -155,12 +155,12 @@
     text-align: center;
   }
   
-.banner2 {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  overflow: visible; 
-}
+  .banner2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    overflow: visible; 
+  }
   
   .drop-shadow-div.blob {
     width: 250px;
@@ -378,6 +378,9 @@
     color: var(--text-secondary);
     text-align: center
     }
+  .certificate p{
+    font-size: 1.2 rem;
+  }
     /* Contact section */
   .contact_me_form {
     width: 100%;
