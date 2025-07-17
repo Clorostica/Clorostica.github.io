@@ -378,8 +378,9 @@
     color: var(--text-secondary);
     text-align: center
     }
-  .certificate p{
-    font-size: 1.2 rem;
+  .certificate p {
+    font-size: 1.2rem; 
+    font-weight: bold; 
   }
     /* Contact section */
   .contact_me_form {
