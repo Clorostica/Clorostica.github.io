@@ -1,6 +1,5 @@
-<script>
-  const toggleBtn = document.getElementById('toggleTheme');
-  const body = document.body;
+const toggleBtn = document.getElementById('toggleTheme');
+const body = document.body;
 
   window.addEventListener('DOMContentLoaded', () => {
     const savedTheme = localStorage.getItem('theme');
@@ -20,4 +19,4 @@
     toggleBtn.textContent = isLight ? '🌙' : '☀️';
     localStorage.setItem('theme', isLight ? 'light' : 'dark');
   });
-</script>
+
