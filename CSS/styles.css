@@ -126,13 +126,14 @@ p {
 
 /*HEADER SECTION CSS*/
 .introduction {
-    padding-top: 120px;
-    max-width: var(--max-width);
-    margin: 0 auto;
+    padding-top: 150px;
+    width: 60%;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 80px;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .introduction .banner .banner2 {
