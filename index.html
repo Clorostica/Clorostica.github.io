@@ -254,12 +254,51 @@
   <section class="projects" id="projects">
     <h2 class="projects__heading">Featured Projects</h2>
     <p>
-         Each of these projects was built from scratch, including everything from the color palette and branding elements to the full design and development of the code. 
-         I was responsible for every stage of the creative and technical process
+      These are demo projects, not full applications. They were fully designed and developed by me using tools like React, Next.js, and Vite.
     </p>
-
     <div class="projects__grid">
-
+     <!-- Budget Tracker -->
+      <div class="project-card">
+        <a href="https://clorostica.github.io/BudgetTracker/" target="_blank" class="project-card__image">
+          <img src="https://clorostica.github.io/IMG/budgettracker1.png" alt="Budget Tracker default" class="image-default">
+          <img src="https://clorostica.github.io/IMG/budgertracker2.png" alt="Budget Tracker hover" class="image-hover">
+        </a>
+        <h3>Budget Tracker <span class="flecha">↗</span></h3>
+        <p>Track income and expenses with categorized inputs and clean UI.</p>
+        <button class="readMoreBtn" data-target="budgetTrackerDetails">Read More</button>
+        <div id="budgetTrackerDetails" class="moreDetails hidden">
+          <div class="project-card__info">
+            <ul>
+              <li><strong>Project:</strong> Budget Tracker</li>
+              <li><strong>Tech:</strong> JavaScript, HTML, CSS</li>
+              <li><strong>Role:</strong> Design and logic</li>
+              <li><strong>Description:</strong> Personal finance management with real-time totals.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Task Manager -->
+      <div class="project-card">
+        <a href="https://clorostica.github.io/Task-List/" target="_blank" class="project-card__image">
+          <img src="https://clorostica.github.io/IMG/tasklist1.png" alt="Task Manager default" class="image-default">
+          <img src="https://clorostica.github.io/IMG/tasklist2.png" alt="Task Manager hover" class="image-hover">
+        </a>
+        <h3>Task Manager App <span class="flecha">↗</span></h3>
+        <p>Daily task management app with cloud storage and authentication.</p>
+        <button class="readMoreBtn" data-target="taskManagerDetails">Read More</button>
+        <div id="taskManagerDetails" class="moreDetails hidden">
+          <div class="project-card__info">
+            <ul>
+              <li><strong>Project:</strong> Task Manager App</li>
+              <li><strong>Tech:</strong> React, Tailwind, Firebase</li>
+              <li><strong>Role:</strong> Full frontend & database integration</li>
+              <li><strong>Description:</strong> Responsive app for daily task management with cloud sync and authentication.</li>
+              <li><strong>Challenges:</strong> Real-time state management with Firebase</li>
+              <li><strong>What I Learned:</strong> Advanced hooks, performance optimization</li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <!-- Cordillera -->
       <div class="project-card">
         <a href="https://clorostica.github.io/Cordillera" target="_blank" class="project-card__image">
@@ -363,51 +402,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Budget Tracker -->
-      <div class="project-card">
-        <a href="https://clorostica.github.io/BudgetTracker/" target="_blank" class="project-card__image">
-          <img src="https://clorostica.github.io/IMG/budgettracker1.png" alt="Budget Tracker default" class="image-default">
-          <img src="https://clorostica.github.io/IMG/budgertracker2.png" alt="Budget Tracker hover" class="image-hover">
-        </a>
-        <h3>Budget Tracker <span class="flecha">↗</span></h3>
-        <p>Track income and expenses with categorized inputs and clean UI.</p>
-        <button class="readMoreBtn" data-target="budgetTrackerDetails">Read More</button>
-        <div id="budgetTrackerDetails" class="moreDetails hidden">
-          <div class="project-card__info">
-            <ul>
-              <li><strong>Project:</strong> Budget Tracker</li>
-              <li><strong>Tech:</strong> JavaScript, HTML, CSS</li>
-              <li><strong>Role:</strong> Design and logic</li>
-              <li><strong>Description:</strong> Personal finance management with real-time totals.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <!-- Task Manager -->
-      <div class="project-card">
-        <a href="https://clorostica.github.io/Task-List/" target="_blank" class="project-card__image">
-          <img src="https://clorostica.github.io/IMG/tasklist1.png" alt="Task Manager default" class="image-default">
-          <img src="https://clorostica.github.io/IMG/tasklist2.png" alt="Task Manager hover" class="image-hover">
-        </a>
-        <h3>Task Manager App <span class="flecha">↗</span></h3>
-        <p>Daily task management app with cloud storage and authentication.</p>
-        <button class="readMoreBtn" data-target="taskManagerDetails">Read More</button>
-        <div id="taskManagerDetails" class="moreDetails hidden">
-          <div class="project-card__info">
-            <ul>
-              <li><strong>Project:</strong> Task Manager App</li>
-              <li><strong>Tech:</strong> React, Tailwind, Firebase</li>
-              <li><strong>Role:</strong> Full frontend & database integration</li>
-              <li><strong>Description:</strong> Responsive app for daily task management with cloud sync and authentication.</li>
-              <li><strong>Challenges:</strong> Real-time state management with Firebase</li>
-              <li><strong>What I Learned:</strong> Advanced hooks, performance optimization</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
     </div>
   </section>
 </div>
