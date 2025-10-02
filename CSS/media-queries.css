@@ -1,5 +1,8 @@
 /* Tablets y pantallas medianas */
 @media screen and (max-width: 1024px) {
+  #header-nav-bar-menu{
+    width: 80%;
+  }
   .introduction {
     width: 85%;
     padding-top: 120px;
